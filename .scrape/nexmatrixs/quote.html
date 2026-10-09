@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>報價系統｜海外代運營方案配置器 — NexMatrix 海易通達</title>
+  <meta name="description" content="海易通達線上報價配置器：選擇目標市場與平臺、內容創作方案、運營服務與增值服務，4 步實時生成海外短影片代運營專屬報價。">
+  <meta name="keywords" content="海外代運營報價,短影片代運營,出海報價系統,TikTok代運營,矩陣運營報價,NexMatrix,海易通達">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/quote.css">
+</head>
+<body class="page-quote">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="NexMatrix 海易通達 首頁">
+        <span class="logo-nex" aria-hidden="true"></span>
+        <span class="logo-text">
+          <strong>海易通達科技</strong>
+          <span>跨境業務服務商</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打開選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="主導航">
+        <a href="index.html" data-nav="home">首頁</a>
+        <a href="cases.html" data-nav="cases">合作案例</a>
+        <a href="products.html" data-nav="products">產品</a>
+        <a href="services.html" data-nav="services">服務</a>
+        <a href="solutions.html" data-nav="solutions">出海方案</a>
+        <a href="about.html" data-nav="about">關於我們</a>
+        <a href="quote.html" data-nav="quote">報價系統</a>
+        <span class="lang-switch" aria-label="語言">
+          <a href="quote.html" class="active">中文</a>
+          <a href="en/index.html">EN</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">首頁</a>
+          <span>/</span>
+          <span>報價系統</span>
+        </div>
+        <p class="eyebrow">Pricing Calculator</p>
+        <h1>線上配置，實時生成專屬報價</h1>
+        <p class="lead">選擇目標市場與平臺、內容創作方案、運營服務與增值服務，4 步完成配置，費用明細即時顯示。報價僅供參考，最終以正式合同為準。</p>
+      </div>
+    </section>
+
+    <section class="pc-section">
+      <div class="pc">
+      <!-- ═══ SCHEME TYPE SELECTOR ═══ -->
+      <div class="scheme-selector fi">
+        <div class="sst" style="margin-top:20px;">選擇方案型別</div>
+        <div class="scheme-selector-inner" id="scheme-selector">
+          <!-- JS rendered -->
+        </div>
+      </div>
+
+      <div class="page-header fi">
+        <div class="ph-crumb">
+          <a href="services.html">服務方案</a>
+          <span class="ph-sep">›</span>
+          <span class="ph-current">報價配置</span>
+        </div>
+        <h1 class="ph-title" id="ph-title">4 步配置 · 實時生成<em>專屬報價</em></h1>
+        <p class="ph-sub" id="ph-sub">選擇目標市場與平臺、內容創作方案、運營服務與增值服務，報價實時顯示在右側</p>
+        <div class="device-tip" id="device-tip-section">
+          <div class="dt-icon">📱</div>
+          <div class="dt-text">
+            <h4 id="device-tip-title">手機裝置 = 獨立運營單元</h4>
+            <p id="device-tip-body"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-layout">
+
+        <div>
+          <div class="back-bridge fi">
+            <div class="bb-left">
+              <div class="bb-icon">📄</div>
+              <div class="bb-text">
+                <h5>還沒了解服務內容？</h5>
+                <p>先查看服務方案頁：平臺方案、影片模板、服務流程說明</p>
+              </div>
+            </div>
+            <a class="bb-link" href="services.html">← 查看服務方案</a>
+          </div>
+
+          <div class="calc-box fi">
+            <div class="calc-box-header">
+              <div class="cbh-title" id="cbh-title">🧮 海外代運營方案配置器</div>
+              <div class="cbh-sub" id="cbh-sub">逐步配置，右側實時顯示費用明細</div>
+            </div>
+
+            <div class="step-tabs">
+              <div class="step-tab active" id="tab0" onclick="goStep(0)"><div class="sn">1</div> <span id="tab0-label">目標市場</span></div>
+              <div class="step-tab" id="tab1" onclick="goStep(1)"><div class="sn">2</div> <span id="tab1-label">內容創作</span></div>
+              <div class="step-tab" id="tab2" onclick="goStep(2)"><div class="sn">3</div> <span id="tab2-label">運營服務</span></div>
+              <div class="step-tab" id="tab3" onclick="goStep(3)"><div class="sn">4</div> <span id="tab3-label">增值服務</span></div>
+            </div>
+
+            <div class="step-body">
+
+              <!-- STEP 1 -->
+              <div class="step-panel active" id="panel0">
+                <!-- Enterprise mode content -->
+                <div id="enterprise-step1">
+                  <div class="sst">選擇目標市場 <span class="sst-sub">點選地區 → 再選語言版本</span></div>
+
+                  <div class="region-groups" id="region-groups"><!-- JS rendered --></div>
+
+                  <div id="lang-sub-panel" style="display:none;">
+                    <div class="lang-sub-panel">
+                      <div class="lsp-head">
+                        <span class="lsp-icon" id="lsp-icon">🌎</span>
+                        <span class="lsp-title" id="lsp-title">選擇語言版本</span>
+                        <span class="lsp-hint">點選新增裝置</span>
+                      </div>
+                      <div class="lang-opts" id="lang-opts"><!-- JS rendered --></div>
+                    </div>
+                  </div>
+
+                  <div class="sst" style="margin-top:20px;">已配置手機裝置 <span class="sst-sub" id="device-count-label">0 臺</span></div>
+                  <div class="devices-area" id="devices-area">
+                    <div class="devices-empty"><span>📱</span>點選上方地區，選擇語言新增第一臺裝置</div>
+                  </div>
+
+                  <div class="device-count-bar" id="device-count-bar" style="display:none;">
+                    <div class="dcb-phones" id="dcb-phones"></div>
+                    <div class="dcb-info">
+                      <div class="dcb-count" id="dcb-count">0</div>
+                      <div class="dcb-label">臺手機裝置</div>
+                    </div>
+                  </div>
+
+                  <div class="price-ref" id="price-ref"></div>
+                </div>
+
+                <!-- Culture IP mode content -->
+                <div id="culture-step1" style="display:none;">
+                  <div class="matrix-flow" id="matrix-flow-diagram">
+                    <div class="mf-title">🔄 矩陣業務流量結構</div>
+                    <div class="mf-steps">
+                      <div class="mf-step">
+                        <div class="mf-step-icon">☁️</div>
+                        <div class="mf-step-label">雲機矩陣曝光</div>
+                        <div class="mf-step-sub">大量影片分發引流</div>
+                      </div>
+                      <div class="mf-arrow">→</div>
+                      <div class="mf-step">
+                        <div class="mf-step-icon">📱</div>
+                        <div class="mf-step-label">真機賬號承接</div>
+                        <div class="mf-step-sub">私信轉化 · 私域沉澱</div>
+                      </div>
+                      <div class="mf-arrow">→</div>
+                      <div class="mf-step">
+                        <div class="mf-step-icon">🛒</div>
+                        <div class="mf-step-label">私域 / 獨立站成交</div>
+                        <div class="mf-step-sub">電商變現 · 品牌沉澱</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sst">真機裝置配置 <span class="sst-sub">承接流量 · 私域運營</span></div>
+                  <div class="device-slider-section">
+                    <div class="ds-label">📱 真機數量 <span class="ds-badge ds-badge-real">流量承接</span></div>
+                    <div class="ds-options" id="true-device-options"><!-- JS --></div>
+                    <div class="ds-desc">
+                      <strong>真機作用：</strong>
+                      <div class="ds-roles" id="true-device-roles"><!-- JS --></div>
+                    </div>
+                  </div>
+
+                  <div class="sst" style="margin-top:16px;">雲機矩陣配置 <span class="sst-sub">影片曝光 · 引流分發</span></div>
+                  <div class="device-slider-section">
+                    <div class="ds-label">☁️ 雲機數量 <span class="ds-badge ds-badge-cloud">流量曝光</span></div>
+                    <div class="ds-options" id="cloud-device-options"><!-- JS --></div>
+                    <div class="ds-desc">
+                      <strong>雲機作用：</strong>
+                      <div class="ds-roles" id="cloud-device-roles"><!-- JS --></div>
+                    </div>
+                  </div>
+
+                  <div class="content-tip" style="margin-top:12px;">
+                    <span class="ct-icon">💡</span>
+                    <span>雲機負責<strong style="color:var(--accent2)">流量曝光</strong>，真機負責<strong style="color:var(--accent)">私域承接</strong>，形成完整的<strong style="color:var(--text2)">矩陣流量結構</strong></span>
+                  </div>
+
+                  <div class="sst" style="margin-top:20px;">選擇目標市場 <span class="sst-sub" id="culture-market-hint">最多選擇 2 個市場 · 推薦：北美 / 東南亞</span></div>
+                  <div class="market-limit-warn" id="culture-market-warn" style="display:none;">⚠️ 文化IP方案最多選擇 2 個市場</div>
+                  <div class="region-groups" id="culture-region-groups"><!-- JS rendered --></div>
+
+                  <div id="culture-lang-sub-panel" style="display:none;">
+                    <div class="lang-sub-panel">
+                      <div class="lsp-head">
+                        <span class="lsp-icon" id="culture-lsp-icon">🌎</span>
+                        <span class="lsp-title" id="culture-lsp-title">選擇語言版本</span>
+                        <span class="lsp-hint">語言自動匹配市場</span>
+                      </div>
+                      <div class="lang-opts" id="culture-lang-opts"><!-- JS rendered --></div>
+                    </div>
+                  </div>
+
+                  <div class="price-ref" id="culture-price-ref" style="margin-top:16px;"></div>
+                </div>
+
+                <div class="step-nav">
+                  <div></div>
+                  <div class="step-progress">步驟 1 / 4<div class="prog-bar"><div class="prog-fill" style="width:25%"></div></div></div>
+                  <button class="btn-next" onclick="goStep(1)">下一步：內容創作 →</button>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="step-panel" id="panel1">
+                <!-- Enterprise content (original) -->
+                <div id="enterprise-step2">
+                  <div class="content-layout">
+                    <div>
+                      <div class="sst">選擇內容風格與製作難度</div>
+                      <div class="tmpl-grid" id="tmpl-grid"></div>
+
+                      <div class="sst" style="margin-top:22px;" id="dh-title-row">出鏡數字人方案 <span class="sst-sub">可選 · 針對真人講解型 / AI 主播型</span></div>
+                      <div class="dh-grid" id="dh-grid"></div>
+                      <div class="tip-box" id="dh-tip-box"></div>
+
+                      <div class="content-tip" style="margin-top:12px;"><span class="ct-icon">📸</span><span id="content-tip-shooting"></span></div>
+
+                      <div class="sst" style="margin-top:24px;">選擇釋出頻次</div>
+                      <div class="freq-grid" id="freq-grid"></div>
+                      <div class="content-tip"><span class="ct-icon">🕐</span><span id="content-tip-timing"></span></div>
+
+                      <div class="content-calc-preview" style="margin-top:16px;">
+                        <div style="font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;" id="content-preview-title">內容製作月度費用預覽</div>
+                        <div class="ccp-formula">
+                          <div class="ccp-item"><div class="ccp-val" id="ccp-price">¥0</div><div class="ccp-label" id="ccp-price-label">單條價格</div></div>
+                          <div class="ccp-op">×</div>
+                          <div class="ccp-item"><div class="ccp-val" id="ccp-count">0</div><div class="ccp-label" id="ccp-count-label">月釋出量</div></div>
+                          <div class="ccp-op">=</div>
+                          <div class="ccp-item"><div class="ccp-result" id="ccp-result">¥0</div><div class="ccp-result-label" id="ccp-result-label">內容月度費用</div></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="phone-preview">
+                      <div class="phone-shell style-basic" id="phone-shell">
+                        <div class="ps-notch"></div>
+                        <div class="ps-avatar" id="ps-avatar"></div>
+                        <div class="ps-lines">
+                          <div class="ps-line" style="width:65%"></div>
+                          <div class="ps-line" style="width:45%"></div>
+                          <div class="ps-line" style="width:55%"></div>
+                        </div>
+                        <div class="ps-play" id="ps-play">▶</div>
+                        <div class="ps-bars">
+                          <div class="ps-bar accent w80"></div>
+                          <div class="ps-bar muted w60"></div>
+                          <div class="ps-bar accent w70"></div>
+                          <div class="ps-bar muted" style="width:50%"></div>
+                        </div>
+                      </div>
+                      <div class="phone-ratio">9 : 16</div>
+                      <div class="phone-style-label" id="phone-style-label">-</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Culture IP content (step 2) -->
+                <div id="culture-step2" style="display:none;">
+                  <div class="sst">內容製作方案 <span class="sst-sub">矩陣業務固定配置</span></div>
+
+                  <div class="culture-content-fixed">
+                    <div class="ccf-title">🤖 內容生產模式（固定）</div>
+                    <div class="ccf-items">
+                      <div class="ccf-item"><span class="ccf-icon">🎭</span> 真人AI數字人</div>
+                      <div class="ccf-item"><span class="ccf-icon">📝</span> AI爆款文案系統</div>
+                    </div>
+                    <div class="ccf-fee" id="culture-sampling-fee">真人數字人取樣費：¥0（按形象數量一次性計費）</div>
+                  </div>
+
+                  <div class="content-tip" style="margin-bottom:16px;">
+                    <span class="ct-icon">💡</span>
+                    <span>矩陣業務需要<strong style="color:var(--text2)">大量原創影片</strong>，因此固定使用真人AI數字人 + AI爆款文案系統進行內容批次生產</span>
+                  </div>
+
+                  <div class="sst">選擇釋出頻次</div>
+                  <div class="freq-grid" id="culture-freq-grid"></div>
+
+                  <div class="content-calc-preview" style="margin-top:16px;">
+                    <div style="font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;">內容製作年度費用預覽</div>
+                    <div class="ccp-formula">
+                      <div class="ccp-item"><div class="ccp-val" id="culture-ccp-price">¥0</div><div class="ccp-label">單裝置單條</div></div>
+                      <div class="ccp-op">×</div>
+                      <div class="ccp-item"><div class="ccp-val" id="culture-ccp-device-count">0</div><div class="ccp-label">真機+雲機數量</div></div>
+                      <div class="ccp-op">×</div>
+                      <div class="ccp-item"><div class="ccp-val" id="culture-ccp-count">0</div><div class="ccp-label">釋出條數</div></div>
+                      <div class="ccp-op">=</div>
+                      <div class="ccp-item"><div class="ccp-result" id="culture-ccp-result">¥0</div><div class="ccp-result-label">內容年度費用</div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step-nav">
+                  <button class="btn-prev" onclick="goStep(0)">← 上一步</button>
+                  <div class="step-progress">步驟 2 / 4<div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div></div>
+                  <button class="btn-next" onclick="goStep(2)">下一步：運營服務 →</button>
+                </div>
+              </div>
+
+              <!-- STEP 3: 運營服務 -->
+              <div class="step-panel" id="panel2">
+                <!-- Enterprise ops -->
+                <div id="enterprise-step3">
+                  <div class="sst">基礎運營服務</div>
+                  <div class="ops-required">
+                    <div class="or-icon">⚙️</div>
+                    <div class="or-info">
+                      <h4 id="ops-required-title">基礎運營（必選 · 所有方案標配）</h4>
+                      <p id="ops-required-desc"></p>
+                      <div class="or-tags" id="ops-required-tags"></div>
+                    </div>
+                    <div class="or-badge">
+                      <span class="ob-req" id="ops-required-badge">✓ 必選</span>
+                      <span class="ob-note" id="ops-required-note">已含在裝置月費</span>
+                    </div>
+                  </div>
+
+                  <div class="sst" style="margin-top:4px;">私域引流方式 <span class="sst-sub">選擇流量匯入目標</span></div>
+                  <div class="capture-grid" id="capture-grid"></div>
+                </div>
+
+                <!-- Culture IP ops -->
+                <div id="culture-step3" style="display:none;">
+                  <div class="sst">矩陣運營服務 <span class="sst-sub">真機 + 雲機協同運營</span></div>
+
+                  <div class="ops-required" style="margin-bottom:16px;">
+                    <div class="or-icon">📱</div>
+                    <div class="or-info">
+                      <h4>真機運營服務（必選）</h4>
+                      <p>真機賬號日常運營管理，私信互動轉化，評論運維，私域沉澱與獨立站引流</p>
+                      <div class="or-tags" id="culture-ops-true-tags"></div>
+                    </div>
+                    <div class="or-badge">
+                      <span class="ob-req">✓ 必選</span>
+                      <span class="ob-note">含在矩陣運營費</span>
+                    </div>
+                  </div>
+
+                  <div class="ops-required">
+                    <div class="or-icon">☁️</div>
+                    <div class="or-info">
+                      <h4>雲機矩陣運營服務（必選）</h4>
+                      <p>雲機矩陣影片批次釋出、引流配置、資料監控，將流量匯入真機與獨立站</p>
+                      <div class="or-tags" id="culture-ops-cloud-tags"></div>
+                    </div>
+                    <div class="or-badge">
+                      <span class="ob-req">✓ 必選</span>
+                      <span class="ob-note">含在矩陣運營費</span>
+                    </div>
+                  </div>
+
+                  <div class="content-tip" style="margin-top:12px;">
+                    <span class="ct-icon">💰</span>
+                    <span>矩陣運營費 <strong style="color:var(--accent)" id="culture-matrix-fee-display">¥3,500/月</strong>，包含真機運營 + 雲機運營全部服務</span>
+                  </div>
+                </div>
+
+                <div class="step-nav">
+                  <button class="btn-prev" onclick="goStep(1)">← 上一步</button>
+                  <div class="step-progress">步驟 3 / 4<div class="prog-bar"><div class="prog-fill" style="width:75%"></div></div></div>
+                  <button class="btn-next" onclick="goStep(3)">下一步：增值服務 →</button>
+                </div>
+              </div>
+
+              <!-- STEP 4 -->
+              <div class="step-panel" id="panel3">
+                <!-- Enterprise addons -->
+                <div id="enterprise-step4">
+                  <div class="addon-free-item">
+                    <div class="afi-icon">📊</div>
+                    <div class="afi-info">
+                      <h4 id="addon-free-title"></h4>
+                      <p id="addon-free-desc"></p>
+                    </div>
+                    <div class="afi-badge" id="addon-free-badge"></div>
+                  </div>
+
+                  <div class="sst">可選增值服務</div>
+                  <div class="addon-grid-2" id="addon-grid-main"></div>
+
+                  <div class="addon-grid-1" style="margin-top:10px;" id="addon-grid-highlight"></div>
+
+                  <div class="tip-box" style="margin-top:10px;" id="addon-tip-box"></div>
+                </div>
+
+                <!-- Culture IP addons -->
+                <div id="culture-step4" style="display:none;">
+                  <div class="addon-free-item">
+                    <div class="afi-icon">📊</div>
+                    <div class="afi-info">
+                      <h4>深度月度資料包告</h4>
+                      <p>每月提供完整資料包告：真機/雲機資料分析、播放量、互動率、私域轉化、獨立站引流效果</p>
+                    </div>
+                    <div class="afi-badge">✓ 必選 · 免費</div>
+                  </div>
+
+                  <div class="sst">多語言獨立站建設 <span class="sst-sub">可選 · 選擇站點型別</span></div>
+                  <div class="culture-website-grid" id="culture-website-grid"><!-- JS --></div>
+
+                  <div class="tip-box" style="margin-top:12px;">💡 獨立站是矩陣流量變現的核心載體，建議選擇<strong>電商型獨立站</strong>以實現完整的流量轉化閉環。</div>
+                </div>
+
+                <div class="step-nav">
+                  <button class="btn-prev" onclick="goStep(2)">← 上一步</button>
+                  <div class="step-progress">步驟 4 / 4 ✅<div class="prog-bar"><div class="prog-fill" style="width:100%"></div></div></div>
+                  <button class="btn-next" onclick="requestQuote()">📩 獲取正式報價方案</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SUMMARY PANEL -->
+        <div>
+          <div class="summary-panel fi">
+            <div class="sp-title">📋 實時費用明細</div>
+
+            <div class="sp-section">
+              <div class="sp-section-label" id="sum-section1-label">市場 · 平臺</div>
+              <div class="sp-chips" id="sum-devices"><span class="sp-empty">—</span></div>
+            </div>
+            <div class="sp-section">
+              <div class="sp-section-label" id="sum-section2-label">內容 · 出鏡 · 頻次</div>
+              <div class="sp-chips" id="sum-content-chips"><span class="sp-empty">—</span></div>
+            </div>
+
+            <div class="sp-divider"></div>
+
+            <div id="sum-lines">
+              <div class="sp-line"><span class="sp-key">（請完成上方配置）</span><span class="sp-val">—</span></div>
+            </div>
+
+            <div class="sp-divider"></div>
+
+            <div class="sp-totals-row">
+              <div class="sp-total-mini">
+                <div class="spt-label">6個月總費用</div>
+                <div class="spt-num" id="sum-period-6">¥0</div>
+                <div class="spt-unit">合計</div>
+              </div>
+              <div class="sp-total-mini">
+                <div class="spt-label">12個月總費用</div>
+                <div class="spt-num green" id="sum-period-12">¥0</div>
+                <div class="spt-unit">合計</div>
+              </div>
+            </div>
+
+            <div class="sp-scale-box" id="sp-scale-box">
+              <div class="sp-scale-title">📊 預期運營規模預估</div>
+              <div class="sp-scale-grid" id="sp-scale-grid">
+                <div class="sp-scale-item"><span class="sp-scale-key">每月總髮布量</span><span class="sp-scale-val" id="scale-monthly-posts">—</span></div>
+                <div class="sp-scale-item"><span class="sp-scale-key">覆蓋平臺數</span><span class="sp-scale-val" id="scale-platforms">—</span></div>
+                <div class="sp-scale-item"><span class="sp-scale-key">覆蓋市場數</span><span class="sp-scale-val" id="scale-markets">—</span></div>
+                <div class="sp-scale-range"><span class="sp-scale-key">6個月累計曝光區間</span><span class="sp-scale-val sp-scale-emphasis" id="scale-exposure-6m">—</span></div>
+                <div class="sp-scale-range"><span class="sp-scale-key">私信互動區間</span><span class="sp-scale-val sp-scale-emphasis" id="scale-dm-range">—</span></div>
+              </div>
+              <div class="sp-scale-note">以上區間基於歷史賬號模型測算，實際效果受內容質量、行業競爭及平臺演算法影響，不構成業績承諾。</div>
+            </div>
+
+            <div class="sp-info-note" id="summary-info-note"></div>
+            <button class="sp-cta" onclick="requestQuote()">📩 立即獲取正式報價方案</button>
+            <button class="sp-copy" onclick="copySummary()" id="copy-summary-btn">📋 複製方案摘要文字</button>
+            <div class="sp-guarantee"><span class="g-icon">🔒</span><span>免費諮詢 · 無義務報價</span></div>
+
+            <div class="sp-period-selector">
+              <div class="sp-period-title">📅 專案週期總費用</div>
+              <div class="sp-period-result">
+                <div class="sp-period-label">報價統一展示 6 個月與 12 個月總費用</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <div class="pc-foot"><span id="footer-disclaimer"></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-nex" aria-hidden="true"></span>
+            <span class="logo-text">
+              <strong>海易通達科技</strong>
+              <span>跨境業務服務商</span>
+            </span>
+          </a>
+          <p>澳門海易通達科技有限公司<br>Macau NexMatrix Tecnologia Limitada<br>Macao NexMatrix Technology Limited<br>Driving Sustainable Growth Through AI Social Media Matrix System</p>
+        </div>
+        <div class="footer-col">
+          <h4>導航</h4>
+          <a href="index.html">首頁</a>
+          <a href="cases.html">合作案例</a>
+          <a href="products.html">產品中心</a>
+          <a href="services.html">服務方案</a>
+          <a href="solutions.html">出海方案</a>
+          <a href="about.html">關於我們</a>
+          <a href="quote.html">報價系統</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+        <div class="footer-col">
+          <h4>產品與服務</h4>
+          <a href="products.html#nexus-one">NEXUS ONE</a>
+          <a href="products.html#matrix-soft">AI 矩陣軟件</a>
+          <a href="products.html#digital-human">AI 數字人</a>
+          <a href="services.html">出海全案服務</a>
+        </div>
+        <div class="footer-col">
+          <h4>聯絡</h4>
+          <p>
+            <a href="contact.html">提交諮詢表單</a><br>
+            我們將盡快與您聯繫
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> 澳門海易通達科技有限公司 · MACAO NEXMATRIX TECHNOLOGY LIMITED</span>
+        <span>AI Social Media Matrix</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/quote.js"></script>
+</body>
+</html>

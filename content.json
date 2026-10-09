@@ -1,0 +1,864 @@
+{
+  "languages": [
+    {"code": "zh-TW", "label": "繁體中文", "flag": "🇲🇴"},
+    {"code": "zh-CN", "label": "简体中文", "flag": "🇨🇳"},
+    {"code": "en", "label": "English", "flag": "🇬🇧"},
+    {"code": "pt", "label": "Português", "flag": "🇵🇹"}
+  ],
+  "default_lang": "zh-TW",
+  "site_names": {
+    "zh-TW": "澳門萬里金騰集團有限公司",
+    "zh-CN": "澳门万里金腾集团有限公司",
+    "en": "Macao WLJT Group Limited",
+    "pt": "Grupo WLJT de Macau, Limitada"
+  },
+  "site_short": {
+    "zh-TW": "萬里金騰集團",
+    "zh-CN": "万里金腾集团",
+    "en": "WLJT Group",
+    "pt": "Grupo WLJT"
+  },
+  "site_name_en": "Macao WLJT Group Limited",
+  "site_url": "https://www.wljtgroup.com",
+  "email": "info@wljtgroup.com",
+  "year": 2026,
+  "address": {
+    "zh-TW": "澳門（詳細地址更新中）",
+    "zh-CN": "澳门（详细地址更新中）",
+    "en": "Macao (full address to be updated)",
+    "pt": "Macau (morada completa a atualizar)"
+  },
+  "social": {"facebook": "#", "linkedin": "#", "twitter": "#"},
+  "portfolio": [
+    {
+      "id": "nexmatrix",
+      "image": "portfolio/nexmatrix.jpg",
+      "url": "https://nexmatrixs.com/",
+      "name": {
+        "zh-TW": "澳門海易通達科技有限公司",
+        "zh-CN": "澳门海易通达科技有限公司",
+        "en": "Macao NexMatrix Technology Limited",
+        "pt": "Macau NexMatrix Tecnologia Limitada"
+      },
+      "brand": "NexMatrix 海易通達",
+      "sector": {
+        "zh-TW": "數字科技與品牌出海",
+        "zh-CN": "数字科技与品牌出海",
+        "en": "Digital Technology & Go-Global",
+        "pt": "Tecnologia Digital e Internacionalização de Marcas"
+      },
+      "tagline": {
+        "zh-TW": "以 AI 社媒矩陣驅動品牌增長，以澳門為中心的品牌出海一站式服務平台",
+        "zh-CN": "以 AI 社媒矩阵驱动品牌增长，以澳门为中心的品牌出海一站式服务平台",
+        "en": "A Macao-centered one-stop go-global platform driving sustainable brand growth with an AI social media matrix",
+        "pt": "Uma plataforma integral centrada em Macau para a internacionalização de marcas, impulsionada por uma matriz de redes sociais com IA"
+      },
+      "description": {
+        "zh-TW": "海易通達專注科技研發、軟硬件產品、數字媒體與社交媒體矩陣運營，具備硬件、軟件、內容、諮詢、運營一體化能力。旗艦硬件 NEXUS ONE 集成 5G CPE、OpenWrt 專業軟路由、ARM 虛擬安卓多開與本地 AI 引擎，配合「澳門跳板」合法出海通道，為品牌出海提供一體化基礎設施。",
+        "zh-CN": "海易通达专注科技研发、软硬件产品、数字媒体与社交媒体矩阵运营，具备硬件、软件、内容、咨询、运营一体化能力。旗舰硬件 NEXUS ONE 集成 5G CPE、OpenWrt 专业软路由、ARM 虚拟安卓多开与本地 AI 引擎，配合“澳门跳板”合法出海通道，为品牌出海提供一体化基础设施。",
+        "en": "NexMatrix focuses on technology R&D, hardware and software products, digital media and social media matrix operations, with integrated capabilities across hardware, software, content, consulting and operations. Its flagship device NEXUS ONE combines 5G CPE, an OpenWrt professional router, ARM-based virtual Android multi-instances and a local AI engine, supported by a compliant Macao springboard channel for brands going global.",
+        "pt": "A NexMatrix dedica-se à investigação e desenvolvimento tecnológico, produtos de hardware e software, media digitais e operação de matrizes de redes sociais, com capacidades integradas de hardware, software, conteúdo, consultoria e operação. O seu dispositivo emblemático NEXUS ONE integra 5G CPE, router profissional OpenWrt, múltiplas instâncias virtuais Android em ARM e um motor de IA local, apoiado por um canal conforme de internacionalização via Macau."
+      },
+      "businesses": [
+        {
+          "zh-TW": "NEXUS ONE 品牌出海一體化硬件",
+          "zh-CN": "NEXUS ONE 品牌出海一体化硬件",
+          "en": "NEXUS ONE integrated go-global hardware",
+          "pt": "NEXUS ONE — hardware integrado de internacionalização"
+        },
+        {
+          "zh-TW": "AI 社媒矩陣軟件與運營",
+          "zh-CN": "AI 社媒矩阵软件与运营",
+          "en": "AI social media matrix software and operations",
+          "pt": "Software e operação de matriz de redes sociais com IA"
+        },
+        {
+          "zh-TW": "AI 數字人與短視頻內容",
+          "zh-CN": "AI 数字人与短视频内容",
+          "en": "AI digital humans and short-video content",
+          "pt": "Humanos digitais com IA e conteúdo de vídeo curto"
+        }
+      ],
+      "stats": [
+        {"value": "5.3億+", "label": {"zh-TW": "三大平台全球月活覆蓋", "zh-CN": "三大平台全球月活覆盖", "en": "Monthly active reach across three platforms", "pt": "Alcance mensal nas três principais plataformas"}},
+        {"value": "100+", "label": {"zh-TW": "全球專業顧問網絡", "zh-CN": "全球专业顾问网络", "en": "Global professional consultants", "pt": "Consultores profissionais globais"}},
+        {"value": "24", "label": {"zh-TW": "單設備安卓實例多開", "zh-CN": "单设备安卓实例多开", "en": "Android instances on a single device", "pt": "Instâncias Android num único dispositivo"}},
+        {"value": "6", "label": {"zh-TW": "大服務維度", "zh-CN": "大服务维度", "en": "Service dimensions", "pt": "Dimensões de serviço"}}
+      ]
+    },
+    {
+      "id": "bridgeholden",
+      "image": "portfolio/bridgeholden.webp",
+      "url": "https://bridgeholdengroup.com/",
+      "name": {
+        "zh-TW": "澳門橋霍頓有限公司",
+        "zh-CN": "澳门桥霍顿有限公司",
+        "en": "United Macao Bridge Holden Corporation Limited",
+        "pt": "United Macao Bridge Holden Corporation Limited"
+      },
+      "brand": "Bridge Holden 橋霍頓",
+      "sector": {
+        "zh-TW": "大健康與跨境醫療",
+        "zh-CN": "大健康与跨境医疗",
+        "en": "Healthcare & Cross-Border Medical",
+        "pt": "Saúde e Serviços Médicos Transfronteiriços"
+      },
+      "tagline": {
+        "zh-TW": "連接全球醫療卓越與優質跨境醫療解決方案",
+        "zh-CN": "连接全球医疗卓越与优质跨境医疗解决方案",
+        "en": "Connecting global medical excellence with premium cross-border healthcare solutions",
+        "pt": "Ligar a excelência médica global a soluções premium de saúde transfronteiriça"
+      },
+      "description": {
+        "zh-TW": "橋霍頓總部設於澳門，專注醫療貿易、醫療諮詢與國際醫療資源對接，與領先醫療機構及專家建立廣泛全球網絡。公司依託吉林心臟病醫院國際專家團隊設立國際顧問委員會，聚焦心血管領域，提供專科諮詢、跨境醫療評估、專家會診協調與健康管理支持。",
+        "zh-CN": "桥霍顿总部设于澳门，专注医疗贸易、医疗咨询与国际医疗资源对接，与领先医疗机构及专家建立广泛全球网络。公司依托吉林心脏病医院国际专家团队设立国际顾问委员会，聚焦心血管领域，提供专科咨询、跨境医疗评估、专家会诊协调与健康管理支持。",
+        "en": "Headquartered in Macao, Bridge Holden specializes in medical device trade, healthcare consulting and international medical expertise, working with leading medical institutions and specialists across an extensive global network. Its international advisory board, built on the international expert team of Jilin Heart Hospital, focuses on cardiovascular care, providing specialty consultation, cross-border medical assessment, expert consultation coordination and health management support.",
+        "pt": "Com sede em Macau, a Bridge Holden dedica-se ao comércio de dispositivos médicos, consultoria de saúde e perícia médica internacional, colaborando com instituições médicas e especialistas de referência numa ampla rede global. O seu conselho consultivo internacional, apoiado pela equipa internacional de especialistas do Hospital Cardíaco de Jilin, centra-se na área cardiovascular, oferecendo consulta de especialidade, avaliação médica transfronteiriça, coordenação de consultas com especialistas e apoio à gestão de saúde."
+      },
+      "businesses": [
+        {
+          "zh-TW": "醫療貿易與國際供應鏈",
+          "zh-CN": "医疗贸易与国际供应链",
+          "en": "Medical trade and global supply chain",
+          "pt": "Comércio médico e cadeia de fornecimento internacional"
+        },
+        {
+          "zh-TW": "跨境醫療諮詢與協調",
+          "zh-CN": "跨境医疗咨询与协调",
+          "en": "Cross-border healthcare consulting and coordination",
+          "pt": "Consultoria e coordenação de saúde transfronteiriça"
+        },
+        {
+          "zh-TW": "國際專家網絡對接",
+          "zh-CN": "国际专家网络对接",
+          "en": "International medical expert network",
+          "pt": "Rede internacional de especialistas médicos"
+        }
+      ],
+      "stats": [
+        {"value": "47+", "label": {"zh-TW": "國際醫療專家", "zh-CN": "国际医疗专家", "en": "International medical experts", "pt": "Especialistas médicos internacionais"}},
+        {"value": "23", "label": {"zh-TW": "跨境醫療網絡", "zh-CN": "跨境医疗网络", "en": "Cross-border medical network", "pt": "Rede médica transfronteiriça"}},
+        {"value": "12+", "label": {"zh-TW": "先進專科服務", "zh-CN": "先进专科服务", "en": "Advanced specialty services", "pt": "Serviços de especialidade avançados"}}
+      ],
+      "disclaimer": {
+        "zh-TW": "合規聲明：橋霍頓僅提供諮詢協調與專家資源匹配服務，不提供直接醫療治療服務。",
+        "zh-CN": "合规声明：桥霍顿仅提供咨询协调与专家资源匹配服务，不提供直接医疗治疗服务。",
+        "en": "Compliance notice: Bridge Holden provides consultation coordination and expert resource matching only, and does not provide direct medical treatment services.",
+        "pt": "Aviso de conformidade: a Bridge Holden presta apenas serviços de coordenação de consultas e correspondência de recursos de especialistas, não prestando serviços de tratamento médico direto."
+      }
+    }
+  ],
+  "insights": [
+    {
+      "date": "2026-10-10",
+      "slug": "wljt-group-official-website-launch",
+      "category": {"zh-TW": "集團公告", "zh-CN": "集团公告", "en": "Announcement", "pt": "Anúncio"},
+      "title": {
+        "zh-TW": "澳門萬里金騰集團官方網站正式上線",
+        "zh-CN": "澳门万里金腾集团官方网站正式上线",
+        "en": "Macao WLJT Group Launches Official Website",
+        "pt": "Grupo WLJT de Macau Lança o seu Website Oficial"
+      },
+      "excerpt": {
+        "zh-TW": "集團官網以繁中、簡中、英、葡四種語言正式上線，呈現投資理念、組合佈局與發展方向。",
+        "zh-CN": "集团官网以繁中、简中、英、葡四种语言正式上线，呈现投资理念、组合布局与发展方向。",
+        "en": "The Group's official website launches in four languages, presenting its investment philosophy, portfolio and direction.",
+        "pt": "O website oficial do Grupo é lançado em quatro línguas, apresentando a sua filosofia de investimento, portefólio e orientação."
+      },
+      "body": {
+        "zh-TW": [
+          "澳門萬里金騰集團有限公司今日宣布，集團官方網站（www.wljtgroup.com）正式上線，以繁體中文、簡體中文、英文及葡文四種語言，向全球合作夥伴呈現集團的投資理念、組合佈局與發展方向。",
+          "作為立足澳門的投資控股集團，萬里金騰目前持有澳門海易通達科技有限公司與澳門橋霍頓有限公司兩家核心企業，業務覆蓋大健康與跨境醫療、數字科技與品牌出海、跨境綜合服務三大領域。",
+          "新網站設有「關於集團」「投資理念」「投資組合」「集團動態」等欄目。其中，投資組合頁詳細介紹兩家被投企業的業務與發展，集團動態頁將持續發布集團的重要進展。",
+          "集團發言人表示：「官網是集團與外界溝通的窗口。我們希望以透明、專業的方式，讓合作夥伴更全面地了解萬里金騰的長期承諾。」",
+          "未來，集團將繼續依託澳門的制度與區位優勢，以長期資本參與高成長產業，與被投企業及合作夥伴共同成長。"
+        ],
+        "zh-CN": [
+          "澳门万里金腾集团有限公司今日宣布，集团官方网站（www.wljtgroup.com）正式上线，以繁体中文、简体中文、英文及葡文四种语言，向全球合作伙伴呈现集团的投资理念、组合布局与发展方向。",
+          "作为立足澳门的投资控股集团，万里金腾目前持有澳门海易通达科技有限公司与澳门桥霍顿有限公司两家核心企业，业务覆盖大健康与跨境医疗、数字科技与品牌出海、跨境综合服务三大领域。",
+          "新网站设有“关于集团”“投资理念”“投资组合”“集团动态”等栏目。其中，投资组合页详细介绍两家被投企业的业务与发展，集团动态页将持续发布集团的重要进展。",
+          "集团发言人表示：“官网是集团与外界沟通的窗口。我们希望以透明、专业的方式，让合作伙伴更全面地了解万里金腾的长期承诺。”",
+          "未来，集团将继续依托澳门的制度与区位优势，以长期资本参与高成长产业，与被投企业及合作伙伴共同成长。"
+        ],
+        "en": [
+          "Macao WLJT Group Limited today announced the official launch of its corporate website (www.wljtgroup.com) in Traditional Chinese, Simplified Chinese, English and Portuguese, presenting the Group's investment philosophy, portfolio and direction to partners worldwide.",
+          "As an investment holding group rooted in Macao, WLJT currently holds two core companies — Macao NexMatrix Technology Limited and United Macao Bridge Holden Corporation Limited — spanning healthcare and cross-border medical services, digital technology and go-global services, and integrated cross-border services.",
+          "The new website features sections including About, Investment Approach, Portfolio and Insights. The Portfolio section introduces the businesses and development of the two investee companies, while Insights will carry the Group's latest progress on an ongoing basis.",
+          "\"The website is our window to the world,\" a Group spokesperson said. \"We aim to communicate in a transparent and professional manner, so that our partners can fully understand WLJT's long-term commitment.\"",
+          "Going forward, the Group will continue to leverage Macao's institutional and geographic advantages, participating in high-growth industries with long-term capital and growing together with its investee companies and partners."
+        ],
+        "pt": [
+          "O Grupo WLJT de Macau, Limitada anunciou hoje o lançamento oficial do seu website institucional (www.wljtgroup.com) em chinês tradicional, chinês simplificado, inglês e português, apresentando a filosofia de investimento, o portefólio e a orientação do Grupo a parceiros de todo o mundo.",
+          "Enquanto grupo holding de investimento sediado em Macau, a WLJT detém atualmente duas empresas nucleares — a Macau NexMatrix Tecnologia Limitada e a United Macao Bridge Holden Corporation Limited — abrangendo as áreas de saúde e serviços médicos transfronteiriços, tecnologia digital e internacionalização de marcas, e serviços integrados transfronteiriços.",
+          "O novo website inclui as secções Sobre o Grupo, Filosofia de Investimento, Portefólio e Notícias. A secção Portefólio apresenta em detalhe os negócios e o desenvolvimento das duas empresas participadas, enquanto a secção Notícias divulgará de forma contínua os progressos do Grupo.",
+          "\"O website é a nossa janela para o mundo\", afirmou um porta-voz do Grupo. \"Pretendemos comunicar de forma transparente e profissional, para que os nossos parceiros compreendam plenamente o compromisso de longo prazo da WLJT.\"",
+          "No futuro, o Grupo continuará a tirar partido das vantagens institucionais e geográficas de Macau, participando em indústrias de elevado crescimento com capital de longo prazo e crescendo em conjunto com as suas participadas e parceiros."
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "slug": "bridge-holden-cross-border-healthcare-platform",
+      "category": {"zh-TW": "投資動態", "zh-CN": "投资动态", "en": "Investment", "pt": "Investimento"},
+      "title": {
+        "zh-TW": "集團參與澳門橋霍頓跨境醫療平台建設",
+        "zh-CN": "集团参与澳门桥霍顿跨境医疗平台建设",
+        "en": "WLJT Group Joins the Development of Bridge Holden's Cross-Border Healthcare Platform",
+        "pt": "Grupo WLJT Participa na Construção da Plataforma de Saúde Transfronteiriça da Bridge Holden"
+      },
+      "excerpt": {
+        "zh-TW": "集團成為澳門橋霍頓有限公司股東，正式進入大健康與跨境醫療領域。",
+        "zh-CN": "集团成为澳门桥霍顿有限公司股东，正式进入大健康与跨境医疗领域。",
+        "en": "The Group becomes a shareholder of United Macao Bridge Holden Corporation Limited, entering the healthcare and cross-border medical sector.",
+        "pt": "O Grupo torna-se acionista da United Macao Bridge Holden Corporation Limited, entrando no setor da saúde e serviços médicos transfronteiriços."
+      },
+      "body": {
+        "zh-TW": [
+          "澳門萬里金騰集團有限公司宣布，參與澳門橋霍頓有限公司（United Macao Bridge Holden Corporation Limited）跨境醫療平台建設，成為其股東。這標誌集團正式進入大健康與跨境醫療領域。",
+          "橋霍頓專注醫療貿易、醫療諮詢與國際醫療資源對接，已建立涵蓋 47 位以上國際醫療專家、23 個跨境醫療網絡與 12 個以上先進專科的服務體系，並依託吉林心臟病醫院國際專家團隊設立國際顧問委員會，聚焦心血管領域。",
+          "集團認為，隨著大灣區居民對優質醫療資源的需求持續增長，跨境醫療諮詢與醫療貿易具有長期發展空間；澳門在「一國兩制」與中葡平台下的獨特優勢，使其成為連接國際醫療資源的理想樞紐。",
+          "需要說明的是，橋霍頓僅提供諮詢協調與專家資源匹配服務，不提供直接醫療治療服務。集團將與之共同堅守合規底線，穩健推進平台建設。",
+          "未來，集團將在資本與資源協同上支持橋霍頓完善服務網絡，推動國際優質醫療資源與灣區需求的精準對接。"
+        ],
+        "zh-CN": [
+          "澳门万里金腾集团有限公司宣布，参与澳门桥霍顿有限公司（United Macao Bridge Holden Corporation Limited）跨境医疗平台建设，成为其股东。这标志集团正式进入大健康与跨境医疗领域。",
+          "桥霍顿专注医疗贸易、医疗咨询与国际医疗资源对接，已建立涵盖 47 位以上国际医疗专家、23 个跨境医疗网络与 12 个以上先进专科的服务体系，并依托吉林心脏病医院国际专家团队设立国际顾问委员会，聚焦心血管领域。",
+          "集团认为，随着大湾区居民对优质医疗资源的需求持续增长，跨境医疗咨询与医疗贸易具有长期发展空间；澳门在“一国两制”与中葡平台下的独特优势，使其成为连接国际医疗资源的理想枢纽。",
+          "需要说明的是，桥霍顿仅提供咨询协调与专家资源匹配服务，不提供直接医疗治疗服务。集团将与之共同坚守合规底线，稳健推进平台建设。",
+          "未来，集团将在资本与资源协同上支持桥霍顿完善服务网络，推动国际优质医疗资源与湾区需求的精准对接。"
+        ],
+        "en": [
+          "Macao WLJT Group Limited announced its participation in the development of the cross-border healthcare platform of United Macao Bridge Holden Corporation Limited, becoming its shareholder. This marks the Group's formal entry into the healthcare and cross-border medical sector.",
+          "Bridge Holden specializes in medical trade, healthcare consulting and international medical resource matching, with a service system covering more than 47 international medical experts, 23 cross-border medical networks and over 12 advanced specialties. Its international advisory board, built on the international expert team of Jilin Heart Hospital, focuses on cardiovascular care.",
+          "The Group believes that as demand for quality medical resources continues to grow across the Greater Bay Area, cross-border healthcare consulting and medical trade offer long-term potential. Macao's unique advantages under \"One Country, Two Systems\" and its role as a platform between China and Portuguese-speaking countries make it an ideal hub connecting international medical resources.",
+          "It should be noted that Bridge Holden provides consultation coordination and expert resource matching only, and does not provide direct medical treatment services. The Group will uphold this compliance baseline together with the company as the platform develops.",
+          "Going forward, the Group will support Bridge Holden in strengthening its service network through capital and resource synergies, advancing the precise matching of international medical excellence with the needs of the Greater Bay Area."
+        ],
+        "pt": [
+          "O Grupo WLJT de Macau, Limitada anunciou a sua participação na construção da plataforma de saúde transfronteiriça da United Macao Bridge Holden Corporation Limited, tornando-se seu acionista. Este passo marca a entrada formal do Grupo no setor da saúde e dos serviços médicos transfronteiriços.",
+          "A Bridge Holden dedica-se ao comércio médico, consultoria de saúde e correspondência de recursos médicos internacionais, contando com um sistema de serviços que abrange mais de 47 especialistas médicos internacionais, 23 redes médicas transfronteiriças e mais de 12 especialidades avançadas. O seu conselho consultivo internacional, apoiado pela equipa internacional de especialistas do Hospital Cardíaco de Jilin, centra-se na área cardiovascular.",
+          "O Grupo considera que, com a procura crescente por recursos médicos de qualidade na Grande Baía, a consultoria de saúde transfronteiriça e o comércio médico apresentam potencial de longo prazo. As vantagens únicas de Macau, no quadro de \"Um País, Dois Sistemas\" e como plataforma entre a China e os países de língua portuguesa, fazem dela um centro ideal de ligação aos recursos médicos internacionais.",
+          "Importa salientar que a Bridge Holden presta apenas serviços de coordenação de consultas e correspondência de recursos de especialistas, não prestando serviços de tratamento médico direto. O Grupo defenderá, em conjunto com a empresa, este princípio de conformidade no desenvolvimento da plataforma.",
+          "No futuro, o Grupo apoiará a Bridge Holden no reforço da sua rede de serviços através de capital e sinergias de recursos, promovendo a correspondência precisa entre a excelência médica internacional e as necessidades da Grande Baía."
+        ]
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "slug": "strategic-investment-nexmatrix",
+      "category": {"zh-TW": "投資動態", "zh-CN": "投资动态", "en": "Investment", "pt": "Investimento"},
+      "title": {
+        "zh-TW": "集團完成對澳門海易通達的戰略投資",
+        "zh-CN": "集团完成对澳门海易通达的战略投资",
+        "en": "WLJT Group Completes Strategic Investment in Macao NexMatrix",
+        "pt": "Grupo WLJT Conclui Investimento Estratégico na Macau NexMatrix"
+      },
+      "excerpt": {
+        "zh-TW": "集團成為澳門海易通達科技有限公司股東，完成在數字科技與品牌出海領域的重要佈局。",
+        "zh-CN": "集团成为澳门海易通达科技有限公司股东，完成在数字科技与品牌出海领域的重要布局。",
+        "en": "The Group becomes a shareholder of Macao NexMatrix Technology Limited, a key move in digital technology and go-global services.",
+        "pt": "O Grupo torna-se acionista da Macau NexMatrix Tecnologia Limitada, um passo importante na área da tecnologia digital e internacionalização de marcas."
+      },
+      "body": {
+        "zh-TW": [
+          "澳門萬里金騰集團有限公司宣布，已完成對澳門海易通達科技有限公司（Macao NexMatrix Technology Limited）的戰略投資，成為其股東。這是集團在數字科技與品牌出海領域的重要佈局。",
+          "海易通達是以澳門為中心的品牌出海一站式服務平台，以 AI 社媒矩陣系統驅動品牌可持續增長，業務覆蓋 TikTok、Instagram、Facebook 三大平台逾 5.3 億月活用戶市場，並擁有逾 100 位全球專業顧問網絡。",
+          "其旗艦硬件 NEXUS ONE 集成 5G CPE、OpenWrt 專業軟路由、ARM 虛擬安卓多開與本地 AI 引擎，單設備最多可運行 24 個獨立安卓實例，配合「澳門跳板」合法出海通道，為品牌出海提供一體化基礎設施。",
+          "集團認為，中國品牌出海正從「產品出海」邁向「品牌與技術出海」，海易通達「硬件、軟件、內容、諮詢、運營」一體化的能力組合，與集團的跨境資源網絡高度互補。",
+          "投資完成後，集團將在資本、治理與跨境資源上支持海易通達發展，助力其深化「前端在澳門，運營在腹地」的雙循環協同網絡。"
+        ],
+        "zh-CN": [
+          "澳门万里金腾集团有限公司宣布，已完成对澳门海易通达科技有限公司（Macao NexMatrix Technology Limited）的战略投资，成为其股东。这是集团在数字科技与品牌出海领域的重要布局。",
+          "海易通达是以澳门为中心的品牌出海一站式服务平台，以 AI 社媒矩阵系统驱动品牌可持续增长，业务覆盖 TikTok、Instagram、Facebook 三大平台逾 5.3 亿月活用户市场，并拥有逾 100 位全球专业顾问网络。",
+          "其旗舰硬件 NEXUS ONE 集成 5G CPE、OpenWrt 专业软路由、ARM 虚拟安卓多开与本地 AI 引擎，单设备最多可运行 24 个独立安卓实例，配合“澳门跳板”合法出海通道，为品牌出海提供一体化基础设施。",
+          "集团认为，中国品牌出海正从“产品出海”迈向“品牌与技术出海”，海易通达“硬件、软件、内容、咨询、运营”一体化的能力组合，与集团的跨境资源网络高度互补。",
+          "投资完成后，集团将在资本、治理与跨境资源上支持海易通达发展，助力其深化“前端在澳门，运营在腹地”的双循环协同网络。"
+        ],
+        "en": [
+          "Macao WLJT Group Limited announced the completion of its strategic investment in Macao NexMatrix Technology Limited, becoming its shareholder. This is a key move by the Group in digital technology and go-global services.",
+          "NexMatrix is a Macao-centered one-stop go-global platform that drives sustainable brand growth with an AI social media matrix system. Its business reaches a market of more than 530 million monthly active users across TikTok, Instagram and Facebook, supported by a network of over 100 professional consultants worldwide.",
+          "Its flagship hardware, NEXUS ONE, integrates 5G CPE, an OpenWrt professional router, ARM-based virtual Android multi-instances and a local AI engine, running up to 24 independent Android instances on a single device. Together with a compliant Macao springboard channel, it provides integrated infrastructure for brands going global.",
+          "The Group believes that Chinese brands are evolving from \"exporting products\" to \"going global with brands and technology\". NexMatrix's integrated capabilities across hardware, software, content, consulting and operations are highly complementary to the Group's cross-border resource network.",
+          "Following the investment, the Group will support NexMatrix's development through capital, governance and cross-border resources, helping it deepen the dual-circulation network of \"front office in Macao, operations in the hinterland\"."
+        ],
+        "pt": [
+          "O Grupo WLJT de Macau, Limitada anunciou a conclusão do seu investimento estratégico na Macau NexMatrix Tecnologia Limitada, tornando-se seu acionista. Trata-se de um passo importante do Grupo na área da tecnologia digital e da internacionalização de marcas.",
+          "A NexMatrix é uma plataforma integral de internacionalização de marcas centrada em Macau, que impulsiona o crescimento sustentável das marcas através de um sistema de matriz de redes sociais com IA. A sua atividade alcança um mercado de mais de 530 milhões de utilizadores ativos mensais no TikTok, Instagram e Facebook, apoiada por uma rede de mais de 100 consultores profissionais em todo o mundo.",
+          "O seu hardware emblemático, NEXUS ONE, integra 5G CPE, router profissional OpenWrt, múltiplas instâncias virtuais Android em ARM e um motor de IA local, executando até 24 instâncias Android independentes num único dispositivo. Em conjunto com um canal conforme de internacionalização via Macau, fornece infraestrutura integrada para marcas em processo de globalização.",
+          "O Grupo considera que as marcas chinesas estão a evoluir da \"exportação de produtos\" para a \"internacionalização de marcas e tecnologia\". As capacidades integradas da NexMatrix em hardware, software, conteúdo, consultoria e operação são altamente complementares à rede de recursos transfronteiriços do Grupo.",
+          "Após o investimento, o Grupo apoiará o desenvolvimento da NexMatrix através de capital, governação e recursos transfronteiriços, ajudando-a a aprofundar a rede de dupla circulação \"frente em Macau, operação no interior\"."
+        ]
+      }
+    }
+  ],
+  "i18n": {
+    "zh-TW": {
+      "nav": {"home": "首頁", "about": "關於集團", "approach": "投資理念", "portfolio": "投資組合", "insights": "集團動態", "contact": "聯繫我們"},
+      "footer": {
+        "description": "立足澳門、輻射灣區與全球的多元化投資控股集團，以長期資本參與高成長產業。",
+        "quickLinks": "快速連結",
+        "companies": "旗下企業",
+        "contactTitle": "聯繫方式",
+        "allRightsReserved": "版權所有"
+      },
+      "home": {
+        "heroKicker": "澳門 · 粵港澳大灣區 · 全球",
+        "heroTitle": "立足澳門、輻射灣區與全球的多元化投資控股集團",
+        "heroSubtitle": "以長期資本參與高成長產業，專注大健康、數字科技與跨境服務，與被投企業共同成長。",
+        "cta1": "了解集團",
+        "cta2": "投資組合",
+        "stats": [
+          {"value": "2", "label": "核心持股企業"},
+          {"value": "3", "label": "大投資領域"},
+          {"value": "4", "label": "語言市場覆蓋"},
+          {"value": "MACAO", "label": "集團註冊地"}
+        ],
+        "sectorsKicker": "投資領域",
+        "sectorsTitle": "專注三大高成長賽道",
+        "sectorsSubtitle": "圍繞我們真正理解的產業，做深、做透、做長久。",
+        "sectors": [
+          {"title": "大健康與跨境醫療", "text": "圍繞跨境醫療諮詢、醫療貿易與健康服務生態，連接國際醫療資源與灣區需求。"},
+          {"title": "數字科技與品牌出海", "text": "投資 AI 驅動的數字營銷、社媒矩陣與智能硬件，助力品牌走向全球市場。"},
+          {"title": "跨境綜合服務", "text": "依託澳門中葡平台與灣區區位優勢，佈局跨境貿易、企業服務與資源對接。"}
+        ],
+        "portfolioKicker": "旗下企業",
+        "portfolioTitle": "以長期資本持有並培育的企業",
+        "portfolioSubtitle": "兩家核心持股企業，分別在數字科技與跨境醫療領域深耕。",
+        "learnMore": "了解詳情",
+        "latestKicker": "集團動態",
+        "latestTitle": "最新動態",
+        "viewAll": "查看全部",
+        "ctaTitle": "與我們同行，共創長期價值",
+        "ctaText": "無論是投資合作、產業協同還是業務對接，我們都期待與您深入交流。",
+        "ctaBtn": "聯繫我們"
+      },
+      "about": {
+        "title": "關於集團",
+        "subtitle": "以澳門為根，以長期資本連接產業與世界",
+        "introKicker": "集團介紹",
+        "introTitle": "植根澳門的長期產業投資者",
+        "introParas": [
+          "澳門萬里金騰集團有限公司是在澳門註冊的投資控股集團。集團依託澳門「一國兩制」的制度優勢、中國與葡語國家商貿合作服務平台的獨特定位，以及粵港澳大灣區的區位優勢，以長期資本參與高成長產業。",
+          "集團以控股與參股方式持有優質企業，目前核心持股包括澳門海易通達科技有限公司與澳門橋霍頓有限公司，業務覆蓋大健康與跨境醫療、數字科技與品牌出海、跨境綜合服務三大領域。",
+          "我們不做短期的財務投機者，而是產業的長期同行者——以資本、治理與資源協同，陪伴被投企業穿越週期、穩健成長。"
+        ],
+        "visionTitle": "願景",
+        "visionText": "成為立足澳門、在大灣區與國際市場之間值得信賴的產業投資集團。",
+        "missionTitle": "使命",
+        "missionText": "以長期資本與專業治理，發掘並培育具有跨境競爭力的企業，為股東、被投企業與澳門經濟適度多元發展創造可持續價值。",
+        "valuesKicker": "核心價值",
+        "valuesTitle": "我們堅持的四個原則",
+        "values": [
+          {"title": "長期主義", "text": "以十年為尺度思考投資，拒絕短期套利，與企業共同成長。"},
+          {"title": "產業協同", "text": "推動被投企業之間的資源共享與業務協作，放大組合價值。"},
+          {"title": "合規穩健", "text": "堅守合規底線與審慎原則，把風險管理放在收益之前。"},
+          {"title": "開放共贏", "text": "以開放姿態連接國際資源，與合作夥伴共享發展成果。"}
+        ],
+        "govKicker": "股東與治理",
+        "govTitle": "資本、治理與資源協同",
+        "govParas": [
+          "作為澳門海易通達與澳門橋霍頓的股東，集團以資本投入、公司治理與資源協同支持被投企業發展。",
+          "我們尊重被投企業的獨立經營與專業判斷，在戰略方向、風險合規與跨境資源上提供支持，與管理團隊形成長期、互信的夥伴關係。"
+        ]
+      },
+      "approach": {
+        "title": "投資理念",
+        "subtitle": "長期、聚焦、穩健",
+        "principlesKicker": "投資原則",
+        "principlesTitle": "四條不容妥協的原則",
+        "principles": [
+          {"title": "長期持有", "text": "以長期資本陪伴企業成長，穿越市場週期，分享企業長期價值。"},
+          {"title": "價值創造", "text": "不止於資本投入，更以治理、資源與戰略賦能企業，創造真實價值。"},
+          {"title": "產業聚焦", "text": "專注我們真正理解的領域：大健康、數字科技與跨境服務。"},
+          {"title": "風險為先", "text": "把風險評估置於收益預期之前，穩健審慎地做出每一項投資決策。"}
+        ],
+        "waysKicker": "投資方式",
+        "waysTitle": "如何參與企業成長",
+        "ways": [
+          {"title": "控股與參股", "text": "以控股或重要參股方式持有核心企業，深度參與長期發展。"},
+          {"title": "戰略協同", "text": "在品牌、渠道、技術與人才上推動被投企業之間的協同。"},
+          {"title": "資源賦能", "text": "發揮澳門中葡平台與灣區網絡優勢，為企業對接跨境資源。"}
+        ],
+        "macaoKicker": "為何澳門",
+        "macaoTitle": "澳門：連接中國與世界的獨特支點",
+        "macaoSubtitle": "制度、稅制、平台與區位，構成集團佈局的基石。",
+        "macao": [
+          {"title": "制度優勢", "text": "「一國兩制」下的自由港與獨立關稅區地位，資金與人員往來便利。"},
+          {"title": "稅制優勢", "text": "簡單低稅制，為企業營運與長期投資提供友好環境。"},
+          {"title": "中葡平台", "text": "中國與葡語國家商貿合作服務平台，連接廣闊的葡語國家市場。"},
+          {"title": "橫琴深合區", "text": "橫琴粵澳深度合作區的政策紅利，為跨境產業協同提供新空間。"}
+        ]
+      },
+      "portfolio": {
+        "title": "投資組合",
+        "subtitle": "以長期資本持有並培育的企業",
+        "businessLabel": "核心業務",
+        "highlightsLabel": "關鍵數據",
+        "visitSite": "訪問官網",
+        "focusKicker": "投資方向",
+        "focusTitle": "集團持續關注的領域",
+        "focusSubtitle": "在現有組合之外，我們持續研究並尋找與集團能力互補的機會。",
+        "focus": [
+          {"title": "大健康產業鏈", "text": "圍繞醫療服務、醫療貿易與健康管理，關注跨境醫療資源整合的長期機會。"},
+          {"title": "數字經濟與 AI 應用", "text": "關注 AI 在營銷、內容與企業服務中的落地應用，以及支撐品牌出海的數字基礎設施。"},
+          {"title": "中葡跨境服務", "text": "依託中葡平台，關注貿易、會展、專業服務等連接中國與葡語國家的服務機會。"}
+        ]
+      },
+      "insights": {"title": "集團動態", "subtitle": "集團的最新進展與重要公告", "readMore": "閱讀更多", "backTo": "返回集團動態"},
+      "contact": {
+        "title": "聯繫我們",
+        "subtitle": "期待與您探討合作的可能",
+        "formTitle": "留言給我們",
+        "name": "姓名",
+        "namePlaceholder": "請輸入您的姓名",
+        "emailLabel": "電子郵箱",
+        "emailPlaceholder": "請輸入您的電子郵箱",
+        "message": "留言內容",
+        "messagePlaceholder": "請簡述您的合作意向或問題",
+        "submit": "提交留言",
+        "submitting": "提交中...",
+        "successMessage": "提交成功，我們會盡快與您聯繫。",
+        "errorRequired": "此欄位為必填項",
+        "errorEmail": "請輸入有效的電子郵件地址",
+        "infoTitle": "集團信息",
+        "emailFieldLabel": "電子郵箱",
+        "addressLabel": "地址",
+        "note": "表單為在線演示，正式對接渠道開通前，歡迎通過郵箱與我們聯繫。"
+      },
+      "meta": {
+        "index": "澳門萬里金騰集團有限公司——立足澳門、輻射灣區與全球的多元化投資控股集團，專注大健康與跨境醫療、數字科技與品牌出海、跨境綜合服務。",
+        "about": "了解澳門萬里金騰集團：澳門註冊的投資控股集團，願景、使命、核心價值與股東治理。",
+        "approach": "萬里金騰集團的投資理念：長期持有、價值創造、產業聚焦、風險為先，以及為何選擇澳門。",
+        "portfolio": "萬里金騰集團投資組合：澳門海易通達科技有限公司與澳門橋霍頓有限公司。",
+        "insights": "澳門萬里金騰集團最新動態與重要公告。",
+        "contact": "聯繫澳門萬里金騰集團：投資合作、產業協同與業務對接。"
+      }
+    },
+    "zh-CN": {
+      "nav": {"home": "首页", "about": "关于集团", "approach": "投资理念", "portfolio": "投资组合", "insights": "集团动态", "contact": "联系我们"},
+      "footer": {
+        "description": "立足澳门、辐射湾区与全球的多元化投资控股集团，以长期资本参与高成长产业。",
+        "quickLinks": "快速链接",
+        "companies": "旗下企业",
+        "contactTitle": "联系方式",
+        "allRightsReserved": "版权所有"
+      },
+      "home": {
+        "heroKicker": "澳门 · 粤港澳大湾区 · 全球",
+        "heroTitle": "立足澳门、辐射湾区与全球的多元化投资控股集团",
+        "heroSubtitle": "以长期资本参与高成长产业，专注大健康、数字科技与跨境服务，与被投企业共同成长。",
+        "cta1": "了解集团",
+        "cta2": "投资组合",
+        "stats": [
+          {"value": "2", "label": "核心持股企业"},
+          {"value": "3", "label": "大投资领域"},
+          {"value": "4", "label": "语言市场覆盖"},
+          {"value": "MACAO", "label": "集团注册地"}
+        ],
+        "sectorsKicker": "投资领域",
+        "sectorsTitle": "专注三大高成长赛道",
+        "sectorsSubtitle": "围绕我们真正理解的产业，做深、做透、做长久。",
+        "sectors": [
+          {"title": "大健康与跨境医疗", "text": "围绕跨境医疗咨询、医疗贸易与健康服务生态，连接国际医疗资源与湾区需求。"},
+          {"title": "数字科技与品牌出海", "text": "投资 AI 驱动的数字营销、社媒矩阵与智能硬件，助力品牌走向全球市场。"},
+          {"title": "跨境综合服务", "text": "依托澳门中葡平台与湾区区位优势，布局跨境贸易、企业服务与资源对接。"}
+        ],
+        "portfolioKicker": "旗下企业",
+        "portfolioTitle": "以长期资本持有并培育的企业",
+        "portfolioSubtitle": "两家核心持股企业，分别在数字科技与跨境医疗领域深耕。",
+        "learnMore": "了解详情",
+        "latestKicker": "集团动态",
+        "latestTitle": "最新动态",
+        "viewAll": "查看全部",
+        "ctaTitle": "与我们同行，共创长期价值",
+        "ctaText": "无论是投资合作、产业协同还是业务对接，我们都期待与您深入交流。",
+        "ctaBtn": "联系我们"
+      },
+      "about": {
+        "title": "关于集团",
+        "subtitle": "以澳门为根，以长期资本连接产业与世界",
+        "introKicker": "集团介绍",
+        "introTitle": "植根澳门的长期产业投资者",
+        "introParas": [
+          "澳门万里金腾集团有限公司是在澳门注册的投资控股集团。集团依托澳门“一国两制”的制度优势、中国与葡语国家商贸合作服务平台的独特定位，以及粤港澳大湾区的区位优势，以长期资本参与高成长产业。",
+          "集团以控股与参股方式持有优质企业，目前核心持股包括澳门海易通达科技有限公司与澳门桥霍顿有限公司，业务覆盖大健康与跨境医疗、数字科技与品牌出海、跨境综合服务三大领域。",
+          "我们不做短期的财务投机者，而是产业的长期同行者——以资本、治理与资源协同，陪伴被投企业穿越周期、稳健成长。"
+        ],
+        "visionTitle": "愿景",
+        "visionText": "成为立足澳门、在大湾区与国际市场之间值得信赖的产业投资集团。",
+        "missionTitle": "使命",
+        "missionText": "以长期资本与专业治理，发掘并培育具有跨境竞争力的企业，为股东、被投企业与澳门经济适度多元发展创造可持续价值。",
+        "valuesKicker": "核心价值",
+        "valuesTitle": "我们坚持的四个原则",
+        "values": [
+          {"title": "长期主义", "text": "以十年为尺度思考投资，拒绝短期套利，与企业共同成长。"},
+          {"title": "产业协同", "text": "推动被投企业之间的资源共享与业务协作，放大组合价值。"},
+          {"title": "合规稳健", "text": "坚守合规底线与审慎原则，把风险管理放在收益之前。"},
+          {"title": "开放共赢", "text": "以开放姿态连接国际资源，与合作伙伴共享发展成果。"}
+        ],
+        "govKicker": "股东与治理",
+        "govTitle": "资本、治理与资源协同",
+        "govParas": [
+          "作为澳门海易通达与澳门桥霍顿的股东，集团以资本投入、公司治理与资源协同支持被投企业发展。",
+          "我们尊重被投企业的独立经营与专业判断，在战略方向、风险合规与跨境资源上提供支持，与管理团队形成长期、互信的伙伴关系。"
+        ]
+      },
+      "approach": {
+        "title": "投资理念",
+        "subtitle": "长期、聚焦、稳健",
+        "principlesKicker": "投资原则",
+        "principlesTitle": "四条不容妥协的原则",
+        "principles": [
+          {"title": "长期持有", "text": "以长期资本陪伴企业成长，穿越市场周期，分享企业长期价值。"},
+          {"title": "价值创造", "text": "不止于资本投入，更以治理、资源与战略赋能企业，创造真实价值。"},
+          {"title": "产业聚焦", "text": "专注我们真正理解的领域：大健康、数字科技与跨境服务。"},
+          {"title": "风险为先", "text": "把风险评估置于收益预期之前，稳健审慎地做出每一项投资决策。"}
+        ],
+        "waysKicker": "投资方式",
+        "waysTitle": "如何参与企业成长",
+        "ways": [
+          {"title": "控股与参股", "text": "以控股或重要参股方式持有核心企业，深度参与长期发展。"},
+          {"title": "战略协同", "text": "在品牌、渠道、技术与人才上推动被投企业之间的协同。"},
+          {"title": "资源赋能", "text": "发挥澳门中葡平台与湾区网络优势，为企业对接跨境资源。"}
+        ],
+        "macaoKicker": "为何澳门",
+        "macaoTitle": "澳门：连接中国与世界的独特支点",
+        "macaoSubtitle": "制度、税制、平台与区位，构成集团布局的基石。",
+        "macao": [
+          {"title": "制度优势", "text": "“一国两制”下的自由港与独立关税区地位，资金与人员往来便利。"},
+          {"title": "税制优势", "text": "简单低税制，为企业营运与长期投资提供友好环境。"},
+          {"title": "中葡平台", "text": "中国与葡语国家商贸合作服务平台，连接广阔的葡语国家市场。"},
+          {"title": "横琴深合区", "text": "横琴粤澳深度合作区的政策红利，为跨境产业协同提供新空间。"}
+        ]
+      },
+      "portfolio": {
+        "title": "投资组合",
+        "subtitle": "以长期资本持有并培育的企业",
+        "businessLabel": "核心业务",
+        "highlightsLabel": "关键数据",
+        "visitSite": "访问官网",
+        "focusKicker": "投资方向",
+        "focusTitle": "集团持续关注的领域",
+        "focusSubtitle": "在现有组合之外，我们持续研究并寻找与集团能力互补的机会。",
+        "focus": [
+          {"title": "大健康产业链", "text": "围绕医疗服务、医疗贸易与健康管理，关注跨境医疗资源整合的长期机会。"},
+          {"title": "数字经济与 AI 应用", "text": "关注 AI 在营销、内容与企业服务中的落地应用，以及支撑品牌出海的数字基础设施。"},
+          {"title": "中葡跨境服务", "text": "依托中葡平台，关注贸易、会展、专业服务等连接中国与葡语国家的服务机会。"}
+        ]
+      },
+      "insights": {"title": "集团动态", "subtitle": "集团的最新进展与重要公告", "readMore": "阅读更多", "backTo": "返回集团动态"},
+      "contact": {
+        "title": "联系我们",
+        "subtitle": "期待与您探讨合作的可能",
+        "formTitle": "留言给我们",
+        "name": "姓名",
+        "namePlaceholder": "请输入您的姓名",
+        "emailLabel": "电子邮箱",
+        "emailPlaceholder": "请输入您的电子邮箱",
+        "message": "留言内容",
+        "messagePlaceholder": "请简述您的合作意向或问题",
+        "submit": "提交留言",
+        "submitting": "提交中...",
+        "successMessage": "提交成功，我们会尽快与您联系。",
+        "errorRequired": "此栏位为必填项",
+        "errorEmail": "请输入有效的电子邮件地址",
+        "infoTitle": "集团信息",
+        "emailFieldLabel": "电子邮箱",
+        "addressLabel": "地址",
+        "note": "表单为在线演示，正式对接渠道开通前，欢迎通过邮箱与我们联系。"
+      },
+      "meta": {
+        "index": "澳门万里金腾集团有限公司——立足澳门、辐射湾区与全球的多元化投资控股集团，专注大健康与跨境医疗、数字科技与品牌出海、跨境综合服务。",
+        "about": "了解澳门万里金腾集团：澳门注册的投资控股集团，愿景、使命、核心价值与股东治理。",
+        "approach": "万里金腾集团的投资理念：长期持有、价值创造、产业聚焦、风险为先，以及为何选择澳门。",
+        "portfolio": "万里金腾集团投资组合：澳门海易通达科技有限公司与澳门桥霍顿有限公司。",
+        "insights": "澳门万里金腾集团最新动态与重要公告。",
+        "contact": "联系澳门万里金腾集团：投资合作、产业协同与业务对接。"
+      }
+    },
+    "en": {
+      "nav": {"home": "Home", "about": "About", "approach": "Approach", "portfolio": "Portfolio", "insights": "Insights", "contact": "Contact"},
+      "footer": {
+        "description": "A diversified investment holding group rooted in Macao, reaching across the Greater Bay Area and beyond, participating in high-growth industries with long-term capital.",
+        "quickLinks": "Quick Links",
+        "companies": "Our Companies",
+        "contactTitle": "Contact",
+        "allRightsReserved": "All rights reserved"
+      },
+      "home": {
+        "heroKicker": "MACAO · GREATER BAY AREA · GLOBAL",
+        "heroTitle": "A diversified investment holding group rooted in Macao, reaching across the Greater Bay Area and beyond",
+        "heroSubtitle": "Participating in high-growth industries with long-term capital — focused on healthcare, digital technology and cross-border services, growing together with our investee companies.",
+        "cta1": "About the Group",
+        "cta2": "Our Portfolio",
+        "stats": [
+          {"value": "2", "label": "Core portfolio companies"},
+          {"value": "3", "label": "Investment sectors"},
+          {"value": "4", "label": "Languages covered"},
+          {"value": "MACAO", "label": "Place of incorporation"}
+        ],
+        "sectorsKicker": "INVESTMENT SECTORS",
+        "sectorsTitle": "Three high-growth arenas",
+        "sectorsSubtitle": "We go deep, not broad — investing only in industries we truly understand.",
+        "sectors": [
+          {"title": "Healthcare & Cross-Border Medical", "text": "Building around cross-border healthcare consulting, medical trade and the health services ecosystem, connecting international medical resources with Greater Bay Area demand."},
+          {"title": "Digital Technology & Go-Global", "text": "Investing in AI-driven digital marketing, social media matrices and smart hardware that help brands reach global markets."},
+          {"title": "Integrated Cross-Border Services", "text": "Leveraging Macao's platform between China and Portuguese-speaking countries and its GBA location to develop cross-border trade, corporate services and resource matching."}
+        ],
+        "portfolioKicker": "OUR COMPANIES",
+        "portfolioTitle": "Companies we hold and nurture for the long term",
+        "portfolioSubtitle": "Two core holdings, deeply rooted in digital technology and cross-border healthcare respectively.",
+        "learnMore": "Learn More",
+        "latestKicker": "INSIGHTS",
+        "latestTitle": "Latest Updates",
+        "viewAll": "View All",
+        "ctaTitle": "Join us in creating long-term value",
+        "ctaText": "Whether for investment, industrial synergy or business matching, we look forward to an in-depth conversation.",
+        "ctaBtn": "Contact Us"
+      },
+      "about": {
+        "title": "About the Group",
+        "subtitle": "Rooted in Macao, connecting industries with the world through long-term capital",
+        "introKicker": "THE GROUP",
+        "introTitle": "A long-term industrial investor rooted in Macao",
+        "introParas": [
+          "Macao WLJT Group Limited is an investment holding group incorporated in Macao. Building on the institutional strengths of \"One Country, Two Systems\", Macao's unique role as a commercial and trade cooperation platform between China and Portuguese-speaking countries, and the geographic advantages of the Guangdong-Hong Kong-Macao Greater Bay Area, the Group participates in high-growth industries with long-term capital.",
+          "The Group holds quality enterprises through controlling and strategic stakes. Its current core holdings include Macao NexMatrix Technology Limited and United Macao Bridge Holden Corporation Limited, spanning healthcare and cross-border medical services, digital technology and go-global services, and integrated cross-border services.",
+          "We are not short-term financial speculators but long-term companions of industry — supporting our investee companies through cycles with capital, governance and resource synergies."
+        ],
+        "visionTitle": "Vision",
+        "visionText": "To be a trusted industrial investment group rooted in Macao, bridging the Greater Bay Area and international markets.",
+        "missionTitle": "Mission",
+        "missionText": "With long-term capital and professional governance, we identify and nurture enterprises with cross-border competitiveness, creating sustainable value for shareholders, investee companies and the adequate diversification of Macao's economy.",
+        "valuesKicker": "CORE VALUES",
+        "valuesTitle": "Four principles we stand by",
+        "values": [
+          {"title": "Long-Termism", "text": "We think in decades, reject short-term arbitrage, and grow alongside our companies."},
+          {"title": "Industrial Synergy", "text": "We foster resource sharing and business collaboration across our portfolio to amplify its combined value."},
+          {"title": "Compliance & Prudence", "text": "We hold the compliance baseline firmly and put risk management ahead of returns."},
+          {"title": "Openness & Shared Success", "text": "We connect international resources with an open mindset and share the fruits of growth with our partners."}
+        ],
+        "govKicker": "SHAREHOLDER & GOVERNANCE",
+        "govTitle": "Capital, governance and resource synergy",
+        "govParas": [
+          "As a shareholder of Macao NexMatrix and Macao Bridge Holden, the Group supports its investee companies through capital, corporate governance and resource synergies.",
+          "We respect the independent operation and professional judgment of our investee companies, providing support on strategic direction, risk compliance and cross-border resources, and building long-term, trust-based partnerships with their management teams."
+        ]
+      },
+      "approach": {
+        "title": "Investment Approach",
+        "subtitle": "Long-term. Focused. Prudent.",
+        "principlesKicker": "INVESTMENT PRINCIPLES",
+        "principlesTitle": "Four principles we never compromise",
+        "principles": [
+          {"title": "Long-Term Holding", "text": "We accompany companies with patient capital through market cycles, sharing in their long-term value."},
+          {"title": "Value Creation", "text": "Beyond capital, we empower companies with governance, resources and strategy to create real value."},
+          {"title": "Sector Focus", "text": "We stay within what we truly understand: healthcare, digital technology and cross-border services."},
+          {"title": "Risk First", "text": "We place risk assessment ahead of return expectations and make every investment decision with prudence."}
+        ],
+        "waysKicker": "HOW WE INVEST",
+        "waysTitle": "How we take part in a company's growth",
+        "ways": [
+          {"title": "Control & Strategic Stakes", "text": "We hold core companies through controlling or significant minority stakes, deeply engaged in their long-term development."},
+          {"title": "Strategic Synergy", "text": "We drive collaboration among investee companies across brand, channels, technology and talent."},
+          {"title": "Resource Empowerment", "text": "We leverage Macao's China-PSC platform and GBA networks to connect companies with cross-border resources."}
+        ],
+        "macaoKicker": "WHY MACAO",
+        "macaoTitle": "Macao: a unique pivot between China and the world",
+        "macaoSubtitle": "Institutions, taxation, platform and location form the foundation of the Group's strategy.",
+        "macao": [
+          {"title": "Institutional Strength", "text": "A free port and separate customs territory under \"One Country, Two Systems\", with convenient flows of capital and people."},
+          {"title": "Tax Advantages", "text": "A simple, low-tax regime that provides a friendly environment for operations and long-term investment."},
+          {"title": "China-PSC Platform", "text": "A commercial and trade cooperation platform between China and Portuguese-speaking countries, connecting to vast Lusophone markets."},
+          {"title": "Hengqin Cooperation Zone", "text": "The policy dividends of the Guangdong-Macao In-Depth Cooperation Zone in Hengqin open new space for cross-border industrial synergy."}
+        ]
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "subtitle": "Companies we hold and nurture with long-term capital",
+        "businessLabel": "Core Businesses",
+        "highlightsLabel": "Key Figures",
+        "visitSite": "Visit Website",
+        "focusKicker": "INVESTMENT FOCUS",
+        "focusTitle": "Areas we continue to watch",
+        "focusSubtitle": "Beyond the current portfolio, we keep researching opportunities complementary to the Group's capabilities.",
+        "focus": [
+          {"title": "Healthcare Value Chain", "text": "Around medical services, medical trade and health management, we follow long-term opportunities in cross-border medical resource integration."},
+          {"title": "Digital Economy & AI Applications", "text": "We watch applied AI in marketing, content and enterprise services, as well as the digital infrastructure behind brands going global."},
+          {"title": "China-PSC Cross-Border Services", "text": "Building on the China-PSC platform, we follow opportunities in trade, exhibitions and professional services connecting China and Portuguese-speaking countries."}
+        ]
+      },
+      "insights": {"title": "Insights", "subtitle": "The Group's latest progress and announcements", "readMore": "Read More", "backTo": "Back to Insights"},
+      "contact": {
+        "title": "Contact Us",
+        "subtitle": "We look forward to exploring opportunities together",
+        "formTitle": "Leave a Message",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Your email address",
+        "message": "Message",
+        "messagePlaceholder": "Briefly describe your inquiry or proposal",
+        "submit": "Send Message",
+        "submitting": "Sending...",
+        "successMessage": "Message sent. We will get back to you soon.",
+        "errorRequired": "This field is required",
+        "errorEmail": "Please enter a valid email address",
+        "infoTitle": "Group Information",
+        "emailFieldLabel": "Email",
+        "addressLabel": "Address",
+        "note": "This form is a front-end demonstration. Before formal channels open, please reach us by email."
+      },
+      "meta": {
+        "index": "Macao WLJT Group Limited — a diversified investment holding group rooted in Macao, reaching across the Greater Bay Area and beyond: healthcare and cross-border medical, digital technology and go-global, integrated cross-border services.",
+        "about": "About Macao WLJT Group: an investment holding group incorporated in Macao — vision, mission, core values and shareholder governance.",
+        "approach": "WLJT Group's investment approach: long-term holding, value creation, sector focus, risk first — and why Macao.",
+        "portfolio": "WLJT Group portfolio: Macao NexMatrix Technology Limited and United Macao Bridge Holden Corporation Limited.",
+        "insights": "Latest news and announcements from Macao WLJT Group.",
+        "contact": "Contact Macao WLJT Group for investment, industrial synergy and business matching."
+      }
+    },
+    "pt": {
+      "nav": {"home": "Início", "about": "Sobre", "approach": "Filosofia", "portfolio": "Portefólio", "insights": "Notícias", "contact": "Contacto"},
+      "footer": {
+        "description": "Um grupo holding de investimento diversificado, sediado em Macau e com alcance na Grande Baía e no mundo, participando em indústrias de elevado crescimento com capital de longo prazo.",
+        "quickLinks": "Ligações Rápidas",
+        "companies": "As Nossas Empresas",
+        "contactTitle": "Contacto",
+        "allRightsReserved": "Todos os direitos reservados"
+      },
+      "home": {
+        "heroKicker": "MACAU · GRANDE BAÍA · GLOBAL",
+        "heroTitle": "Um grupo holding de investimento diversificado, sediado em Macau, com alcance na Grande Baía e no mundo",
+        "heroSubtitle": "Participamos em indústrias de elevado crescimento com capital de longo prazo — com foco na saúde, tecnologia digital e serviços transfronteiriços, crescendo em conjunto com as nossas participadas.",
+        "cta1": "Sobre o Grupo",
+        "cta2": "Portefólio",
+        "stats": [
+          {"value": "2", "label": "Empresas participadas nucleares"},
+          {"value": "3", "label": "Áreas de investimento"},
+          {"value": "4", "label": "Línguas abrangidas"},
+          {"value": "MACAU", "label": "Local de constituição"}
+        ],
+        "sectorsKicker": "ÁREAS DE INVESTIMENTO",
+        "sectorsTitle": "Três áreas de elevado crescimento",
+        "sectorsSubtitle": "Preferimos profundidade a amplitude — investimos apenas em indústrias que conhecemos bem.",
+        "sectors": [
+          {"title": "Saúde e Serviços Médicos Transfronteiriços", "text": "Desenvolvemos consultoria de saúde transfronteiriça, comércio médico e o ecossistema de serviços de saúde, ligando recursos médicos internacionais à procura da Grande Baía."},
+          {"title": "Tecnologia Digital e Internacionalização", "text": "Investimos em marketing digital com IA, matrizes de redes sociais e hardware inteligente que ajudam as marcas a chegar aos mercados globais."},
+          {"title": "Serviços Transfronteiriços Integrados", "text": "Tirando partido da plataforma de Macau entre a China e os países de língua portuguesa e da sua posição na Grande Baía, desenvolvemos comércio transfronteiriço, serviços empresariais e correspondência de recursos."}
+        ],
+        "portfolioKicker": "AS NOSSAS EMPRESAS",
+        "portfolioTitle": "Empresas que detemos e desenvolvemos a longo prazo",
+        "portfolioSubtitle": "Duas participações nucleares, profundamente enraizadas na tecnologia digital e na saúde transfronteiriça.",
+        "learnMore": "Saber Mais",
+        "latestKicker": "NOTÍCIAS",
+        "latestTitle": "Últimas Notícias",
+        "viewAll": "Ver Tudo",
+        "ctaTitle": "Junte-se a nós na criação de valor de longo prazo",
+        "ctaText": "Seja para investimento, sinergia industrial ou correspondência de negócios, esperamos uma conversa aprofundada consigo.",
+        "ctaBtn": "Contacte-nos"
+      },
+      "about": {
+        "title": "Sobre o Grupo",
+        "subtitle": "Com raízes em Macau, ligando indústrias ao mundo através de capital de longo prazo",
+        "introKicker": "O GRUPO",
+        "introTitle": "Um investidor industrial de longo prazo com raízes em Macau",
+        "introParas": [
+          "O Grupo WLJT de Macau, Limitada é um grupo holding de investimento constituído em Macau. Com base nas vantagens institucionais de \"Um País, Dois Sistemas\", no papel único de Macau como plataforma de cooperação comercial e comercial entre a China e os países de língua portuguesa, e nas vantagens geográficas da Grande Baía Guangdong-Hong Kong-Macau, o Grupo participa em indústrias de elevado crescimento com capital de longo prazo.",
+          "O Grupo detém empresas de qualidade através de participações de controlo e estratégicas. As suas participações nucleares incluem atualmente a Macau NexMatrix Tecnologia Limitada e a United Macao Bridge Holden Corporation Limited, abrangendo saúde e serviços médicos transfronteiriços, tecnologia digital e internacionalização de marcas, e serviços transfronteiriços integrados.",
+          "Não somos especuladores financeiros de curto prazo, mas companheiros de longo prazo da indústria — apoiando as nossas participadas através dos ciclos com capital, governação e sinergias de recursos."
+        ],
+        "visionTitle": "Visão",
+        "visionText": "Ser um grupo de investimento industrial de confiança, sediado em Macau, fazendo a ponte entre a Grande Baía e os mercados internacionais.",
+        "missionTitle": "Missão",
+        "missionText": "Com capital de longo prazo e governação profissional, identificamos e desenvolvemos empresas com competitividade transfronteiriça, criando valor sustentável para os acionistas, para as participadas e para a diversificação adequada da economia de Macau.",
+        "valuesKicker": "VALORES FUNDAMENTAIS",
+        "valuesTitle": "Quatro princípios que defendemos",
+        "values": [
+          {"title": "Longo Prazo", "text": "Pensamos em décadas, rejeitamos a arbitragem de curto prazo e crescemos lado a lado com as nossas empresas."},
+          {"title": "Sinergia Industrial", "text": "Promovemos a partilha de recursos e a colaboração entre as participadas, ampliando o valor do portefólio."},
+          {"title": "Conformidade e Prudência", "text": "Defendemos firmemente a conformidade e colocamos a gestão de risco à frente dos retornos."},
+          {"title": "Abertura e Benefício Mútuo", "text": "Ligamos recursos internacionais com uma atitude aberta e partilhamos os frutos do crescimento com os nossos parceiros."}
+        ],
+        "govKicker": "ACIONISTA E GOVERNAÇÃO",
+        "govTitle": "Capital, governação e sinergia de recursos",
+        "govParas": [
+          "Enquanto acionista da Macau NexMatrix e da Macau Bridge Holden, o Grupo apoia as suas participadas através de capital, governação societária e sinergias de recursos.",
+          "Respeitamos a operação independente e o discernimento profissional das nossas participadas, prestando apoio na orientação estratégica, na conformidade e nos recursos transfronteiriços, e construindo parcerias duradouras e de confiança com as suas equipas de gestão."
+        ]
+      },
+      "approach": {
+        "title": "Filosofia de Investimento",
+        "subtitle": "Longo prazo. Foco. Prudência.",
+        "principlesKicker": "PRINCÍPIOS DE INVESTIMENTO",
+        "principlesTitle": "Quatro princípios inegociáveis",
+        "principles": [
+          {"title": "Detenção de Longo Prazo", "text": "Acompanhamos as empresas com capital paciente através dos ciclos de mercado, partilhando o seu valor de longo prazo."},
+          {"title": "Criação de Valor", "text": "Para além do capital, capacitamos as empresas com governação, recursos e estratégia, criando valor real."},
+          {"title": "Foco Setorial", "text": "Permanecemos no que conhecemos bem: saúde, tecnologia digital e serviços transfronteiriços."},
+          {"title": "Risco em Primeiro Lugar", "text": "Colocamos a avaliação de risco à frente das expectativas de retorno e decidimos cada investimento com prudência."}
+        ],
+        "waysKicker": "COMO INVESTIMOS",
+        "waysTitle": "Como participamos no crescimento das empresas",
+        "ways": [
+          {"title": "Controlo e Participações Estratégicas", "text": "Detemos empresas nucleares através de participações de controlo ou minorias relevantes, profundamente envolvidos no seu desenvolvimento de longo prazo."},
+          {"title": "Sinergia Estratégica", "text": "Impulsionamos a colaboração entre participadas em marca, canais, tecnologia e talento."},
+          {"title": "Capacitação com Recursos", "text": "Aproveitamos a plataforma China-PLP de Macau e as redes da Grande Baía para ligar as empresas a recursos transfronteiriços."}
+        ],
+        "macaoKicker": "PORQUÊ MACAU",
+        "macaoTitle": "Macau: um ponto de apoio único entre a China e o mundo",
+        "macaoSubtitle": "Instituições, fiscalidade, plataforma e localização constituem o fundamento da estratégia do Grupo.",
+        "macao": [
+          {"title": "Força Institucional", "text": "Porto franco e território aduaneiro separado no quadro de \"Um País, Dois Sistemas\", com fluxos convenientes de capital e pessoas."},
+          {"title": "Vantagens Fiscais", "text": "Um regime fiscal simples e de baixa tributação, favorável à operação e ao investimento de longo prazo."},
+          {"title": "Plataforma China-PLP", "text": "Plataforma de cooperação comercial entre a China e os países de língua portuguesa, ligando a vastos mercados lusófonos."},
+          {"title": "Zona de Cooperação de Hengqin", "text": "Os dividendos políticos da Zona de Cooperação Aprofundada Guangdong-Macau em Hengqin abrem novo espaço para a sinergia industrial transfronteiriça."}
+        ]
+      },
+      "portfolio": {
+        "title": "Portefólio",
+        "subtitle": "Empresas que detemos e desenvolvemos com capital de longo prazo",
+        "businessLabel": "Negócios Principais",
+        "highlightsLabel": "Números-Chave",
+        "visitSite": "Visitar Website",
+        "focusKicker": "FOCO DE INVESTIMENTO",
+        "focusTitle": "Áreas que continuamos a acompanhar",
+        "focusSubtitle": "Para além do portefólio atual, continuamos a estudar oportunidades complementares às capacidades do Grupo.",
+        "focus": [
+          {"title": "Cadeia de Valor da Saúde", "text": "Em torno dos serviços médicos, comércio médico e gestão de saúde, acompanhamos oportunidades de longo prazo na integração de recursos médicos transfronteiriços."},
+          {"title": "Economia Digital e Aplicações de IA", "text": "Acompanhamos a aplicação da IA no marketing, conteúdo e serviços empresariais, bem como a infraestrutura digital que apoia a internacionalização das marcas."},
+          {"title": "Serviços Transfronteiriços China-PLP", "text": "Com base na plataforma China-PLP, acompanhamos oportunidades em comércio, exposições e serviços profissionais que ligam a China e os países de língua portuguesa."}
+        ]
+      },
+      "insights": {"title": "Notícias", "subtitle": "Os progressos mais recentes e anúncios do Grupo", "readMore": "Ler Mais", "backTo": "Voltar às Notícias"},
+      "contact": {
+        "title": "Contacte-nos",
+        "subtitle": "Esperamos explorar oportunidades em conjunto",
+        "formTitle": "Deixe uma Mensagem",
+        "name": "Nome",
+        "namePlaceholder": "O seu nome",
+        "emailLabel": "Email",
+        "emailPlaceholder": "O seu endereço de email",
+        "message": "Mensagem",
+        "messagePlaceholder": "Descreva brevemente a sua questão ou proposta",
+        "submit": "Enviar Mensagem",
+        "submitting": "A enviar...",
+        "successMessage": "Mensagem enviada. Entraremos em contacto em breve.",
+        "errorRequired": "Este campo é obrigatório",
+        "errorEmail": "Introduza um endereço de email válido",
+        "infoTitle": "Informação do Grupo",
+        "emailFieldLabel": "Email",
+        "addressLabel": "Morada",
+        "note": "Este formulário é uma demonstração de front-end. Até à abertura dos canais formais, contacte-nos por email."
+      },
+      "meta": {
+        "index": "Grupo WLJT de Macau, Limitada — um grupo holding de investimento diversificado, sediado em Macau, com alcance na Grande Baía e no mundo: saúde transfronteiriça, tecnologia digital e internacionalização, serviços transfronteiriços integrados.",
+        "about": "Sobre o Grupo WLJT de Macau: um grupo holding de investimento constituído em Macau — visão, missão, valores e governação.",
+        "approach": "A filosofia de investimento do Grupo WLJT: detenção de longo prazo, criação de valor, foco setorial, risco em primeiro lugar — e porquê Macau.",
+        "portfolio": "Portefólio do Grupo WLJT: Macau NexMatrix Tecnologia Limitada e United Macao Bridge Holden Corporation Limited.",
+        "insights": "Últimas notícias e anúncios do Grupo WLJT de Macau.",
+        "contact": "Contacte o Grupo WLJT de Macau para investimento, sinergia industrial e correspondência de negócios."
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們｜NexMatrix 海易通達</title>
+  <meta name="description" content="聯絡澳門海易通達科技有限公司 — 預約出海診斷、產品演示與定制方案。">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="NexMatrix 海易通達 首頁">
+        <span class="logo-nex" aria-hidden="true"></span>
+        <span class="logo-text">
+          <strong>海易通達科技</strong>
+          <span>跨境業務服務商</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打開選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="主導航">
+        <a href="index.html" data-nav="home">首頁</a>
+        <a href="cases.html" data-nav="cases">合作案例</a>
+        <a href="products.html" data-nav="products">產品</a>
+        <a href="services.html" data-nav="services">服務</a>
+        <a href="solutions.html" data-nav="solutions">出海方案</a>
+        <a href="about.html" data-nav="about">關於我們</a>
+        <a href="quote.html" data-nav="quote">報價系統</a>
+        <span class="lang-switch" aria-label="語言">
+          <a href="contact.html" class="active">中文</a>
+          <a href="en/contact.html">EN</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">首頁</a>
+          <span>/</span>
+          <span>聯絡我們</span>
+        </div>
+        <p class="eyebrow">Contact</p>
+        <h1>開始您的出海對話</h1>
+        <p class="lead">告訴我們您的行業、目標市場與當前挑戰，我們將安排顧問與您對接。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item">
+              <div class="icon"><i class="fa-solid fa-building"></i></div>
+              <div>
+                <h4>公司主體</h4>
+                <p>
+                  澳門海易通達科技有限公司<br>
+                  Macao NexMatrix Technology Limited<br>
+                  註冊地：中國澳門特別行政區
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <h4>服務範圍</h4>
+                <p>品牌出海 · AI 矩陣 · 硬件與內容引擎 · 全案諮詢</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>響應承諾</h4>
+                <p>工作日提交後，我們將盡快回覆您的諮詢需求。</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <h4>隱私說明</h4>
+                <p>您提交的信息僅用於商務對接，不會向第三方出售。</p>
+              </div>
+            </div>
+            <div class="media-frame ratio-4x3" style="margin-top:0.25rem;"><img src="assets/img/contact-office.jpg" alt="辦公形象" width="1200" height="800" loading="lazy"></div>
+          </div>
+
+          <div class="form-card reveal">
+            <h3>提交諮詢需求</h3>
+            <p>填寫下方表單，我們的顧問將盡快與您聯繫。</p>
+            <div class="form-success" role="status">感謝提交！我們已收到您的信息，將盡快與您聯繫。</div>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">姓名 *</label>
+                  <input type="text" id="name" name="name" required placeholder="您的姓名" autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="phone">聯繫方式 *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="電話 / WhatsApp / 郵箱" autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company">公司名稱</label>
+                  <input type="text" id="company" name="company" placeholder="貴公司名稱" autocomplete="organization">
+                </div>
+                <div class="form-group">
+                  <label for="service">意向服務</label>
+                  <select id="service" name="service">
+                    <option value="">請選擇</option>
+                    <option value="nexus-one">NEXUS ONE 硬件</option>
+                    <option value="matrix">AI 矩陣搭建 / 代運營</option>
+                    <option value="digital-human">數字人製作</option>
+                    <option value="website">海外獨立站</option>
+                    <option value="company">海外公司註冊</option>
+                    <option value="training">人才培訓</option>
+                    <option value="enterprise">定制化全案（企業級）</option>
+                    <option value="other">其他 / 出海診斷</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">需求說明 *</label>
+                <textarea id="message" name="message" required placeholder="請簡述目標市場、當前痛點或希望了解的產品…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">提交諮詢</button>
+              <p class="form-note">提交即表示您同意我們與您聯繫，用於商務對接目的。</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="metrics reveal">
+          <div class="metric">
+            <div class="n"><em>1</em></div>
+            <div class="l">工作日內盡快響應</div>
+          </div>
+          <div class="metric">
+            <div class="n"><em>6</em></div>
+            <div class="l">大服務維度</div>
+          </div>
+          <div class="metric">
+            <div class="n"><em>100+</em></div>
+            <div class="l">全球顧問網絡</div>
+          </div>
+          <div class="metric">
+            <div class="n"><em>MO</em></div>
+            <div class="l">澳門科技主體</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-nex" aria-hidden="true"></span>
+        <span class="logo-text">
+          <strong>海易通達科技</strong>
+          <span>跨境業務服務商</span>
+        </span>
+          </a>
+          <p>澳門海易通達科技有限公司<br>Macau NexMatrix Tecnologia Limitada<br>Macao NexMatrix Technology Limited</p>
+        </div>
+        <div class="footer-col">
+          <h4>導航</h4>
+          <a href="index.html">首頁</a>
+          <a href="cases.html">合作案例</a>
+          <a href="products.html">產品中心</a>
+          <a href="services.html">服務方案</a>
+          <a href="solutions.html">出海方案</a>
+          <a href="about.html">關於我們</a>
+          <a href="quote.html">報價系統</a>
+          <a href="contact.html">聯絡我們</a>
+        </div>
+        <div class="footer-col">
+          <h4>產品與服務</h4>
+          <a href="products.html#nexus-one">NEXUS ONE</a>
+          <a href="products.html#matrix-soft">AI 矩陣軟件</a>
+          <a href="services.html">出海全案服務</a>
+        </div>
+        <div class="footer-col">
+          <h4>聯絡</h4>
+          <p>
+            <a href="contact.html">提交諮詢表單</a><br>
+            我們將盡快與您聯繫
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> 澳門海易通達科技有限公司 · MACAO NEXMATRIX TECHNOLOGY LIMITED</span>
+        <span>AI Social Media Matrix</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

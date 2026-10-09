@@ -1,0 +1,418 @@
+/* =========================================================
+   NexMatrix — 合作案例 Case Studies
+   獨立樣式表，僅供 cases.html 引用。
+   類名以 cs- 前綴；.page-hero / .btn 沿用 main.css 保持全站一致。
+   ========================================================= */
+
+.page-cases {
+  --cs-ink: #0c1a2e;
+  --cs-text: #4a5972;
+  --cs-muted: #6b7a91;
+  --cs-dim: #94a1b4;
+
+  --cs-line: #e3e9f2;
+  --cs-white: #ffffff;
+  --cs-mist: #f5f8fc;
+
+  --cs-blue: #1768ff;
+  --cs-blue-deep: #0d4dcc;
+  --cs-blue-soft: #eaf2ff;
+  --cs-violet: #5b4bd0;
+  --cs-violet-soft: #eeebff;
+  --cs-teal: #0a7d86;
+  --cs-teal-soft: #e2f4f5;
+
+  --cs-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--cs-white);
+}
+
+.cs { display: block; background: var(--cs-white); }
+
+/* ---------- 案例區塊 ---------- */
+/* 全站為白色編輯風，案例之間以髮絲線分隔而非底色交替 */
+.cs-case {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+  background: var(--cs-white);
+}
+.cs-case + .cs-case { border-top: 1px solid var(--cs-line); }
+/* 首個案例緊接 page-hero，收掉多餘留白
+   （不可用 :first-of-type — 同層第一個 <section> 是 .page-hero） */
+.page-hero + .cs-case { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+
+.cs-case-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  align-items: start;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--cs-line);
+}
+.cs-case-num {
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #c3d5f0;
+  font-variant-numeric: tabular-nums;
+}
+.cs-case-head h2 {
+  margin-top: 0.65rem;
+  font-size: clamp(1.5rem, 2.8vw, 2.15rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--cs-ink);
+}
+.cs-case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--cs-muted);
+}
+.cs-case-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.cs-case-meta i { color: var(--cs-blue); font-size: 0.8rem; }
+
+.cs-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.cs-tag {
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--cs-blue-soft);
+  color: var(--cs-blue-deep);
+}
+.cs-tag--v { background: var(--cs-violet-soft); color: #4536ad; }
+.cs-tag--t { background: var(--cs-teal-soft); color: #076169; }
+
+/* ---------- 正文 + 側欄 ---------- */
+.cs-case-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  margin-top: 2.25rem;
+  align-items: start;
+}
+.cs-block + .cs-block { margin-top: 1.75rem; }
+.cs-block h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cs-blue);
+}
+.cs-block h3::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: var(--cs-blue);
+}
+.cs-block p {
+  margin-top: 0.7rem;
+  font-size: 0.94rem;
+  line-height: 1.85;
+  color: var(--cs-text);
+}
+.cs-list { margin-top: 0.8rem; display: grid; gap: 0.6rem; }
+.cs-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--cs-text);
+}
+.cs-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--cs-blue);
+}
+
+/* 側欄：成果指標 */
+.cs-side { display: grid; gap: 1rem; }
+.cs-panel {
+  padding: 1.5rem 1.4rem;
+  border: 1px solid var(--cs-line);
+  border-radius: 14px;
+  background: #fff;
+}
+.cs-panel-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cs-blue);
+  margin-bottom: 1.1rem;
+}
+.cs-metrics { display: grid; gap: 1.1rem; }
+.cs-metrics > div { display: grid; gap: 0.2rem; }
+.cs-metrics dt {
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--cs-ink);
+}
+.cs-metrics dd { font-size: 0.82rem; line-height: 1.55; color: var(--cs-muted); }
+.cs-metrics .cs-note { font-size: 0.74rem; color: var(--cs-dim); }
+
+/* 側欄：獨立站連結 */
+.cs-sites { display: grid; gap: 0.55rem; }
+.cs-site {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--cs-line);
+  border-radius: 10px;
+  background: var(--cs-mist);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s var(--cs-ease);
+}
+.cs-site:hover { transform: translateX(3px); border-color: #a9c8f8; background: var(--cs-blue-soft); }
+.cs-site > i:first-child {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--cs-blue-soft);
+  color: var(--cs-blue);
+  font-size: 0.8rem;
+}
+.cs-site:hover > i:first-child { background: #fff; }
+.cs-site b { display: block; font-size: 0.85rem; font-weight: 700; color: var(--cs-ink); }
+.cs-site em { display: block; font-style: normal; font-size: 0.74rem; color: var(--cs-muted); }
+.cs-site > i:last-child { color: var(--cs-dim); font-size: 0.75rem; }
+
+/* ---------- 截圖畫廊 ---------- */
+.cs-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: clamp(2rem, 3.5vw, 2.75rem);
+}
+/* ---------- 案例二：橫向畫廊（露出下一張） ---------- */
+.cs-carousel {
+  position: relative;
+  margin-top: clamp(2rem, 3.5vw, 2.75rem);
+}
+.cs-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  align-items: stretch;         /* 卡片等高 */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 2px;
+}
+.cs-track::-webkit-scrollbar { display: none; }
+.cs-track:focus-visible { outline: 3px solid rgba(23, 104, 255, 0.38); outline-offset: 4px; }
+/* 66% + 置中吸附 → 中間一整張，左右各露出約 17% */
+.cs-track > .cs-shot {
+  flex: 0 0 66%;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* 三張原圖高寬比不同（506 / 611 / 618），統一高度並自頂部裁切，
+   以保留賬號名與粉絲數這類關鍵信息 */
+.cs-track > .cs-shot img {
+  height: clamp(280px, 27vw, 400px);
+  object-fit: cover;
+  object-position: top center;
+}
+.cs-track > .cs-shot figcaption { flex: 1; }
+
+/* 左右兩側虛化：漸層 + 背景模糊，遮罩讓效果向內平滑消失 */
+.cs-carousel::before,
+.cs-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 96px;
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 1;
+  transition: opacity 0.35s var(--cs-ease);
+}
+.cs-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.45) 55%, rgba(255,255,255,0) 100%);
+  -webkit-mask-image: linear-gradient(90deg, #000 35%, transparent 100%);
+          mask-image: linear-gradient(90deg, #000 35%, transparent 100%);
+}
+.cs-carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.45) 55%, rgba(255,255,255,0) 100%);
+  -webkit-mask-image: linear-gradient(270deg, #000 35%, transparent 100%);
+          mask-image: linear-gradient(270deg, #000 35%, transparent 100%);
+}
+/* 已到端點時該側無內容，淡出對應虛化 */
+.cs-carousel.at-start::before { opacity: 0; }
+.cs-carousel.at-end::after { opacity: 0; }
+
+.cs-cbtn {
+  position: absolute;
+  top: 42%;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--cs-line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--cs-ink);
+  font-size: 0.95rem;
+  box-shadow: 0 8px 24px rgba(20, 52, 100, 0.16);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s, transform 0.2s var(--cs-ease);
+}
+.cs-cbtn:hover:not(:disabled) {
+  transform: scale(1.06);
+  border-color: var(--cs-blue);
+  background: var(--cs-blue);
+  color: #fff;
+}
+.cs-cbtn:disabled { opacity: 0.3; cursor: default; box-shadow: none; }
+.cs-cbtn--prev { left: -14px; }
+.cs-cbtn--next { right: -14px; }
+
+@media (max-width: 768px) {
+  .cs-track > .cs-shot { flex: 0 0 88%; }
+  .cs-track > .cs-shot img { height: 210px; }
+  .cs-carousel::before, .cs-carousel::after { width: 54px; }
+  .cs-cbtn { width: 40px; height: 40px; }
+  .cs-cbtn--prev { left: -6px; }
+  .cs-cbtn--next { right: -6px; }
+}
+.cs-shots--kb { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 720px; }
+
+.cs-shot {
+  overflow: hidden;
+  border: 1px solid var(--cs-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(20, 52, 100, 0.07);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--cs-ease);
+}
+.cs-shot:hover {
+  transform: translateY(-4px);
+  border-color: #a9c8f8;
+  box-shadow: 0 20px 42px rgba(20, 52, 100, 0.13);
+}
+/* 瀏覽器視窗樣式 */
+.cs-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--cs-line);
+  background: var(--cs-mist);
+}
+.cs-dots { display: flex; gap: 0.3rem; flex-shrink: 0; }
+.cs-dots span { width: 8px; height: 8px; border-radius: 50%; background: #d3dde9; }
+.cs-bar code {
+  flex: 1;
+  overflow: hidden;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  color: var(--cs-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cs-shot img { width: 100%; height: auto; display: block; }
+.cs-shot figcaption {
+  padding: 0.85rem 1rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--cs-muted);
+  border-top: 1px solid var(--cs-line);
+}
+
+/* ---------- 免責聲明 ---------- */
+.cs-disclaimer {
+  padding: 0 0 clamp(3rem, 5vw, 4rem);
+  background: var(--cs-white);
+}
+.cs-disclaimer p {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #d6e2f2;
+  border-radius: 0 8px 8px 0;
+  background: var(--cs-mist);
+  font-size: 0.82rem;
+  line-height: 1.75;
+  color: var(--cs-muted);
+}
+
+/* ---------- CTA ---------- */
+.cs-cta { padding: 0 0 clamp(4.5rem, 7vw, 6rem); background: var(--cs-white); }
+.cs-cta-band {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(2.25rem, 4vw, 3.5rem);
+  border: 1px solid var(--cs-line);
+  border-radius: 12px;
+  background: #fff;
+}
+.cs-cta-band > * { position: relative; z-index: 1; }
+.cs-cta-band h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2.05rem);
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+  color: var(--cs-ink);
+}
+.cs-cta-band p { max-width: 52ch; margin-top: 0.85rem; font-size: 0.98rem; line-height: 1.8; color: var(--cs-muted); }
+.cs-cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.cs-cta-actions .btn-ghost { border-color: #cbd7e7; color: #25507f; background: transparent; }
+.cs-cta-actions .btn-ghost:hover { border-color: var(--cs-blue); background: #eef5ff; color: var(--cs-blue); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .cs-case-body { grid-template-columns: 1fr; gap: 2rem; }
+  .cs-side { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .cs-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .cs-case { padding: 3.5rem 0; }
+  .cs-case-head { grid-template-columns: 1fr; gap: 0.75rem; }
+  .cs-case-num { font-size: 2rem; }
+  .cs-case-head h2 { margin-top: 0.5rem; }
+  .cs-side { grid-template-columns: 1fr; }
+  .cs-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cs-shots, .cs-shots--kb { grid-template-columns: 1fr; max-width: none; }
+  .cs-site:hover { transform: none; }
+  .cs-cta-band { grid-template-columns: 1fr; }
+  .cs-cta-actions .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+@media (max-width: 360px) {
+  .cs-metrics { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs *, .cs *::before, .cs *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

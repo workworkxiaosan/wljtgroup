@@ -1,0 +1,665 @@
+/* =========================================================
+   NexMatrix — Homepage (明亮商務風)
+   獨立首頁樣式表，僅供 index.html 引用。
+   全部類名以 hm- 前綴，避開 main.css 內既有的首頁覆蓋層。
+   ========================================================= */
+
+.page-home {
+  /* Ink */
+  --hm-ink: #0c1a2e;
+  --hm-text: #4a5972;
+  --hm-muted: #6b7a91;
+  --hm-dim: #94a1b4;
+
+  /* Lines & surfaces */
+  --hm-line: #e3e9f2;
+  --hm-line-soft: #eef2f8;
+  --hm-white: #ffffff;
+  --hm-mist: #f5f8fc;
+
+  /* Brand */
+  --hm-blue: #1768ff;
+  --hm-blue-deep: #0d4dcc;
+  --hm-blue-soft: #eaf2ff;
+  --hm-violet: #5b4bd0;
+  --hm-violet-soft: #eeebff;
+  --hm-teal: #0a7d86;
+  --hm-teal-soft: #e2f4f5;
+
+  /* Dark (hero / cta only) */
+  --hm-navy: #08172b;
+
+  --hm-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--hm-white);
+}
+
+.hm { display: block; background: var(--hm-white); }
+.hm ::selection { background: rgba(23, 104, 255, 0.16); color: var(--hm-ink); }
+
+/* ---------- Shared section shell ---------- */
+.hm-sec {
+  position: relative;
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+  background: var(--hm-white);
+}
+.hm-sec--mist { background: var(--hm-mist); }
+.hm-sec--mist + .hm-sec--mist { padding-top: 0; }
+
+/* ---------- Section heading ---------- */
+.hm-head { max-width: 760px; margin-bottom: clamp(2.25rem, 4vw, 3.25rem); }
+.hm-head--center { max-width: 680px; margin-inline: auto; text-align: center; }
+.hm-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hm-blue);
+}
+.hm-label::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--hm-blue);
+}
+.hm-head--center .hm-label { justify-content: center; }
+.hm-head h2 {
+  max-width: 21ch;
+  font-size: clamp(1.85rem, 3.3vw, 2.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--hm-ink);
+}
+.hm-head--center h2 { max-width: none; }
+.hm-head p {
+  max-width: 54ch;
+  margin-top: 1rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--hm-muted);
+}
+.hm-head--center p { margin-inline: auto; }
+
+/* =========================================================
+   HERO — 深色開篇
+   ========================================================= */
+.hm-hero {
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--header-h) + clamp(3.5rem, 7vw, 6rem)) 0 clamp(3.5rem, 6vw, 5.5rem);
+  background:
+    radial-gradient(ellipse 60% 70% at 88% 8%, rgba(30, 110, 255, 0.36), transparent 60%),
+    radial-gradient(ellipse 50% 60% at 8% 100%, rgba(22, 76, 168, 0.32), transparent 65%),
+    linear-gradient(140deg, #061223 0%, #0b1e38 55%, #10294a 100%);
+}
+.hm-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000, transparent 78%);
+  pointer-events: none;
+}
+.hm-hero > .container { position: relative; z-index: 1; }
+.hm-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.hm-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.9rem 0.4rem 0.75rem;
+  border: 1px solid rgba(120, 178, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(46, 124, 255, 0.12);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8dc0ff;
+}
+.hm-hero-eyebrow i { font-size: 0.8rem; }
+
+.hm-hero h1 {
+  margin-top: 1.5rem;
+  max-width: 13ch;
+  font-size: clamp(2.35rem, 4.8vw, 4rem);
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hm-hero h1 em {
+  font-style: normal;
+  background: linear-gradient(96deg, #6fb2ff, #3f8bff 55%, #79c6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hm-hero-lead {
+  max-width: 40ch;
+  margin-top: 1.4rem;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  line-height: 1.85;
+  color: #b9c8de;
+}
+.hm-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+.hm-hero-actions .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #fff;
+  background: transparent;
+}
+.hm-hero-actions .btn-ghost:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Hero stats — 細線分隔，比卡片框更克制 */
+.hm-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+  margin-top: clamp(2.5rem, 4vw, 3.25rem);
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+.hm-hero-stats dt {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #fff;
+}
+.hm-hero-stats dd {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #93a7c2;
+}
+
+/* Hero visual — 產品面板 + 浮動標籤 */
+.hm-hero-visual { position: relative; }
+.hm-hero-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(146, 190, 255, 0.24);
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 30px 70px rgba(2, 12, 28, 0.5);
+  backdrop-filter: blur(6px);
+}
+.hm-hero-shot { position: relative; }
+.hm-hero-shot img {
+  width: 100%;
+  height: auto;          /* 覆蓋 img height 屬性，否則 aspect-ratio 不生效 */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+/* 讓白底產品圖平順過渡到深色說明欄 */
+.hm-hero-shot::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 34%;
+  background: linear-gradient(180deg, transparent, rgba(9, 26, 48, 0.42));
+  pointer-events: none;
+}
+.hm-hero-panel-cap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(146, 190, 255, 0.18);
+  background: rgba(6, 18, 35, 0.72);
+}
+.hm-hero-panel-cap strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.hm-hero-panel-cap span {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.74rem;
+  color: #91a6c1;
+}
+.hm-hero-panel-cap i {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: rgba(65, 140, 255, 0.18);
+  color: #79b3ff;
+}
+
+.hm-chip {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--hm-line);
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(2, 14, 33, 0.28);
+}
+.hm-chip i {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.hm-chip b { display: block; font-size: 0.8rem; font-weight: 600; color: var(--hm-ink); }
+.hm-chip em { display: block; font-style: normal; font-size: 0.72rem; color: var(--hm-dim); }
+.hm-chip--a { top: 8%; left: -8%; }
+.hm-chip--a i { background: var(--hm-blue-soft); color: var(--hm-blue); }
+.hm-chip--b { bottom: 16%; right: -6%; }
+.hm-chip--b i { background: var(--hm-teal-soft); color: var(--hm-teal); }
+
+/* =========================================================
+   TRUST RAIL — 平台渠道條
+   ========================================================= */
+.hm-rail { padding: clamp(2.25rem, 4vw, 3rem) 0; background: var(--hm-white); border-bottom: 1px solid var(--hm-line); }
+.hm-rail-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 2fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+.hm-rail-copy span {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hm-blue);
+}
+.hm-rail-copy strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--hm-ink);
+}
+.hm-rail-tiles {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.hm-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid var(--hm-line);
+  border-radius: 10px;
+  background: var(--hm-mist);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hm-muted);
+  transition: border-color 0.2s, color 0.2s, background 0.2s, transform 0.2s var(--hm-ease);
+}
+.hm-tile i { font-size: 1.15rem; color: var(--hm-blue); }
+.hm-tile:hover {
+  transform: translateY(-2px);
+  border-color: #a9c8f8;
+  background: #fff;
+  color: var(--hm-ink);
+}
+
+/* =========================================================
+   INSIGHT — 市場困局
+   ========================================================= */
+.hm-pain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+.hm-pain {
+  position: relative;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--hm-line);
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--hm-ease);
+}
+.hm-pain:hover {
+  transform: translateY(-4px);
+  border-color: #a9c8f8;
+  box-shadow: 0 18px 36px rgba(20, 52, 100, 0.1);
+}
+.hm-pain-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--hm-dim);
+}
+.hm-pain i {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 1rem 0 1.15rem;
+  border-radius: 10px;
+  background: var(--hm-blue-soft);
+  color: var(--hm-blue);
+  font-size: 1.05rem;
+}
+.hm-pain h3 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; color: var(--hm-ink); }
+.hm-pain p { margin-top: 0.6rem; font-size: 0.88rem; line-height: 1.75; color: var(--hm-muted); }
+
+/* =========================================================
+   SYSTEM — 增長操作系統
+   ========================================================= */
+.hm-sys-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--hm-line);
+  border-radius: 14px;
+  background: var(--hm-line);
+}
+.hm-sys {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  background: #fff;
+  transition: background 0.25s;
+}
+.hm-sys:hover { background: #f8fbff; }
+.hm-sys-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+}
+.hm-sys:nth-child(1) .hm-sys-icon { background: var(--hm-blue-soft); color: var(--hm-blue); }
+.hm-sys:nth-child(2) .hm-sys-icon { background: var(--hm-violet-soft); color: var(--hm-violet); }
+.hm-sys:nth-child(3) .hm-sys-icon { background: var(--hm-teal-soft); color: var(--hm-teal); }
+.hm-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hm-blue);
+}
+.hm-sys h3 { margin-top: 0.6rem; font-size: 1.22rem; font-weight: 700; letter-spacing: -0.015em; color: var(--hm-ink); }
+.hm-sys p { margin-top: 0.75rem; font-size: 0.92rem; line-height: 1.8; color: var(--hm-muted); }
+
+/* =========================================================
+   HARDWARE — NEXUS ONE
+   ========================================================= */
+.hm-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.hm-split-media {
+  overflow: hidden;
+  border: 1px solid var(--hm-line);
+  border-radius: 16px;
+  background: linear-gradient(155deg, #f0f6ff, #e3edfd);
+  box-shadow: 0 24px 54px rgba(19, 55, 108, 0.13);
+}
+.hm-split-media img {
+  width: 100%;
+  height: auto;          /* 同上：讓 aspect-ratio 接管高度 */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.6s var(--hm-ease);
+}
+.hm-split-media:hover img { transform: scale(1.03); }
+
+.hm-split-copy h2 {
+  max-width: 14ch;
+  font-size: clamp(1.85rem, 3.3vw, 2.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--hm-ink);
+}
+.hm-split-copy > p {
+  max-width: 46ch;
+  margin-top: 1rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--hm-muted);
+}
+.hm-split-more { margin-top: 2rem; }
+
+.hm-steps { display: grid; gap: 0.5rem; margin-top: 2rem; }
+.hm-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--hm-line);
+  border-radius: 0 10px 10px 0;
+  background: var(--hm-mist);
+  transition: border-color 0.22s, background 0.22s, transform 0.22s var(--hm-ease);
+}
+.hm-step:hover { transform: translateX(5px); border-left-color: var(--hm-blue); background: var(--hm-blue-soft); }
+.hm-step-num {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--hm-blue);
+  font-variant-numeric: tabular-nums;
+}
+.hm-step h3 { font-size: 0.98rem; font-weight: 700; color: var(--hm-ink); }
+.hm-step p { margin-top: 0.3rem; font-size: 0.86rem; line-height: 1.7; color: var(--hm-muted); }
+
+/* =========================================================
+   SOFTWARE — 軟件與內容引擎
+   ========================================================= */
+.hm-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.hm-gcard {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--hm-line);
+  border-radius: 14px;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--hm-ease);
+}
+.hm-gcard:hover {
+  transform: translateY(-5px);
+  border-color: #a9c8f8;
+  box-shadow: 0 20px 42px rgba(20, 52, 100, 0.12);
+}
+.hm-gcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--hm-line);
+  transition: transform 0.6s var(--hm-ease);
+}
+.hm-gcard:hover img { transform: scale(1.04); }
+.hm-gcard--dh img { object-position: center 26%; }
+.hm-gcard-body { padding: 1.35rem 1.4rem 1.6rem; }
+.hm-gcard-body h3 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.015em; color: var(--hm-ink); }
+.hm-gcard-body p { margin-top: 0.55rem; font-size: 0.89rem; line-height: 1.75; color: var(--hm-muted); }
+
+/* =========================================================
+   SERVICES — 六大維度
+   ========================================================= */
+.hm-svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--hm-line);
+  border-radius: 14px;
+  background: var(--hm-line);
+}
+.hm-svc {
+  display: block;
+  padding: 1.85rem 1.65rem;
+  background: #fff;
+  transition: background 0.25s;
+}
+.hm-svc:hover { background: #f8fbff; }
+.hm-svc i {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--hm-blue-soft);
+  color: var(--hm-blue);
+}
+.hm-svc:nth-child(3n+2) i { background: var(--hm-violet-soft); color: var(--hm-violet); }
+.hm-svc:nth-child(3n+3) i { background: var(--hm-teal-soft); color: var(--hm-teal); }
+.hm-svc h3 { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; color: var(--hm-ink); }
+.hm-svc p { margin-top: 0.5rem; font-size: 0.88rem; line-height: 1.75; color: var(--hm-muted); }
+.hm-svc-more { margin-top: 2.25rem; }
+
+/* =========================================================
+   VISION — 未來戰略
+   ========================================================= */
+.hm-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.hm-vcard {
+  padding: clamp(1.85rem, 3vw, 2.5rem);
+  border: 1px solid var(--hm-line);
+  border-radius: 14px;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s var(--hm-ease);
+}
+.hm-vcard:hover {
+  transform: translateY(-4px);
+  border-color: #a9c8f8;
+  box-shadow: 0 20px 42px rgba(20, 52, 100, 0.11);
+}
+.hm-vcard h3 { margin-top: 0.55rem; font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; color: var(--hm-ink); }
+.hm-vcard p { margin-top: 0.85rem; font-size: 0.94rem; line-height: 1.8; color: var(--hm-muted); }
+
+/* =========================================================
+   CTA — 深色收尾
+   ========================================================= */
+.hm-cta { padding: clamp(3.5rem, 6vw, 5rem) 0 clamp(4.5rem, 7vw, 6rem); background: var(--hm-mist); }
+/* 上一段同為淺灰底時收攏留白，避免形成過長的空白帶 */
+.hm-sec--mist + .hm-cta { padding-top: clamp(1rem, 2vw, 1.75rem); }
+.hm-cta-band {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(2.25rem, 4vw, 3.5rem);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(70, 150, 255, 0.5), transparent 38%),
+    linear-gradient(125deg, #0a1c33 0%, #123c76 100%);
+  box-shadow: 0 26px 56px rgba(9, 29, 62, 0.24);
+}
+.hm-cta-band::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  top: -115px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  box-shadow: 0 0 0 42px rgba(255, 255, 255, 0.04);
+}
+.hm-cta-band > * { position: relative; z-index: 1; }
+.hm-cta-band h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2.05rem);
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+.hm-cta-band p { max-width: 52ch; margin-top: 0.85rem; font-size: 0.98rem; line-height: 1.8; color: #bccbe1; }
+.hm-cta-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.hm-cta-actions .btn-primary { background: #fff; color: var(--hm-blue-deep); box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18); }
+.hm-cta-actions .btn-primary:hover { background: var(--hm-blue-soft); color: var(--hm-blue-deep); }
+.hm-cta-actions .btn-ghost { border-color: rgba(255, 255, 255, 0.34); color: #fff; background: transparent; }
+.hm-cta-actions .btn-ghost:hover { border-color: #fff; background: rgba(255, 255, 255, 0.1); color: #fff; }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 1024px) {
+  .hm-hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .hm-hero h1 { max-width: 16ch; }
+  .hm-hero-visual { max-width: 560px; }
+  .hm-chip--a { left: -3%; }
+  .hm-chip--b { right: -2%; }
+  .hm-pain-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hm-rail-inner { grid-template-columns: 1fr; }
+  .hm-sys-grid, .hm-svc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hm-split { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hm-split-media { order: -1; }
+  .hm-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .hm-sec { padding: 4rem 0; }
+  .hm-hero { padding-top: calc(var(--header-h) + 3rem); padding-bottom: 3.25rem; }
+  .hm-hero h1 { font-size: clamp(2.1rem, 9.5vw, 2.9rem); max-width: none; }
+  .hm-hero-lead { max-width: none; }
+  .hm-hero-actions .btn { flex: 1 1 auto; justify-content: center; }
+  .hm-hero-stats { gap: 0.85rem; padding-top: 1.35rem; }
+  .hm-hero-stats dt { font-size: 1.35rem; }
+  .hm-hero-stats dd { font-size: 0.7rem; }
+  .hm-hero-visual { max-width: none; }
+  .hm-chip { padding: 0.55rem 0.7rem; }
+  .hm-chip i { width: 26px; height: 26px; font-size: 0.75rem; }
+  .hm-chip b { font-size: 0.72rem; }
+  .hm-chip em { font-size: 0.66rem; }
+  .hm-chip--a { top: 5%; left: -2%; }
+  .hm-chip--b { bottom: 22%; right: -2%; }
+  .hm-head h2 { max-width: none; }
+  .hm-rail-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hm-pain-grid, .hm-gallery, .hm-vision-grid { grid-template-columns: 1fr; }
+  .hm-sys-grid, .hm-svc-grid { grid-template-columns: 1fr; }
+  .hm-step:hover { transform: none; }
+  .hm-gcard img { height: 180px; }
+  .hm-cta-band { grid-template-columns: 1fr; }
+  .hm-cta-actions .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hm *, .hm *::before, .hm *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
