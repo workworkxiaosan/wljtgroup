@@ -1,9 +1,25 @@
 {
   "languages": [
-    {"code": "zh-TW", "label": "繁體中文", "flag": "🇲🇴"},
-    {"code": "zh-CN", "label": "简体中文", "flag": "🇨🇳"},
-    {"code": "en", "label": "English", "flag": "🇬🇧"},
-    {"code": "pt", "label": "Português", "flag": "🇵🇹"}
+    {
+      "code": "zh-TW",
+      "label": "繁體中文",
+      "flag": "🇲🇴"
+    },
+    {
+      "code": "zh-CN",
+      "label": "简体中文",
+      "flag": "🇨🇳"
+    },
+    {
+      "code": "en",
+      "label": "English",
+      "flag": "🇬🇧"
+    },
+    {
+      "code": "pt",
+      "label": "Português",
+      "flag": "🇵🇹"
+    }
   ],
   "default_lang": "zh-TW",
   "site_names": {
@@ -23,12 +39,16 @@
   "email": "info@wljtgroup.com",
   "year": 2026,
   "address": {
-    "zh-TW": "澳門（詳細地址更新中）",
-    "zh-CN": "澳门（详细地址更新中）",
-    "en": "Macao (full address to be updated)",
-    "pt": "Macau (morada completa a atualizar)"
+    "zh-TW": "澳門湖畔南街中國與葡語國家商貿合作服務平台綜合體辦公樓B1",
+    "zh-CN": "澳门湖畔南街中国与葡语国家商贸合作服务平台综合体办公楼B1",
+    "en": "Office Building B1, China-Portuguese-speaking Countries Trade Cooperation Service Platform Complex, Rua Sul de Entre Lagos, Macao",
+    "pt": "Edifício de Escritórios B1, Complexo da Plataforma de Serviços para a Cooperação Comercial entre a China e os Países de Língua Portuguesa, Rua Sul de Entre Lagos, Macau"
   },
-  "social": {"facebook": "#", "linkedin": "#", "twitter": "#"},
+  "social": {
+    "facebook": "#",
+    "linkedin": "#",
+    "twitter": "#"
+  },
   "portfolio": [
     {
       "id": "nexmatrix",
@@ -80,10 +100,42 @@
         }
       ],
       "stats": [
-        {"value": "5.3億+", "label": {"zh-TW": "三大平台全球月活覆蓋", "zh-CN": "三大平台全球月活覆盖", "en": "Monthly active reach across three platforms", "pt": "Alcance mensal nas três principais plataformas"}},
-        {"value": "100+", "label": {"zh-TW": "全球專業顧問網絡", "zh-CN": "全球专业顾问网络", "en": "Global professional consultants", "pt": "Consultores profissionais globais"}},
-        {"value": "24", "label": {"zh-TW": "單設備安卓實例多開", "zh-CN": "单设备安卓实例多开", "en": "Android instances on a single device", "pt": "Instâncias Android num único dispositivo"}},
-        {"value": "6", "label": {"zh-TW": "大服務維度", "zh-CN": "大服务维度", "en": "Service dimensions", "pt": "Dimensões de serviço"}}
+        {
+          "value": "5.3億+",
+          "label": {
+            "zh-TW": "三大平台全球月活覆蓋",
+            "zh-CN": "三大平台全球月活覆盖",
+            "en": "Monthly active reach across three platforms",
+            "pt": "Alcance mensal nas três principais plataformas"
+          }
+        },
+        {
+          "value": "100+",
+          "label": {
+            "zh-TW": "全球專業顧問網絡",
+            "zh-CN": "全球专业顾问网络",
+            "en": "Global professional consultants",
+            "pt": "Consultores profissionais globais"
+          }
+        },
+        {
+          "value": "24",
+          "label": {
+            "zh-TW": "單設備安卓實例多開",
+            "zh-CN": "单设备安卓实例多开",
+            "en": "Android instances on a single device",
+            "pt": "Instâncias Android num único dispositivo"
+          }
+        },
+        {
+          "value": "6",
+          "label": {
+            "zh-TW": "大服務維度",
+            "zh-CN": "大服务维度",
+            "en": "Service dimensions",
+            "pt": "Dimensões de serviço"
+          }
+        }
       ]
     },
     {
@@ -136,9 +188,33 @@
         }
       ],
       "stats": [
-        {"value": "47+", "label": {"zh-TW": "國際醫療專家", "zh-CN": "国际医疗专家", "en": "International medical experts", "pt": "Especialistas médicos internacionais"}},
-        {"value": "23", "label": {"zh-TW": "跨境醫療網絡", "zh-CN": "跨境医疗网络", "en": "Cross-border medical network", "pt": "Rede médica transfronteiriça"}},
-        {"value": "12+", "label": {"zh-TW": "先進專科服務", "zh-CN": "先进专科服务", "en": "Advanced specialty services", "pt": "Serviços de especialidade avançados"}}
+        {
+          "value": "47+",
+          "label": {
+            "zh-TW": "國際醫療專家",
+            "zh-CN": "国际医疗专家",
+            "en": "International medical experts",
+            "pt": "Especialistas médicos internacionais"
+          }
+        },
+        {
+          "value": "23",
+          "label": {
+            "zh-TW": "跨境醫療網絡",
+            "zh-CN": "跨境医疗网络",
+            "en": "Cross-border medical network",
+            "pt": "Rede médica transfronteiriça"
+          }
+        },
+        {
+          "value": "12+",
+          "label": {
+            "zh-TW": "先進專科服務",
+            "zh-CN": "先进专科服务",
+            "en": "Advanced specialty services",
+            "pt": "Serviços de especialidade avançados"
+          }
+        }
       ],
       "disclaimer": {
         "zh-TW": "合規聲明：橋霍頓僅提供諮詢協調與專家資源匹配服務，不提供直接醫療治療服務。",
@@ -152,7 +228,12 @@
     {
       "date": "2026-10-10",
       "slug": "wljt-group-official-website-launch",
-      "category": {"zh-TW": "集團公告", "zh-CN": "集团公告", "en": "Announcement", "pt": "Anúncio"},
+      "category": {
+        "zh-TW": "集團公告",
+        "zh-CN": "集团公告",
+        "en": "Announcement",
+        "pt": "Anúncio"
+      },
       "title": {
         "zh-TW": "澳門萬里金騰集團官方網站正式上線",
         "zh-CN": "澳门万里金腾集团官方网站正式上线",
@@ -199,7 +280,12 @@
     {
       "date": "2026-08-08",
       "slug": "bridge-holden-cross-border-healthcare-platform",
-      "category": {"zh-TW": "投資動態", "zh-CN": "投资动态", "en": "Investment", "pt": "Investimento"},
+      "category": {
+        "zh-TW": "投資動態",
+        "zh-CN": "投资动态",
+        "en": "Investment",
+        "pt": "Investimento"
+      },
       "title": {
         "zh-TW": "集團參與澳門橋霍頓跨境醫療平台建設",
         "zh-CN": "集团参与澳门桥霍顿跨境医疗平台建设",
@@ -246,7 +332,12 @@
     {
       "date": "2026-06-18",
       "slug": "strategic-investment-nexmatrix",
-      "category": {"zh-TW": "投資動態", "zh-CN": "投资动态", "en": "Investment", "pt": "Investimento"},
+      "category": {
+        "zh-TW": "投資動態",
+        "zh-CN": "投资动态",
+        "en": "Investment",
+        "pt": "Investimento"
+      },
       "title": {
         "zh-TW": "集團完成對澳門海易通達的戰略投資",
         "zh-CN": "集团完成对澳门海易通达的战略投资",
@@ -293,7 +384,14 @@
   ],
   "i18n": {
     "zh-TW": {
-      "nav": {"home": "首頁", "about": "關於集團", "approach": "投資理念", "portfolio": "投資組合", "insights": "集團動態", "contact": "聯繫我們"},
+      "nav": {
+        "home": "首頁",
+        "about": "關於集團",
+        "approach": "投資理念",
+        "portfolio": "投資組合",
+        "insights": "集團動態",
+        "contact": "聯繫我們"
+      },
       "footer": {
         "description": "立足澳門、輻射灣區與全球的多元化投資控股集團，以長期資本參與高成長產業。",
         "quickLinks": "快速連結",
@@ -308,18 +406,39 @@
         "cta1": "了解集團",
         "cta2": "投資組合",
         "stats": [
-          {"value": "2", "label": "核心持股企業"},
-          {"value": "3", "label": "大投資領域"},
-          {"value": "4", "label": "語言市場覆蓋"},
-          {"value": "MACAO", "label": "集團註冊地"}
+          {
+            "value": "2",
+            "label": "核心持股企業"
+          },
+          {
+            "value": "3",
+            "label": "大投資領域"
+          },
+          {
+            "value": "4",
+            "label": "語言市場覆蓋"
+          },
+          {
+            "value": "MACAO",
+            "label": "集團註冊地"
+          }
         ],
         "sectorsKicker": "投資領域",
         "sectorsTitle": "專注三大高成長賽道",
         "sectorsSubtitle": "圍繞我們真正理解的產業，做深、做透、做長久。",
         "sectors": [
-          {"title": "大健康與跨境醫療", "text": "圍繞跨境醫療諮詢、醫療貿易與健康服務生態，連接國際醫療資源與灣區需求。"},
-          {"title": "數字科技與品牌出海", "text": "投資 AI 驅動的數字營銷、社媒矩陣與智能硬件，助力品牌走向全球市場。"},
-          {"title": "跨境綜合服務", "text": "依託澳門中葡平台與灣區區位優勢，佈局跨境貿易、企業服務與資源對接。"}
+          {
+            "title": "大健康與跨境醫療",
+            "text": "圍繞跨境醫療諮詢、醫療貿易與健康服務生態，連接國際醫療資源與灣區需求。"
+          },
+          {
+            "title": "數字科技與品牌出海",
+            "text": "投資 AI 驅動的數字營銷、社媒矩陣與智能硬件，助力品牌走向全球市場。"
+          },
+          {
+            "title": "跨境綜合服務",
+            "text": "依託澳門中葡平台與灣區區位優勢，佈局跨境貿易、企業服務與資源對接。"
+          }
         ],
         "portfolioKicker": "旗下企業",
         "portfolioTitle": "以長期資本持有並培育的企業",
@@ -349,10 +468,22 @@
         "valuesKicker": "核心價值",
         "valuesTitle": "我們堅持的四個原則",
         "values": [
-          {"title": "長期主義", "text": "以十年為尺度思考投資，拒絕短期套利，與企業共同成長。"},
-          {"title": "產業協同", "text": "推動被投企業之間的資源共享與業務協作，放大組合價值。"},
-          {"title": "合規穩健", "text": "堅守合規底線與審慎原則，把風險管理放在收益之前。"},
-          {"title": "開放共贏", "text": "以開放姿態連接國際資源，與合作夥伴共享發展成果。"}
+          {
+            "title": "長期主義",
+            "text": "以十年為尺度思考投資，拒絕短期套利，與企業共同成長。"
+          },
+          {
+            "title": "產業協同",
+            "text": "推動被投企業之間的資源共享與業務協作，放大組合價值。"
+          },
+          {
+            "title": "合規穩健",
+            "text": "堅守合規底線與審慎原則，把風險管理放在收益之前。"
+          },
+          {
+            "title": "開放共贏",
+            "text": "以開放姿態連接國際資源，與合作夥伴共享發展成果。"
+          }
         ],
         "govKicker": "股東與治理",
         "govTitle": "資本、治理與資源協同",
@@ -367,26 +498,59 @@
         "principlesKicker": "投資原則",
         "principlesTitle": "四條不容妥協的原則",
         "principles": [
-          {"title": "長期持有", "text": "以長期資本陪伴企業成長，穿越市場週期，分享企業長期價值。"},
-          {"title": "價值創造", "text": "不止於資本投入，更以治理、資源與戰略賦能企業，創造真實價值。"},
-          {"title": "產業聚焦", "text": "專注我們真正理解的領域：大健康、數字科技與跨境服務。"},
-          {"title": "風險為先", "text": "把風險評估置於收益預期之前，穩健審慎地做出每一項投資決策。"}
+          {
+            "title": "長期持有",
+            "text": "以長期資本陪伴企業成長，穿越市場週期，分享企業長期價值。"
+          },
+          {
+            "title": "價值創造",
+            "text": "不止於資本投入，更以治理、資源與戰略賦能企業，創造真實價值。"
+          },
+          {
+            "title": "產業聚焦",
+            "text": "專注我們真正理解的領域：大健康、數字科技與跨境服務。"
+          },
+          {
+            "title": "風險為先",
+            "text": "把風險評估置於收益預期之前，穩健審慎地做出每一項投資決策。"
+          }
         ],
         "waysKicker": "投資方式",
         "waysTitle": "如何參與企業成長",
         "ways": [
-          {"title": "控股與參股", "text": "以控股或重要參股方式持有核心企業，深度參與長期發展。"},
-          {"title": "戰略協同", "text": "在品牌、渠道、技術與人才上推動被投企業之間的協同。"},
-          {"title": "資源賦能", "text": "發揮澳門中葡平台與灣區網絡優勢，為企業對接跨境資源。"}
+          {
+            "title": "控股與參股",
+            "text": "以控股或重要參股方式持有核心企業，深度參與長期發展。"
+          },
+          {
+            "title": "戰略協同",
+            "text": "在品牌、渠道、技術與人才上推動被投企業之間的協同。"
+          },
+          {
+            "title": "資源賦能",
+            "text": "發揮澳門中葡平台與灣區網絡優勢，為企業對接跨境資源。"
+          }
         ],
         "macaoKicker": "為何澳門",
         "macaoTitle": "澳門：連接中國與世界的獨特支點",
         "macaoSubtitle": "制度、稅制、平台與區位，構成集團佈局的基石。",
         "macao": [
-          {"title": "制度優勢", "text": "「一國兩制」下的自由港與獨立關稅區地位，資金與人員往來便利。"},
-          {"title": "稅制優勢", "text": "簡單低稅制，為企業營運與長期投資提供友好環境。"},
-          {"title": "中葡平台", "text": "中國與葡語國家商貿合作服務平台，連接廣闊的葡語國家市場。"},
-          {"title": "橫琴深合區", "text": "橫琴粵澳深度合作區的政策紅利，為跨境產業協同提供新空間。"}
+          {
+            "title": "制度優勢",
+            "text": "「一國兩制」下的自由港與獨立關稅區地位，資金與人員往來便利。"
+          },
+          {
+            "title": "稅制優勢",
+            "text": "簡單低稅制，為企業營運與長期投資提供友好環境。"
+          },
+          {
+            "title": "中葡平台",
+            "text": "中國與葡語國家商貿合作服務平台，連接廣闊的葡語國家市場。"
+          },
+          {
+            "title": "橫琴深合區",
+            "text": "橫琴粵澳深度合作區的政策紅利，為跨境產業協同提供新空間。"
+          }
         ]
       },
       "portfolio": {
@@ -399,12 +563,26 @@
         "focusTitle": "集團持續關注的領域",
         "focusSubtitle": "在現有組合之外，我們持續研究並尋找與集團能力互補的機會。",
         "focus": [
-          {"title": "大健康產業鏈", "text": "圍繞醫療服務、醫療貿易與健康管理，關注跨境醫療資源整合的長期機會。"},
-          {"title": "數字經濟與 AI 應用", "text": "關注 AI 在營銷、內容與企業服務中的落地應用，以及支撐品牌出海的數字基礎設施。"},
-          {"title": "中葡跨境服務", "text": "依託中葡平台，關注貿易、會展、專業服務等連接中國與葡語國家的服務機會。"}
+          {
+            "title": "大健康產業鏈",
+            "text": "圍繞醫療服務、醫療貿易與健康管理，關注跨境醫療資源整合的長期機會。"
+          },
+          {
+            "title": "數字經濟與 AI 應用",
+            "text": "關注 AI 在營銷、內容與企業服務中的落地應用，以及支撐品牌出海的數字基礎設施。"
+          },
+          {
+            "title": "中葡跨境服務",
+            "text": "依託中葡平台，關注貿易、會展、專業服務等連接中國與葡語國家的服務機會。"
+          }
         ]
       },
-      "insights": {"title": "集團動態", "subtitle": "集團的最新進展與重要公告", "readMore": "閱讀更多", "backTo": "返回集團動態"},
+      "insights": {
+        "title": "集團動態",
+        "subtitle": "集團的最新進展與重要公告",
+        "readMore": "閱讀更多",
+        "backTo": "返回集團動態"
+      },
       "contact": {
         "title": "聯繫我們",
         "subtitle": "期待與您探討合作的可能",
@@ -435,7 +613,14 @@
       }
     },
     "zh-CN": {
-      "nav": {"home": "首页", "about": "关于集团", "approach": "投资理念", "portfolio": "投资组合", "insights": "集团动态", "contact": "联系我们"},
+      "nav": {
+        "home": "首页",
+        "about": "关于集团",
+        "approach": "投资理念",
+        "portfolio": "投资组合",
+        "insights": "集团动态",
+        "contact": "联系我们"
+      },
       "footer": {
         "description": "立足澳门、辐射湾区与全球的多元化投资控股集团，以长期资本参与高成长产业。",
         "quickLinks": "快速链接",
@@ -450,18 +635,39 @@
         "cta1": "了解集团",
         "cta2": "投资组合",
         "stats": [
-          {"value": "2", "label": "核心持股企业"},
-          {"value": "3", "label": "大投资领域"},
-          {"value": "4", "label": "语言市场覆盖"},
-          {"value": "MACAO", "label": "集团注册地"}
+          {
+            "value": "2",
+            "label": "核心持股企业"
+          },
+          {
+            "value": "3",
+            "label": "大投资领域"
+          },
+          {
+            "value": "4",
+            "label": "语言市场覆盖"
+          },
+          {
+            "value": "MACAO",
+            "label": "集团注册地"
+          }
         ],
         "sectorsKicker": "投资领域",
         "sectorsTitle": "专注三大高成长赛道",
         "sectorsSubtitle": "围绕我们真正理解的产业，做深、做透、做长久。",
         "sectors": [
-          {"title": "大健康与跨境医疗", "text": "围绕跨境医疗咨询、医疗贸易与健康服务生态，连接国际医疗资源与湾区需求。"},
-          {"title": "数字科技与品牌出海", "text": "投资 AI 驱动的数字营销、社媒矩阵与智能硬件，助力品牌走向全球市场。"},
-          {"title": "跨境综合服务", "text": "依托澳门中葡平台与湾区区位优势，布局跨境贸易、企业服务与资源对接。"}
+          {
+            "title": "大健康与跨境医疗",
+            "text": "围绕跨境医疗咨询、医疗贸易与健康服务生态，连接国际医疗资源与湾区需求。"
+          },
+          {
+            "title": "数字科技与品牌出海",
+            "text": "投资 AI 驱动的数字营销、社媒矩阵与智能硬件，助力品牌走向全球市场。"
+          },
+          {
+            "title": "跨境综合服务",
+            "text": "依托澳门中葡平台与湾区区位优势，布局跨境贸易、企业服务与资源对接。"
+          }
         ],
         "portfolioKicker": "旗下企业",
         "portfolioTitle": "以长期资本持有并培育的企业",
@@ -491,10 +697,22 @@
         "valuesKicker": "核心价值",
         "valuesTitle": "我们坚持的四个原则",
         "values": [
-          {"title": "长期主义", "text": "以十年为尺度思考投资，拒绝短期套利，与企业共同成长。"},
-          {"title": "产业协同", "text": "推动被投企业之间的资源共享与业务协作，放大组合价值。"},
-          {"title": "合规稳健", "text": "坚守合规底线与审慎原则，把风险管理放在收益之前。"},
-          {"title": "开放共赢", "text": "以开放姿态连接国际资源，与合作伙伴共享发展成果。"}
+          {
+            "title": "长期主义",
+            "text": "以十年为尺度思考投资，拒绝短期套利，与企业共同成长。"
+          },
+          {
+            "title": "产业协同",
+            "text": "推动被投企业之间的资源共享与业务协作，放大组合价值。"
+          },
+          {
+            "title": "合规稳健",
+            "text": "坚守合规底线与审慎原则，把风险管理放在收益之前。"
+          },
+          {
+            "title": "开放共赢",
+            "text": "以开放姿态连接国际资源，与合作伙伴共享发展成果。"
+          }
         ],
         "govKicker": "股东与治理",
         "govTitle": "资本、治理与资源协同",
@@ -509,26 +727,59 @@
         "principlesKicker": "投资原则",
         "principlesTitle": "四条不容妥协的原则",
         "principles": [
-          {"title": "长期持有", "text": "以长期资本陪伴企业成长，穿越市场周期，分享企业长期价值。"},
-          {"title": "价值创造", "text": "不止于资本投入，更以治理、资源与战略赋能企业，创造真实价值。"},
-          {"title": "产业聚焦", "text": "专注我们真正理解的领域：大健康、数字科技与跨境服务。"},
-          {"title": "风险为先", "text": "把风险评估置于收益预期之前，稳健审慎地做出每一项投资决策。"}
+          {
+            "title": "长期持有",
+            "text": "以长期资本陪伴企业成长，穿越市场周期，分享企业长期价值。"
+          },
+          {
+            "title": "价值创造",
+            "text": "不止于资本投入，更以治理、资源与战略赋能企业，创造真实价值。"
+          },
+          {
+            "title": "产业聚焦",
+            "text": "专注我们真正理解的领域：大健康、数字科技与跨境服务。"
+          },
+          {
+            "title": "风险为先",
+            "text": "把风险评估置于收益预期之前，稳健审慎地做出每一项投资决策。"
+          }
         ],
         "waysKicker": "投资方式",
         "waysTitle": "如何参与企业成长",
         "ways": [
-          {"title": "控股与参股", "text": "以控股或重要参股方式持有核心企业，深度参与长期发展。"},
-          {"title": "战略协同", "text": "在品牌、渠道、技术与人才上推动被投企业之间的协同。"},
-          {"title": "资源赋能", "text": "发挥澳门中葡平台与湾区网络优势，为企业对接跨境资源。"}
+          {
+            "title": "控股与参股",
+            "text": "以控股或重要参股方式持有核心企业，深度参与长期发展。"
+          },
+          {
+            "title": "战略协同",
+            "text": "在品牌、渠道、技术与人才上推动被投企业之间的协同。"
+          },
+          {
+            "title": "资源赋能",
+            "text": "发挥澳门中葡平台与湾区网络优势，为企业对接跨境资源。"
+          }
         ],
         "macaoKicker": "为何澳门",
         "macaoTitle": "澳门：连接中国与世界的独特支点",
         "macaoSubtitle": "制度、税制、平台与区位，构成集团布局的基石。",
         "macao": [
-          {"title": "制度优势", "text": "“一国两制”下的自由港与独立关税区地位，资金与人员往来便利。"},
-          {"title": "税制优势", "text": "简单低税制，为企业营运与长期投资提供友好环境。"},
-          {"title": "中葡平台", "text": "中国与葡语国家商贸合作服务平台，连接广阔的葡语国家市场。"},
-          {"title": "横琴深合区", "text": "横琴粤澳深度合作区的政策红利，为跨境产业协同提供新空间。"}
+          {
+            "title": "制度优势",
+            "text": "“一国两制”下的自由港与独立关税区地位，资金与人员往来便利。"
+          },
+          {
+            "title": "税制优势",
+            "text": "简单低税制，为企业营运与长期投资提供友好环境。"
+          },
+          {
+            "title": "中葡平台",
+            "text": "中国与葡语国家商贸合作服务平台，连接广阔的葡语国家市场。"
+          },
+          {
+            "title": "横琴深合区",
+            "text": "横琴粤澳深度合作区的政策红利，为跨境产业协同提供新空间。"
+          }
         ]
       },
       "portfolio": {
@@ -541,12 +792,26 @@
         "focusTitle": "集团持续关注的领域",
         "focusSubtitle": "在现有组合之外，我们持续研究并寻找与集团能力互补的机会。",
         "focus": [
-          {"title": "大健康产业链", "text": "围绕医疗服务、医疗贸易与健康管理，关注跨境医疗资源整合的长期机会。"},
-          {"title": "数字经济与 AI 应用", "text": "关注 AI 在营销、内容与企业服务中的落地应用，以及支撑品牌出海的数字基础设施。"},
-          {"title": "中葡跨境服务", "text": "依托中葡平台，关注贸易、会展、专业服务等连接中国与葡语国家的服务机会。"}
+          {
+            "title": "大健康产业链",
+            "text": "围绕医疗服务、医疗贸易与健康管理，关注跨境医疗资源整合的长期机会。"
+          },
+          {
+            "title": "数字经济与 AI 应用",
+            "text": "关注 AI 在营销、内容与企业服务中的落地应用，以及支撑品牌出海的数字基础设施。"
+          },
+          {
+            "title": "中葡跨境服务",
+            "text": "依托中葡平台，关注贸易、会展、专业服务等连接中国与葡语国家的服务机会。"
+          }
         ]
       },
-      "insights": {"title": "集团动态", "subtitle": "集团的最新进展与重要公告", "readMore": "阅读更多", "backTo": "返回集团动态"},
+      "insights": {
+        "title": "集团动态",
+        "subtitle": "集团的最新进展与重要公告",
+        "readMore": "阅读更多",
+        "backTo": "返回集团动态"
+      },
       "contact": {
         "title": "联系我们",
         "subtitle": "期待与您探讨合作的可能",
@@ -577,7 +842,14 @@
       }
     },
     "en": {
-      "nav": {"home": "Home", "about": "About", "approach": "Approach", "portfolio": "Portfolio", "insights": "Insights", "contact": "Contact"},
+      "nav": {
+        "home": "Home",
+        "about": "About",
+        "approach": "Approach",
+        "portfolio": "Portfolio",
+        "insights": "Insights",
+        "contact": "Contact"
+      },
       "footer": {
         "description": "A diversified investment holding group rooted in Macao, reaching across the Greater Bay Area and beyond, participating in high-growth industries with long-term capital.",
         "quickLinks": "Quick Links",
@@ -592,18 +864,39 @@
         "cta1": "About the Group",
         "cta2": "Our Portfolio",
         "stats": [
-          {"value": "2", "label": "Core portfolio companies"},
-          {"value": "3", "label": "Investment sectors"},
-          {"value": "4", "label": "Languages covered"},
-          {"value": "MACAO", "label": "Place of incorporation"}
+          {
+            "value": "2",
+            "label": "Core portfolio companies"
+          },
+          {
+            "value": "3",
+            "label": "Investment sectors"
+          },
+          {
+            "value": "4",
+            "label": "Languages covered"
+          },
+          {
+            "value": "MACAO",
+            "label": "Place of incorporation"
+          }
         ],
         "sectorsKicker": "INVESTMENT SECTORS",
         "sectorsTitle": "Three high-growth arenas",
         "sectorsSubtitle": "We go deep, not broad — investing only in industries we truly understand.",
         "sectors": [
-          {"title": "Healthcare & Cross-Border Medical", "text": "Building around cross-border healthcare consulting, medical trade and the health services ecosystem, connecting international medical resources with Greater Bay Area demand."},
-          {"title": "Digital Technology & Go-Global", "text": "Investing in AI-driven digital marketing, social media matrices and smart hardware that help brands reach global markets."},
-          {"title": "Integrated Cross-Border Services", "text": "Leveraging Macao's platform between China and Portuguese-speaking countries and its GBA location to develop cross-border trade, corporate services and resource matching."}
+          {
+            "title": "Healthcare & Cross-Border Medical",
+            "text": "Building around cross-border healthcare consulting, medical trade and the health services ecosystem, connecting international medical resources with Greater Bay Area demand."
+          },
+          {
+            "title": "Digital Technology & Go-Global",
+            "text": "Investing in AI-driven digital marketing, social media matrices and smart hardware that help brands reach global markets."
+          },
+          {
+            "title": "Integrated Cross-Border Services",
+            "text": "Leveraging Macao's platform between China and Portuguese-speaking countries and its GBA location to develop cross-border trade, corporate services and resource matching."
+          }
         ],
         "portfolioKicker": "OUR COMPANIES",
         "portfolioTitle": "Companies we hold and nurture for the long term",
@@ -633,10 +926,22 @@
         "valuesKicker": "CORE VALUES",
         "valuesTitle": "Four principles we stand by",
         "values": [
-          {"title": "Long-Termism", "text": "We think in decades, reject short-term arbitrage, and grow alongside our companies."},
-          {"title": "Industrial Synergy", "text": "We foster resource sharing and business collaboration across our portfolio to amplify its combined value."},
-          {"title": "Compliance & Prudence", "text": "We hold the compliance baseline firmly and put risk management ahead of returns."},
-          {"title": "Openness & Shared Success", "text": "We connect international resources with an open mindset and share the fruits of growth with our partners."}
+          {
+            "title": "Long-Termism",
+            "text": "We think in decades, reject short-term arbitrage, and grow alongside our companies."
+          },
+          {
+            "title": "Industrial Synergy",
+            "text": "We foster resource sharing and business collaboration across our portfolio to amplify its combined value."
+          },
+          {
+            "title": "Compliance & Prudence",
+            "text": "We hold the compliance baseline firmly and put risk management ahead of returns."
+          },
+          {
+            "title": "Openness & Shared Success",
+            "text": "We connect international resources with an open mindset and share the fruits of growth with our partners."
+          }
         ],
         "govKicker": "SHAREHOLDER & GOVERNANCE",
         "govTitle": "Capital, governance and resource synergy",
@@ -651,26 +956,59 @@
         "principlesKicker": "INVESTMENT PRINCIPLES",
         "principlesTitle": "Four principles we never compromise",
         "principles": [
-          {"title": "Long-Term Holding", "text": "We accompany companies with patient capital through market cycles, sharing in their long-term value."},
-          {"title": "Value Creation", "text": "Beyond capital, we empower companies with governance, resources and strategy to create real value."},
-          {"title": "Sector Focus", "text": "We stay within what we truly understand: healthcare, digital technology and cross-border services."},
-          {"title": "Risk First", "text": "We place risk assessment ahead of return expectations and make every investment decision with prudence."}
+          {
+            "title": "Long-Term Holding",
+            "text": "We accompany companies with patient capital through market cycles, sharing in their long-term value."
+          },
+          {
+            "title": "Value Creation",
+            "text": "Beyond capital, we empower companies with governance, resources and strategy to create real value."
+          },
+          {
+            "title": "Sector Focus",
+            "text": "We stay within what we truly understand: healthcare, digital technology and cross-border services."
+          },
+          {
+            "title": "Risk First",
+            "text": "We place risk assessment ahead of return expectations and make every investment decision with prudence."
+          }
         ],
         "waysKicker": "HOW WE INVEST",
         "waysTitle": "How we take part in a company's growth",
         "ways": [
-          {"title": "Control & Strategic Stakes", "text": "We hold core companies through controlling or significant minority stakes, deeply engaged in their long-term development."},
-          {"title": "Strategic Synergy", "text": "We drive collaboration among investee companies across brand, channels, technology and talent."},
-          {"title": "Resource Empowerment", "text": "We leverage Macao's China-PSC platform and GBA networks to connect companies with cross-border resources."}
+          {
+            "title": "Control & Strategic Stakes",
+            "text": "We hold core companies through controlling or significant minority stakes, deeply engaged in their long-term development."
+          },
+          {
+            "title": "Strategic Synergy",
+            "text": "We drive collaboration among investee companies across brand, channels, technology and talent."
+          },
+          {
+            "title": "Resource Empowerment",
+            "text": "We leverage Macao's China-PSC platform and GBA networks to connect companies with cross-border resources."
+          }
         ],
         "macaoKicker": "WHY MACAO",
         "macaoTitle": "Macao: a unique pivot between China and the world",
         "macaoSubtitle": "Institutions, taxation, platform and location form the foundation of the Group's strategy.",
         "macao": [
-          {"title": "Institutional Strength", "text": "A free port and separate customs territory under \"One Country, Two Systems\", with convenient flows of capital and people."},
-          {"title": "Tax Advantages", "text": "A simple, low-tax regime that provides a friendly environment for operations and long-term investment."},
-          {"title": "China-PSC Platform", "text": "A commercial and trade cooperation platform between China and Portuguese-speaking countries, connecting to vast Lusophone markets."},
-          {"title": "Hengqin Cooperation Zone", "text": "The policy dividends of the Guangdong-Macao In-Depth Cooperation Zone in Hengqin open new space for cross-border industrial synergy."}
+          {
+            "title": "Institutional Strength",
+            "text": "A free port and separate customs territory under \"One Country, Two Systems\", with convenient flows of capital and people."
+          },
+          {
+            "title": "Tax Advantages",
+            "text": "A simple, low-tax regime that provides a friendly environment for operations and long-term investment."
+          },
+          {
+            "title": "China-PSC Platform",
+            "text": "A commercial and trade cooperation platform between China and Portuguese-speaking countries, connecting to vast Lusophone markets."
+          },
+          {
+            "title": "Hengqin Cooperation Zone",
+            "text": "The policy dividends of the Guangdong-Macao In-Depth Cooperation Zone in Hengqin open new space for cross-border industrial synergy."
+          }
         ]
       },
       "portfolio": {
@@ -683,12 +1021,26 @@
         "focusTitle": "Areas we continue to watch",
         "focusSubtitle": "Beyond the current portfolio, we keep researching opportunities complementary to the Group's capabilities.",
         "focus": [
-          {"title": "Healthcare Value Chain", "text": "Around medical services, medical trade and health management, we follow long-term opportunities in cross-border medical resource integration."},
-          {"title": "Digital Economy & AI Applications", "text": "We watch applied AI in marketing, content and enterprise services, as well as the digital infrastructure behind brands going global."},
-          {"title": "China-PSC Cross-Border Services", "text": "Building on the China-PSC platform, we follow opportunities in trade, exhibitions and professional services connecting China and Portuguese-speaking countries."}
+          {
+            "title": "Healthcare Value Chain",
+            "text": "Around medical services, medical trade and health management, we follow long-term opportunities in cross-border medical resource integration."
+          },
+          {
+            "title": "Digital Economy & AI Applications",
+            "text": "We watch applied AI in marketing, content and enterprise services, as well as the digital infrastructure behind brands going global."
+          },
+          {
+            "title": "China-PSC Cross-Border Services",
+            "text": "Building on the China-PSC platform, we follow opportunities in trade, exhibitions and professional services connecting China and Portuguese-speaking countries."
+          }
         ]
       },
-      "insights": {"title": "Insights", "subtitle": "The Group's latest progress and announcements", "readMore": "Read More", "backTo": "Back to Insights"},
+      "insights": {
+        "title": "Insights",
+        "subtitle": "The Group's latest progress and announcements",
+        "readMore": "Read More",
+        "backTo": "Back to Insights"
+      },
       "contact": {
         "title": "Contact Us",
         "subtitle": "We look forward to exploring opportunities together",
@@ -719,7 +1071,14 @@
       }
     },
     "pt": {
-      "nav": {"home": "Início", "about": "Sobre", "approach": "Filosofia", "portfolio": "Portefólio", "insights": "Notícias", "contact": "Contacto"},
+      "nav": {
+        "home": "Início",
+        "about": "Sobre",
+        "approach": "Filosofia",
+        "portfolio": "Portefólio",
+        "insights": "Notícias",
+        "contact": "Contacto"
+      },
       "footer": {
         "description": "Um grupo holding de investimento diversificado, sediado em Macau e com alcance na Grande Baía e no mundo, participando em indústrias de elevado crescimento com capital de longo prazo.",
         "quickLinks": "Ligações Rápidas",
@@ -734,18 +1093,39 @@
         "cta1": "Sobre o Grupo",
         "cta2": "Portefólio",
         "stats": [
-          {"value": "2", "label": "Empresas participadas nucleares"},
-          {"value": "3", "label": "Áreas de investimento"},
-          {"value": "4", "label": "Línguas abrangidas"},
-          {"value": "MACAU", "label": "Local de constituição"}
+          {
+            "value": "2",
+            "label": "Empresas participadas nucleares"
+          },
+          {
+            "value": "3",
+            "label": "Áreas de investimento"
+          },
+          {
+            "value": "4",
+            "label": "Línguas abrangidas"
+          },
+          {
+            "value": "MACAU",
+            "label": "Local de constituição"
+          }
         ],
         "sectorsKicker": "ÁREAS DE INVESTIMENTO",
         "sectorsTitle": "Três áreas de elevado crescimento",
         "sectorsSubtitle": "Preferimos profundidade a amplitude — investimos apenas em indústrias que conhecemos bem.",
         "sectors": [
-          {"title": "Saúde e Serviços Médicos Transfronteiriços", "text": "Desenvolvemos consultoria de saúde transfronteiriça, comércio médico e o ecossistema de serviços de saúde, ligando recursos médicos internacionais à procura da Grande Baía."},
-          {"title": "Tecnologia Digital e Internacionalização", "text": "Investimos em marketing digital com IA, matrizes de redes sociais e hardware inteligente que ajudam as marcas a chegar aos mercados globais."},
-          {"title": "Serviços Transfronteiriços Integrados", "text": "Tirando partido da plataforma de Macau entre a China e os países de língua portuguesa e da sua posição na Grande Baía, desenvolvemos comércio transfronteiriço, serviços empresariais e correspondência de recursos."}
+          {
+            "title": "Saúde e Serviços Médicos Transfronteiriços",
+            "text": "Desenvolvemos consultoria de saúde transfronteiriça, comércio médico e o ecossistema de serviços de saúde, ligando recursos médicos internacionais à procura da Grande Baía."
+          },
+          {
+            "title": "Tecnologia Digital e Internacionalização",
+            "text": "Investimos em marketing digital com IA, matrizes de redes sociais e hardware inteligente que ajudam as marcas a chegar aos mercados globais."
+          },
+          {
+            "title": "Serviços Transfronteiriços Integrados",
+            "text": "Tirando partido da plataforma de Macau entre a China e os países de língua portuguesa e da sua posição na Grande Baía, desenvolvemos comércio transfronteiriço, serviços empresariais e correspondência de recursos."
+          }
         ],
         "portfolioKicker": "AS NOSSAS EMPRESAS",
         "portfolioTitle": "Empresas que detemos e desenvolvemos a longo prazo",
@@ -775,10 +1155,22 @@
         "valuesKicker": "VALORES FUNDAMENTAIS",
         "valuesTitle": "Quatro princípios que defendemos",
         "values": [
-          {"title": "Longo Prazo", "text": "Pensamos em décadas, rejeitamos a arbitragem de curto prazo e crescemos lado a lado com as nossas empresas."},
-          {"title": "Sinergia Industrial", "text": "Promovemos a partilha de recursos e a colaboração entre as participadas, ampliando o valor do portefólio."},
-          {"title": "Conformidade e Prudência", "text": "Defendemos firmemente a conformidade e colocamos a gestão de risco à frente dos retornos."},
-          {"title": "Abertura e Benefício Mútuo", "text": "Ligamos recursos internacionais com uma atitude aberta e partilhamos os frutos do crescimento com os nossos parceiros."}
+          {
+            "title": "Longo Prazo",
+            "text": "Pensamos em décadas, rejeitamos a arbitragem de curto prazo e crescemos lado a lado com as nossas empresas."
+          },
+          {
+            "title": "Sinergia Industrial",
+            "text": "Promovemos a partilha de recursos e a colaboração entre as participadas, ampliando o valor do portefólio."
+          },
+          {
+            "title": "Conformidade e Prudência",
+            "text": "Defendemos firmemente a conformidade e colocamos a gestão de risco à frente dos retornos."
+          },
+          {
+            "title": "Abertura e Benefício Mútuo",
+            "text": "Ligamos recursos internacionais com uma atitude aberta e partilhamos os frutos do crescimento com os nossos parceiros."
+          }
         ],
         "govKicker": "ACIONISTA E GOVERNAÇÃO",
         "govTitle": "Capital, governação e sinergia de recursos",
@@ -793,26 +1185,59 @@
         "principlesKicker": "PRINCÍPIOS DE INVESTIMENTO",
         "principlesTitle": "Quatro princípios inegociáveis",
         "principles": [
-          {"title": "Detenção de Longo Prazo", "text": "Acompanhamos as empresas com capital paciente através dos ciclos de mercado, partilhando o seu valor de longo prazo."},
-          {"title": "Criação de Valor", "text": "Para além do capital, capacitamos as empresas com governação, recursos e estratégia, criando valor real."},
-          {"title": "Foco Setorial", "text": "Permanecemos no que conhecemos bem: saúde, tecnologia digital e serviços transfronteiriços."},
-          {"title": "Risco em Primeiro Lugar", "text": "Colocamos a avaliação de risco à frente das expectativas de retorno e decidimos cada investimento com prudência."}
+          {
+            "title": "Detenção de Longo Prazo",
+            "text": "Acompanhamos as empresas com capital paciente através dos ciclos de mercado, partilhando o seu valor de longo prazo."
+          },
+          {
+            "title": "Criação de Valor",
+            "text": "Para além do capital, capacitamos as empresas com governação, recursos e estratégia, criando valor real."
+          },
+          {
+            "title": "Foco Setorial",
+            "text": "Permanecemos no que conhecemos bem: saúde, tecnologia digital e serviços transfronteiriços."
+          },
+          {
+            "title": "Risco em Primeiro Lugar",
+            "text": "Colocamos a avaliação de risco à frente das expectativas de retorno e decidimos cada investimento com prudência."
+          }
         ],
         "waysKicker": "COMO INVESTIMOS",
         "waysTitle": "Como participamos no crescimento das empresas",
         "ways": [
-          {"title": "Controlo e Participações Estratégicas", "text": "Detemos empresas nucleares através de participações de controlo ou minorias relevantes, profundamente envolvidos no seu desenvolvimento de longo prazo."},
-          {"title": "Sinergia Estratégica", "text": "Impulsionamos a colaboração entre participadas em marca, canais, tecnologia e talento."},
-          {"title": "Capacitação com Recursos", "text": "Aproveitamos a plataforma China-PLP de Macau e as redes da Grande Baía para ligar as empresas a recursos transfronteiriços."}
+          {
+            "title": "Controlo e Participações Estratégicas",
+            "text": "Detemos empresas nucleares através de participações de controlo ou minorias relevantes, profundamente envolvidos no seu desenvolvimento de longo prazo."
+          },
+          {
+            "title": "Sinergia Estratégica",
+            "text": "Impulsionamos a colaboração entre participadas em marca, canais, tecnologia e talento."
+          },
+          {
+            "title": "Capacitação com Recursos",
+            "text": "Aproveitamos a plataforma China-PLP de Macau e as redes da Grande Baía para ligar as empresas a recursos transfronteiriços."
+          }
         ],
         "macaoKicker": "PORQUÊ MACAU",
         "macaoTitle": "Macau: um ponto de apoio único entre a China e o mundo",
         "macaoSubtitle": "Instituições, fiscalidade, plataforma e localização constituem o fundamento da estratégia do Grupo.",
         "macao": [
-          {"title": "Força Institucional", "text": "Porto franco e território aduaneiro separado no quadro de \"Um País, Dois Sistemas\", com fluxos convenientes de capital e pessoas."},
-          {"title": "Vantagens Fiscais", "text": "Um regime fiscal simples e de baixa tributação, favorável à operação e ao investimento de longo prazo."},
-          {"title": "Plataforma China-PLP", "text": "Plataforma de cooperação comercial entre a China e os países de língua portuguesa, ligando a vastos mercados lusófonos."},
-          {"title": "Zona de Cooperação de Hengqin", "text": "Os dividendos políticos da Zona de Cooperação Aprofundada Guangdong-Macau em Hengqin abrem novo espaço para a sinergia industrial transfronteiriça."}
+          {
+            "title": "Força Institucional",
+            "text": "Porto franco e território aduaneiro separado no quadro de \"Um País, Dois Sistemas\", com fluxos convenientes de capital e pessoas."
+          },
+          {
+            "title": "Vantagens Fiscais",
+            "text": "Um regime fiscal simples e de baixa tributação, favorável à operação e ao investimento de longo prazo."
+          },
+          {
+            "title": "Plataforma China-PLP",
+            "text": "Plataforma de cooperação comercial entre a China e os países de língua portuguesa, ligando a vastos mercados lusófonos."
+          },
+          {
+            "title": "Zona de Cooperação de Hengqin",
+            "text": "Os dividendos políticos da Zona de Cooperação Aprofundada Guangdong-Macau em Hengqin abrem novo espaço para a sinergia industrial transfronteiriça."
+          }
         ]
       },
       "portfolio": {
@@ -825,12 +1250,26 @@
         "focusTitle": "Áreas que continuamos a acompanhar",
         "focusSubtitle": "Para além do portefólio atual, continuamos a estudar oportunidades complementares às capacidades do Grupo.",
         "focus": [
-          {"title": "Cadeia de Valor da Saúde", "text": "Em torno dos serviços médicos, comércio médico e gestão de saúde, acompanhamos oportunidades de longo prazo na integração de recursos médicos transfronteiriços."},
-          {"title": "Economia Digital e Aplicações de IA", "text": "Acompanhamos a aplicação da IA no marketing, conteúdo e serviços empresariais, bem como a infraestrutura digital que apoia a internacionalização das marcas."},
-          {"title": "Serviços Transfronteiriços China-PLP", "text": "Com base na plataforma China-PLP, acompanhamos oportunidades em comércio, exposições e serviços profissionais que ligam a China e os países de língua portuguesa."}
+          {
+            "title": "Cadeia de Valor da Saúde",
+            "text": "Em torno dos serviços médicos, comércio médico e gestão de saúde, acompanhamos oportunidades de longo prazo na integração de recursos médicos transfronteiriços."
+          },
+          {
+            "title": "Economia Digital e Aplicações de IA",
+            "text": "Acompanhamos a aplicação da IA no marketing, conteúdo e serviços empresariais, bem como a infraestrutura digital que apoia a internacionalização das marcas."
+          },
+          {
+            "title": "Serviços Transfronteiriços China-PLP",
+            "text": "Com base na plataforma China-PLP, acompanhamos oportunidades em comércio, exposições e serviços profissionais que ligam a China e os países de língua portuguesa."
+          }
         ]
       },
-      "insights": {"title": "Notícias", "subtitle": "Os progressos mais recentes e anúncios do Grupo", "readMore": "Ler Mais", "backTo": "Voltar às Notícias"},
+      "insights": {
+        "title": "Notícias",
+        "subtitle": "Os progressos mais recentes e anúncios do Grupo",
+        "readMore": "Ler Mais",
+        "backTo": "Voltar às Notícias"
+      },
       "contact": {
         "title": "Contacte-nos",
         "subtitle": "Esperamos explorar oportunidades em conjunto",

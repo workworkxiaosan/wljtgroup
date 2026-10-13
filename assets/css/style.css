@@ -207,6 +207,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
   letter-spacing: 0; margin: 0 auto 1.75rem; max-width: 58rem;
 }
 html[lang="en"] .hero h1, html[lang="pt"] .hero h1 { font-size: clamp(1.75rem, 4.2vw, 3.25rem); line-height: 1.28; }
+.hero h1 .keep { white-space: nowrap; }
 .hero-sub {
   font-size: clamp(1rem, 1.6vw, 1.25rem); line-height: 1.85;
   max-width: 44rem; margin: 0 auto 3rem; color: rgba(250, 249, 246, .78);

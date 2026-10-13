@@ -20,6 +20,16 @@ PAGES = ['index', 'about', 'approach', 'portfolio', 'insights', 'contact']
 
 def esc(s): return html.escape(str(s), quote=True)
 
+# 首頁大標題中不可拆行的短語（CJK 換行可在任意字符間發生，用 nowrap span 保住關鍵詞）
+KEEP_TOGETHER = {'zh-TW': '多元化', 'zh-CN': '多元化'}
+
+def esc_keep(s, lang):
+    out = esc(s)
+    phrase = KEEP_TOGETHER.get(lang)
+    if phrase:
+        out = out.replace(phrase, f'<span class="keep">{phrase}</span>')
+    return out
+
 def t(lang, *keys):
     d = I18N[lang]
     for k in keys: d = d[k]
@@ -297,7 +307,7 @@ def render_index(lang):
   <div class="container">
     <div class="reveal">
       <span class="kicker gold">{esc(hm['heroKicker'])}</span>
-      <h1>{esc(hm['heroTitle'])}</h1>
+      <h1>{esc_keep(hm['heroTitle'], lang)}</h1>
       <p class="hero-sub">{esc(hm['heroSubtitle'])}</p>
       <div class="cta-row">
         <a class="btn btn-gold" href="{page_href('about', lang, lang)}">{esc(hm['cta1'])}{icon('arrow')}</a>
