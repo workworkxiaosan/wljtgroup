@@ -97,21 +97,22 @@ SOCIAL = [('facebook', 'Facebook'), ('linkedin', 'LinkedIn'), ('twitter', 'Twitt
 
 # ---------------- 頁頭 / 頁尾 ----------------
 def brand_block(lang, pre):
-    logo = pre + asset('img/logo.svg', lang)
+    logo = pre + asset('img/logo-mark.png', lang)
     hp = pre + page_href('index', lang, lang)
     return (f'<a href="{hp}" class="logo-link"><img src="{logo}" alt="{esc(site_name(lang))}">'
             f'<span class="wordmark"><span class="wordmark-zh">{esc(C["site_short"]["zh-TW"])}</span>'
-            f'<span class="wordmark-en">WLJT GROUP</span></span></a>')
+            f'<span class="wordmark-en">WANLI JINTENG</span></span></a>')
 
-def header(page, lang, pre=''):
+def header(page, lang, pre='', url_path=None):
     nav = I18N[lang]['nav']
+    current_path = url_path or page
     hp = lambda p: pre + page_href(p, lang, lang)
     links = ''.join(
         f'<a href="{hp(p)}" class="{"active" if p == page else ""}">{esc(nav[p if p != "index" else "home"])}</a>'
         for p in PAGES)
     lang_btn_label = next(l['label'] for l in C['languages'] if l['code'] == lang)
     lang_items = ''.join(
-        f'<a href="{pre + page_href(page, l["code"], lang)}" class="{"current" if l["code"] == lang else ""}">{l["flag"]} {esc(l["label"])}</a>'
+        f'<a href="{pre + page_href(current_path, l["code"], lang)}" class="{"current" if l["code"] == lang else ""}">{l["flag"]} {esc(l["label"])}</a>'
         for l in C['languages'])
     mlinks = ''.join(
         f'<a href="{hp(p)}" class="mnav {"active" if p == page else ""}">{esc(nav[p if p != "index" else "home"])}</a>'
@@ -122,21 +123,21 @@ def header(page, lang, pre=''):
     <nav class="main-nav">{links}</nav>
     <div class="header-actions">
       <div class="lang-switch">
-        <button type="button" aria-haspopup="true">{icon('globe')}<span>{esc(lang_btn_label)}</span></button>
+        <button type="button" aria-haspopup="true" aria-expanded="false">{icon('globe')}<span>{esc(lang_btn_label)}</span></button>
         <div class="dropdown">{lang_items}</div>
       </div>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">{icon('menu')}</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-controls="mobile-panel" aria-expanded="false">{icon('menu')}</button>
     </div>
   </div>
 </header>
 <div class="panel-overlay" id="panel-overlay"></div>
-<aside class="mobile-panel" id="mobile-panel">
+<aside class="mobile-panel" id="mobile-panel" inert aria-hidden="true">
   <div style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
-    <button class="menu-toggle close" onclick="document.getElementById('mobile-panel').classList.remove('open');document.getElementById('panel-overlay').classList.remove('open');" aria-label="Close">{icon('close')}</button>
+    <button class="menu-toggle close" id="menu-close" type="button" aria-label="Close">{icon('close')}</button>
   </div>
   {mlinks}
   <div class="lang-switch" style="margin-top:1rem;">
-    <button type="button" aria-haspopup="true">{icon('globe')}<span>{esc(lang_btn_label)}</span></button>
+    <button type="button" aria-haspopup="true" aria-expanded="false">{icon('globe')}<span>{esc(lang_btn_label)}</span></button>
     <div class="dropdown" style="position:static;box-shadow:none;border:none;display:block;">{lang_items}</div>
   </div>
 </aside>'''
@@ -145,7 +146,10 @@ def footer(lang, pre=''):
     nav = I18N[lang]['nav']
     ft = I18N[lang]['footer']
     hp = lambda p: pre + page_href(p, lang, lang)
-    social = ''.join(f'<a href="{C["social"][s]}" aria-label="{label}">{icon(s)}</a>' for s, label in SOCIAL)
+    social = ''.join(
+        f'<a href="{esc(C["social"][s])}" aria-label="{label}">{icon(s)}</a>'
+        for s, label in SOCIAL if C['social'].get(s, '').strip() not in ('', '#'))
+    social_row = f'<div class="social-row">{social}</div>' if social else ''
     companies = ''.join(
         f'<li><a href="{p["url"]}" target="_blank" rel="noopener">{esc(p["name"][lang])}</a></li>'
         for p in C['portfolio'])
@@ -155,7 +159,8 @@ def footer(lang, pre=''):
       <div class="footer-col">
         {brand_block(lang, pre)}
         <p class="desc">{esc(ft['description'])}</p>
-        <div class="social-row">{social}</div>
+        <p class="brand-tagline">Vast Connections, Wealth Soaring All Over The World</p>
+        {social_row}
       </div>
       <div class="footer-col">
         <h4>{esc(ft['quickLinks'])}</h4>
@@ -191,18 +196,21 @@ def page_shell(page, lang, title, description, body, depth=0, url_path=None, og_
     pre = '../' * depth
     css = pre + asset('css/style.css', lang)
     js = pre + asset('js/main.js', lang)
+    current_path = url_path or page
     lang_links = ''.join(
-        f'<link rel="alternate" hreflang="{l}" href="{abs_url(url_path or page, l)}">'
+        f'<link rel="alternate" hreflang="{l}" href="{abs_url(current_path, l)}">'
         for l in LANGS)
-    canonical = abs_url(url_path or page, lang)
+    lang_links += f'<link rel="alternate" hreflang="x-default" href="{abs_url(current_path, DEFAULT)}">'
+    canonical = abs_url(current_path, lang)
     base = C.get('site_url', 'https://www.wljtgroup.com').rstrip('/')
     og_image = og_image or (base + '/assets/img/og-cover.jpg')
     og_locale = {'zh-TW': 'zh_TW', 'zh-CN': 'zh_CN', 'en': 'en_US', 'pt': 'pt_PT'}[lang]
+    og_type = 'article' if current_path.startswith('insights/') else 'website'
     sn = site_name(lang)
     jsonld = ''
     if page == 'index':
         jsonld = f'''<script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"Organization","name":"{sn}","alternateName":"{C['site_name_en']}","url":"{base}","logo":"{base}/assets/img/logo.svg","email":"{C['email']}"}}
+  {{"@context":"https://schema.org","@type":"Organization","name":"{sn}","alternateName":"{C['site_name_en']}","url":"{base}","logo":"{base}/assets/img/logo-full.png","email":"{C['email']}"}}
   </script>'''
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -212,7 +220,7 @@ def page_shell(page, lang, title, description, body, depth=0, url_path=None, og_
   <title>{esc(title)} | {esc(sn)}</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{canonical}">
-  <meta property="og:type" content="{'website' if page == 'index' else 'article'}">
+  <meta property="og:type" content="{og_type}">
   <meta property="og:site_name" content="{esc(sn)}">
   <meta property="og:locale" content="{og_locale}">
   <meta property="og:title" content="{esc(title)}">
@@ -223,7 +231,7 @@ def page_shell(page, lang, title, description, body, depth=0, url_path=None, og_
   <meta name="twitter:title" content="{esc(title)}">
   <meta name="twitter:description" content="{esc(description)}">
   <meta name="twitter:image" content="{og_image}">
-  <link rel="icon" type="image/svg+xml" href="{pre + asset('img/logo.svg', lang)}">
+  <link rel="icon" type="image/png" href="{pre + asset('img/logo-mark.png', lang)}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -233,8 +241,9 @@ def page_shell(page, lang, title, description, body, depth=0, url_path=None, og_
   {jsonld}
 </head>
 <body class="page-{page}">
-{header(page, lang, pre)}
-<main>
+<a class="skip-link" href="#main-content">{esc(t(lang, 'skip'))}</a>
+{header(page, lang, pre, current_path)}
+<main id="main-content">
 {body}
 </main>
 {footer(lang, pre)}
@@ -562,7 +571,7 @@ def render_insight_article(lang, a):
 # ---------------- 聯繫我們 ----------------
 def render_contact(lang):
     ct = I18N[lang]['contact']
-    err_req, err_email, submitting = esc(ct['errorRequired']), esc(ct['errorEmail']), esc(ct['submitting'])
+    err_req, err_email = esc(ct['errorRequired']), esc(ct['errorEmail'])
     body = page_hero(lang, 'contact') + f'''
 <section class="section-spacing">
   <div class="container">
@@ -583,24 +592,24 @@ def render_contact(lang):
       </div>
       <div class="card reveal">
         <h3 class="form-title">{esc(ct['formTitle'])}</h3>
-        <form class="ajax-form" data-err-required="{err_req}" data-err-email="{err_email}" data-submitting="{submitting}" novalidate>
+        <form class="ajax-form" data-err-required="{err_req}" data-err-email="{err_email}" novalidate>
           <div class="form-group">
             <label for="c-name">{esc(ct['name'])}</label>
-            <input id="c-name" name="name" type="text" placeholder="{esc(ct['namePlaceholder'])}" required>
-            <p class="err-msg" data-for="name"></p>
+            <input id="c-name" name="name" type="text" placeholder="{esc(ct['namePlaceholder'])}" aria-describedby="c-name-error" required>
+            <p class="err-msg" id="c-name-error" data-for="name" role="alert"></p>
           </div>
           <div class="form-group">
             <label for="c-email">{esc(ct['emailLabel'])}</label>
-            <input id="c-email" name="email" type="email" placeholder="{esc(ct['emailPlaceholder'])}" required>
-            <p class="err-msg" data-for="email"></p>
+            <input id="c-email" name="email" type="email" placeholder="{esc(ct['emailPlaceholder'])}" aria-describedby="c-email-error" required>
+            <p class="err-msg" id="c-email-error" data-for="email" role="alert"></p>
           </div>
           <div class="form-group">
             <label for="c-message">{esc(ct['message'])}</label>
-            <textarea id="c-message" name="message" placeholder="{esc(ct['messagePlaceholder'])}" required></textarea>
-            <p class="err-msg" data-for="message"></p>
+            <textarea id="c-message" name="message" placeholder="{esc(ct['messagePlaceholder'])}" aria-describedby="c-message-error" required></textarea>
+            <p class="err-msg" id="c-message-error" data-for="message" role="alert"></p>
           </div>
           <button type="submit" class="btn btn-gold-solid">{esc(ct['submit'])}</button>
-          <div class="form-toast">{icon('check')}{esc(ct['successMessage'])}</div>
+          <div class="form-toast" role="status">{esc(ct['note'])}</div>
         </form>
       </div>
     </div>

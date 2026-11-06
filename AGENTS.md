@@ -6,21 +6,23 @@
 
 - `content.json` — 全部網站內容的唯一母本（4 語言、集團動態文章、旗下企業資料）。**更新內容只改這裡**。
 - `build.py` — 讀 `content.json` 生成靜態頁面到 `dist/`（含 `dist/CNAME`，內容 `www.wljtgroup.com`）。語言目錄：繁中在根目錄，其他在 `zh-CN/`、`en/`、`pt/`。
-- `assets/` — 源頭樣式/腳本/圖片，`build.py` 會拷貝進 `dist/`。`logo.svg` 為自製金線「萬」字標（兼作 favicon）；`og-cover.jpg` 是社交分享圖（1200×630，PIL 生成）。
+- `assets/` — 源頭樣式/腳本/圖片，`build.py` 會拷貝進 `dist/`。現行品牌標誌為 `logo-mark.png`（320×314，透明底，用於頁頭/頁尾及 favicon）與 `logo-full.png`（600×684，透明底，含完整英文公司名及標語，用於 Organization JSON-LD）；舊 `logo.svg` 已停用。`og-cover.jpg` 是社交分享圖（1200×630，已套用新標誌）。
 - `dist/` — 生成物，**不要手改**，已被 .gitignore 忽略。除 24 個頁面外還自動生成 `robots.txt`、`sitemap.xml`（含 4 語言 hreflang）、`404.html`。
 - `.scrape/` — 舊 WordPress 佔位站及兩家被投企業官網的抓取備份（`NOTES.md` 是被投企業全部事實的核對來源）。
 
 ## 更新流程
 
 1. 改 `content.json`（加集團動態文章 = 在 `insights` 數組加一條，4 語言都填；帶 `slug` 和 `body`（每語言是段落數組）會自動生成詳情頁 `insights/{slug}.html`，列表「閱讀更多」自動連到該頁）。
-2. `python3 build.py`。
+2. `python3 build.py && python3 .github/scripts/audit_site.py`（站內連結/資源、canonical、hreflang、sitemap 審計須通過）。
 3. `git add -A && git commit -m "..." && git push`。
 4. GitHub Pages 部署後線上生效。
+
+雙週維護：`.github/workflows/site-maintenance.yml` 每月 1、15 日 03:17 UTC（澳門約 11:17）及手動觸發時乾淨構建並運行 `.github/scripts/audit_site.py`；失敗會建立或更新固定標題的 GitHub issue，成功不提交、不改網站。排程可能受 GitHub 延遲，外部連結、視覺、內容事實與無障礙仍需人工/代理復查後迭代修復。
 
 ## 關鍵事實
 
 - 頁面共 6 個（`PAGES`）：index/about/approach/portfolio/insights/contact，× 4 語言 = 24 頁 + 3 篇動態詳情頁 × 4 語言。
-- 公司名 4 語言（`content.json` 的 `site_names`）：zh-TW「澳門萬里金騰集團有限公司」、zh-CN「澳门万里金腾集团有限公司」、en「Macao WLJT Group Limited」（**暫定，待與註冊文件核對**）、pt「Grupo WLJT de Macau, Limitada」（**暫定，待核對**）。
+- 公司名 4 語言（`content.json` 的 `site_names`）：zh-TW「澳門萬里金騰集團有限公司」、zh-CN「澳门万里金腾集团有限公司」、en「Macau Wanli Jinteng Group Limited」（依品牌文檔及現行標誌）、pt「Grupo WLJT de Macau, Limitada」（**暫定，待核對**，未隨英文品牌更新改動）。頁頭/頁尾英文字標為「WANLI JINTENG」，頁尾品牌標語為「Vast Connections, Wealth Soaring All Over The World」。
 - **佔位待確認**：email `info@wljtgroup.com` 為佔位；社交鏈接（FB/LinkedIn/Twitter）在 `social` 字段，目前是 `#`。確認後改 `content.json` 重建即可。地址已確認（2026-10）：澳門湖畔南街中國與葡語國家商貿合作服務平台綜合體辦公樓B1（pt 街名官方為 Rua Sul de Entre Lagos），在 `content.json` 的 `address` 字段 4 語言。首頁大標題「多元化」用 `build.py` 的 `KEEP_TOGETHER` + `.keep{white-space:nowrap}` 防止拆行。
 - 旗下企業（`content.json` 的 `portfolio` 數組，含 4 語言名稱/業務/關鍵數據/官網鏈接）：
   1. **澳門海易通達科技有限公司**（Macao NexMatrix Technology Limited，https://nexmatrixs.com/）——AI 社媒矩陣與品牌出海一站式平台，旗艦硬件 NEXUS ONE。數據（5.3億+月活覆蓋/100+顧問/24 安卓實例/6 大服務維度）以 `.scrape/NOTES.md` 為準。
@@ -28,7 +30,7 @@
 - 域名 `www.wljtgroup.com`：`site_url` 是絕對 URL 的基準（canonical/OG/sitemap），換域名時改它。默認語言繁中在根路徑（如 `/about.html`）。
 - 部署（2026-10 已上線）：GitHub 倉庫 `workworkxiaosan/wljtgroup`（public），push 到 main 觸發 `.github/workflows/deploy.yml`（build.py → upload-pages-artifact → deploy-pages）。DNS 在 Hostinger（API 管理）：`@` A 記錄 → GitHub Pages（185.199.108.153/109.153/110.153/111.153），`www` CNAME → `workworkxiaosan.github.io.`；MX/SPF/DMARC/DKIM/autodiscover/autoconfig 郵件記錄保留不動，`ftp` A 記錄是舊托管遺留。注意：Hostinger DNS API 覆蓋 zone 前，須先用 DELETE `/api/dns/v1/zones/{domain}`（body `{"filters":[{"name":"@","type":"ALIAS"}]}`）刪掉舊 ALIAS，否則報「ALIAS must not be used with A」。
 - 每頁自動帶 canonical / Open Graph / Twitter Card / hreflang 標籤，首頁帶 Organization JSON-LD（`site_names` 按各語言版本書寫，簡體頁用簡體公司名）。
-- 設計：深墨藍黑（#0C1B2A / #101820）+ 香檳金點綴（#C3A24B / #B08D3E）+ 米白背景（#FAF9F6）；字體 Playfair Display（標題）+ DM Sans（正文），與橋霍頓站形成集團視覺延續；純手寫 CSS/JS，無框架。
+- 設計：深墨藍黑（#0C1B2A / #101820）+ 品牌金點綴（#B8A070 / #967F4E）+ 米白背景（#FAF9F6）；字體 Playfair Display（標題）+ DM Sans（正文），與橋霍頓站形成集團視覺延續；純手寫 CSS/JS，無框架。
 - 繁體用港澳寫法（「平台/了解/群體」的 台/了/群 是正字）。
 - 聯繫表單為前端演示，未接後端；如需真正收集留言可接 Formspree 等服務。
 - 列表排序：集團動態按 date 降序，首頁最新動態取前 3 條。

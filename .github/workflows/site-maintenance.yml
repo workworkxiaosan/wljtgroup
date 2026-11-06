@@ -1,0 +1,74 @@
+name: Website biweekly maintenance
+
+on:
+  schedule:
+    - cron: '17 3 1,15 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: website-maintenance
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Clean build
+        run: |
+          rm -rf dist
+          python3 build.py
+
+      - name: Audit generated site
+        run: python3 .github/scripts/audit_site.py --report audit-report.md
+
+      - name: Publish audit summary
+        if: always() && hashFiles('audit-report.md') != ''
+        run: cat audit-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create or update maintenance issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TITLE: '網站雙週體檢：發現待修復問題'
+        run: |
+          {
+            printf '%s\n\n' '<!-- wljt-site-audit -->'
+            printf '%s\n\n' "本次自動體檢未通過，請依下列結果安排迭代修復。"
+            printf '%s\n' "- Workflow：$RUN_URL"
+            printf '%s\n\n' "- Commit：$GITHUB_SHA"
+            if [ -f audit-report.md ]; then
+              cat audit-report.md
+            else
+              printf '%s\n' '乾淨構建或審計在產生報告前失敗，請查看 workflow 日誌。'
+            fi
+          } > issue-body.md
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('issue-body.md')
+          body = path.read_text(encoding='utf-8')
+          if len(body) > 55000:
+              path.write_text(body[:55000] + '\n\n報告過長已截斷，完整錯誤請查看 workflow 日誌。\n', encoding='utf-8')
+          PY
+          existing=$(gh api --paginate "repos/$REPO/issues?state=open&per_page=100" --jq '.[] | select((.title == env.TITLE) and (.pull_request | not)) | .number' | head -n 1)
+          if [ -n "$existing" ]; then
+            gh api --method PATCH "repos/$REPO/issues/$existing" -F body=@issue-body.md > /dev/null
+            echo "Updated issue #$existing"
+          else
+            gh api --method POST "repos/$REPO/issues" -f title="$TITLE" -F body=@issue-body.md > /dev/null
+            echo "Created a maintenance issue"
+          fi

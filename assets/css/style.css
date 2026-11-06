@@ -6,9 +6,9 @@
   --navy: #0C1B2A;
   --navy-2: #101820;
   --navy-3: #16273B;
-  --gold: #C3A24B;
-  --gold-2: #B08D3E;
-  --gold-soft: rgba(195, 162, 75, .12);
+  --gold: #B8A070;
+  --gold-2: #967F4E;
+  --gold-soft: rgba(184, 160, 112, .12);
   --cream: #FAF9F6;
   --cream-2: #F3F1EA;
   --ink: #1B2531;
@@ -35,6 +35,19 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 
 .container { margin: 0 auto; max-width: 76rem; padding-left: 1.25rem; padding-right: 1.25rem; }
 @media (min-width: 1024px) { .container { padding-left: 2rem; padding-right: 2rem; } }
+
+/* ---------- 跳至主要內容 ---------- */
+.skip-link {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.skip-link:focus {
+  position: fixed; top: 1rem; left: 1rem; z-index: 100;
+  width: auto; height: auto; margin: 0; padding: .75rem 1rem;
+  overflow: visible; clip: auto; white-space: normal;
+  background: var(--gold); color: var(--navy); border-radius: var(--radius);
+  font-weight: 600; outline: 2px solid var(--cream); outline-offset: 2px;
+}
 
 .section-spacing { padding-top: 5rem; padding-bottom: 5rem; }
 @media (min-width: 768px) { .section-spacing { padding-top: 6.5rem; padding-bottom: 6.5rem; } }
@@ -109,8 +122,8 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .site-header .container { display: flex; align-items: center; justify-content: space-between; height: 4.5rem; }
 .logo-link { display: flex; align-items: center; gap: .75rem; }
 .logo-link:hover { opacity: .85; }
-.logo-link img { height: 2.5rem; width: auto; }
-.wordmark { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-link img { height: 2.5rem; width: auto; flex-shrink: 0; }
+.wordmark { display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap; }
 .wordmark-zh { font-family: var(--font-serif); font-size: 1.0625rem; font-weight: 600; color: var(--cream); letter-spacing: .08em; }
 .wordmark-en { font-size: .625rem; letter-spacing: .34em; color: var(--gold); font-weight: 600; }
 .main-nav { display: none; align-items: center; gap: .25rem; }
@@ -127,7 +140,8 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .main-nav a:hover { color: var(--cream); }
 .main-nav a:hover::after, .main-nav a.active::after { transform: scaleX(1); }
 .main-nav a.active { color: var(--gold); }
-.header-actions { display: flex; align-items: center; gap: .5rem; }
+.header-actions { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; }
+@media (max-width: 379px) { .site-header .wordmark { display: none; } }
 .lang-switch { position: relative; }
 .lang-switch > button {
   display: inline-flex; align-items: center; gap: .5rem;
@@ -447,6 +461,7 @@ textarea { resize: vertical; min-height: 7rem; }
 @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; } }
 .footer-col .logo-link { margin-bottom: 1.25rem; }
 .footer-col p.desc { font-size: .875rem; line-height: 1.75; color: rgba(250, 249, 246, .55); max-width: 22rem; }
+.brand-tagline { font-size: .6875rem; letter-spacing: .18em; color: var(--gold); margin-top: .75rem; text-transform: uppercase; opacity: .85; }
 .footer-col h4 {
   font-family: var(--font-sans); font-size: .75rem; font-weight: 600;
   letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem;

@@ -12,37 +12,72 @@
   onScroll();
 
   /* ---------- 語言切換下拉 ---------- */
+  function setLangOpen(sw, open) {
+    var btn = sw.querySelector('button');
+    sw.classList.toggle('open', open);
+    if (btn) btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeLangs(except) {
+    document.querySelectorAll('.lang-switch.open').forEach(function (sw) {
+      if (sw !== except) setLangOpen(sw, false);
+    });
+  }
   document.querySelectorAll('.lang-switch').forEach(function (sw) {
     var btn = sw.querySelector('button');
+    if (!btn) return;
+    setLangOpen(sw, false);
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
-      document.querySelectorAll('.lang-switch.open').forEach(function (o) {
-        if (o !== sw) o.classList.remove('open');
-      });
-      sw.classList.toggle('open');
+      var open = !sw.classList.contains('open');
+      closeLangs(sw);
+      setLangOpen(sw, open);
     });
   });
-  document.addEventListener('click', function () {
-    document.querySelectorAll('.lang-switch.open').forEach(function (o) {
-      o.classList.remove('open');
-    });
-  });
+  document.addEventListener('click', function () { closeLangs(); });
 
   /* ---------- 手機選單 ---------- */
   var panel = document.getElementById('mobile-panel');
   var overlay = document.getElementById('panel-overlay');
   var toggle = document.getElementById('menu-toggle');
-  function closePanel() {
-    if (panel) { panel.classList.remove('open'); overlay.classList.remove('open'); }
+  var close = panel ? (document.getElementById('menu-close') || panel.querySelector('.menu-toggle.close')) : null;
+  function setPanelOpen(open, moveFocus) {
+    if (!panel || !toggle) return;
+    var wasOpen = panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    if (overlay) overlay.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+    if (open) {
+      panel.removeAttribute('inert');
+      panel.inert = false;
+    } else {
+      panel.setAttribute('inert', '');
+      panel.inert = true;
+    }
+    if (!moveFocus) return;
+    if (open && close) close.focus();
+    if (!open && wasOpen) toggle.focus();
   }
+  function closePanel() { setPanelOpen(false, true); }
   if (toggle && panel) {
+    setPanelOpen(false, false);
     toggle.addEventListener('click', function () {
-      panel.classList.add('open');
-      overlay.classList.add('open');
+      setPanelOpen(!panel.classList.contains('open'), true);
     });
-    overlay.addEventListener('click', closePanel);
+    if (close) close.addEventListener('click', closePanel);
+    if (overlay) overlay.addEventListener('click', closePanel);
     panel.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closePanel); });
   }
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    var openLang = document.querySelector('.lang-switch.open');
+    closeLangs();
+    if (openLang) {
+      var langBtn = openLang.querySelector('button');
+      if (langBtn) langBtn.focus();
+    }
+    if (panel && panel.classList.contains('open')) closePanel();
+  });
 
   /* ---------- 進場動畫 ---------- */
   var revealEls = document.querySelectorAll('.reveal');
@@ -67,42 +102,38 @@
   /* ---------- 表單校驗 + 提交 ---------- */
   document.querySelectorAll('form.ajax-form').forEach(function (form) {
     var toast = form.querySelector('.form-toast');
+    var fields = form.querySelectorAll('[required]');
+    function validateField(field) {
+      var err = form.querySelector('.err-msg[data-for="' + field.name + '"]');
+      var msg = '';
+      if (!field.value.trim()) {
+        msg = form.dataset.errRequired || '此欄位為必填項';
+      } else if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())) {
+        msg = form.dataset.errEmail || '請輸入有效的電子郵件地址';
+      }
+      field.classList.toggle('error', !!msg);
+      field.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      if (err) err.textContent = msg;
+      return !msg;
+    }
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var valid = true;
-      form.querySelectorAll('[required]').forEach(function (field) {
-        var err = form.querySelector('.err-msg[data-for="' + field.name + '"]');
-        var msg = '';
-        if (!field.value.trim()) {
-          msg = form.dataset.errRequired || '此欄位為必填項';
-        } else if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim())) {
-          msg = form.dataset.errEmail || '請輸入有效的電子郵件地址';
-        }
-        field.classList.toggle('error', !!msg);
-        if (err) err.textContent = msg;
-        if (msg) valid = false;
+      var firstInvalid = null;
+      fields.forEach(function (field) {
+        if (!validateField(field) && !firstInvalid) firstInvalid = field;
       });
-      if (!valid) return;
-      var submitBtn = form.querySelector('[type="submit"]');
-      var original = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = form.dataset.submitting || '提交中...';
-      setTimeout(function () {
-        submitBtn.disabled = false;
-        submitBtn.textContent = original;
-        form.reset();
-        if (toast) {
-          toast.classList.add('show');
-          setTimeout(function () { toast.classList.remove('show'); }, 4000);
-        }
-      }, 1000);
+      if (firstInvalid) {
+        if (toast) toast.classList.remove('show');
+        firstInvalid.focus();
+        return;
+      }
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(function () { toast.classList.remove('show'); }, 4000);
+      }
     });
-    form.querySelectorAll('input, textarea').forEach(function (field) {
-      field.addEventListener('input', function () {
-        field.classList.remove('error');
-        var err = form.querySelector('.err-msg[data-for="' + field.name + '"]');
-        if (err) err.textContent = '';
-      });
+    fields.forEach(function (field) {
+      field.addEventListener('input', function () { validateField(field); });
     });
   });
 })();
