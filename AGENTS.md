@@ -4,7 +4,7 @@
 
 ## 結構
 
-- `content.json` — 全部網站內容的唯一母本（4 語言、集團動態文章、旗下企業資料）。**更新內容只改這裡**。
+- `content.json` — 全部網站內容的唯一母本（4 語言、集團動態文章、投資項目資料）。**更新內容只改這裡**。
 - `build.py` — 讀 `content.json` 生成靜態頁面到 `dist/`（含 `dist/CNAME`，內容 `www.wljtgroup.com`）。語言目錄：繁中在根目錄，其他在 `zh-CN/`、`en/`、`pt/`。
 - `assets/` — 源頭樣式/腳本/圖片，`build.py` 會拷貝進 `dist/`。現行品牌標誌為 `logo-mark.png`（320×314，透明底，用於頁頭/頁尾及 favicon）與 `logo-full.png`（600×684，透明底，含完整英文公司名及標語，用於 Organization JSON-LD）；舊 `logo.svg` 已停用。`og-cover.jpg` 是社交分享圖（1200×630，已套用新標誌）。
 - `dist/` — 生成物，**不要手改**，已被 .gitignore 忽略。除 24 個頁面外還自動生成 `robots.txt`、`sitemap.xml`（含 4 語言 hreflang）、`404.html`。
@@ -24,7 +24,7 @@
 - 頁面共 6 個（`PAGES`）：index/about/approach/portfolio/insights/contact，× 4 語言 = 24 頁 + 3 篇動態詳情頁 × 4 語言。
 - 公司名 4 語言（`content.json` 的 `site_names`）：zh-TW「澳門萬里金騰集團有限公司」、zh-CN「澳门万里金腾集团有限公司」、en「Macau Wanli Jinteng Group Limited」（依品牌文檔及現行標誌）、pt「Grupo WLJT de Macau, Limitada」（**暫定，待核對**，未隨英文品牌更新改動）。頁頭/頁尾英文字標為「WANLI JINTENG」，頁尾品牌標語為「Vast Connections, Wealth Soaring All Over The World」。
 - **佔位待確認**：email `info@wljtgroup.com` 為佔位；社交鏈接（FB/LinkedIn/Twitter）在 `social` 字段，目前是 `#`。確認後改 `content.json` 重建即可。地址已確認（2026-10）：澳門湖畔南街中國與葡語國家商貿合作服務平台綜合體辦公樓B1（pt 街名官方為 Rua Sul de Entre Lagos），在 `content.json` 的 `address` 字段 4 語言。首頁大標題「多元化」用 `build.py` 的 `KEEP_TOGETHER` + `.keep{white-space:nowrap}` 防止拆行。
-- 旗下企業（`content.json` 的 `portfolio` 數組，含 4 語言名稱/業務/關鍵數據/官網鏈接）：
+- 投資項目（`content.json` 的 `portfolio` 數組，含 4 語言名稱/業務/關鍵數據/官網鏈接）：
   1. **澳門海易通達科技有限公司**（Macao NexMatrix Technology Limited，https://nexmatrixs.com/）——AI 社媒矩陣與品牌出海一站式平台，旗艦硬件 NEXUS ONE。數據（5.3億+月活覆蓋/100+顧問/24 安卓實例/6 大服務維度）以 `.scrape/NOTES.md` 為準。
   2. **澳門橋霍頓有限公司**（United Macao Bridge Holden Corporation Limited，https://bridgeholdengroup.com/）——跨境醫療諮詢與醫療貿易。**合規口徑必須保留**：該公司僅提供諮詢協調與專家資源匹配，**不提供直接醫療治療服務**（portfolio 頁有醒目聲明，見 `disclaimer` 字段）。數據（47+專家/23 網絡/12+專科）以 `.scrape/NOTES.md` 為準。
 - 域名 `www.wljtgroup.com`：`site_url` 是絕對 URL 的基準（canonical/OG/sitemap），換域名時改它。默認語言繁中在根路徑（如 `/about.html`）。

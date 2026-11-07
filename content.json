@@ -396,7 +396,7 @@
       "footer": {
         "description": "立足澳門、輻射灣區與全球的多元化投資控股集團，以長期資本參與高成長產業。",
         "quickLinks": "快速連結",
-        "companies": "旗下企業",
+        "companies": "投資項目",
         "contactTitle": "聯繫方式",
         "allRightsReserved": "版權所有"
       },
@@ -441,7 +441,7 @@
             "text": "依託澳門中葡平台與灣區區位優勢，佈局跨境貿易、企業服務與資源對接。"
           }
         ],
-        "portfolioKicker": "旗下企業",
+        "portfolioKicker": "投資項目",
         "portfolioTitle": "以長期資本持有並培育的企業",
         "portfolioSubtitle": "兩家核心持股企業，分別在數字科技與跨境醫療領域深耕。",
         "learnMore": "了解詳情",
@@ -626,7 +626,7 @@
       "footer": {
         "description": "立足澳门、辐射湾区与全球的多元化投资控股集团，以长期资本参与高成长产业。",
         "quickLinks": "快速链接",
-        "companies": "旗下企业",
+        "companies": "投资项目",
         "contactTitle": "联系方式",
         "allRightsReserved": "版权所有"
       },
@@ -671,7 +671,7 @@
             "text": "依托澳门中葡平台与湾区区位优势，布局跨境贸易、企业服务与资源对接。"
           }
         ],
-        "portfolioKicker": "旗下企业",
+        "portfolioKicker": "投资项目",
         "portfolioTitle": "以长期资本持有并培育的企业",
         "portfolioSubtitle": "两家核心持股企业，分别在数字科技与跨境医疗领域深耕。",
         "learnMore": "了解详情",
@@ -856,7 +856,7 @@
       "footer": {
         "description": "A diversified investment holding group rooted in Macao, reaching across the Greater Bay Area and beyond, participating in high-growth industries with long-term capital.",
         "quickLinks": "Quick Links",
-        "companies": "Our Companies",
+        "companies": "Investment Projects",
         "contactTitle": "Contact",
         "allRightsReserved": "All rights reserved"
       },
@@ -901,7 +901,7 @@
             "text": "Leveraging Macao's platform between China and Portuguese-speaking countries and its GBA location to develop cross-border trade, corporate services and resource matching."
           }
         ],
-        "portfolioKicker": "OUR COMPANIES",
+        "portfolioKicker": "INVESTMENT PROJECTS",
         "portfolioTitle": "Companies we hold and nurture for the long term",
         "portfolioSubtitle": "Two core holdings, deeply rooted in digital technology and cross-border healthcare respectively.",
         "learnMore": "Learn More",
@@ -1086,7 +1086,7 @@
       "footer": {
         "description": "Um grupo holding de investimento diversificado, sediado em Macau e com alcance na Grande Baía e no mundo, participando em indústrias de elevado crescimento com capital de longo prazo.",
         "quickLinks": "Ligações Rápidas",
-        "companies": "As Nossas Empresas",
+        "companies": "Projetos de Investimento",
         "contactTitle": "Contacto",
         "allRightsReserved": "Todos os direitos reservados"
       },
@@ -1131,7 +1131,7 @@
             "text": "Tirando partido da plataforma de Macau entre a China e os países de língua portuguesa e da sua posição na Grande Baía, desenvolvemos comércio transfronteiriço, serviços empresariais e correspondência de recursos."
           }
         ],
-        "portfolioKicker": "AS NOSSAS EMPRESAS",
+        "portfolioKicker": "PROJETOS DE INVESTIMENTO",
         "portfolioTitle": "Empresas que detemos e desenvolvemos a longo prazo",
         "portfolioSubtitle": "Duas participações nucleares, profundamente enraizadas na tecnologia digital e na saúde transfronteiriça.",
         "learnMore": "Saber Mais",

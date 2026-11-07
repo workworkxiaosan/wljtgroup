@@ -99,9 +99,11 @@ SOCIAL = [('facebook', 'Facebook'), ('linkedin', 'LinkedIn'), ('twitter', 'Twitt
 def brand_block(lang, pre):
     logo = pre + asset('img/logo-mark.png', lang)
     hp = pre + page_href('index', lang, lang)
+    zh_chars = ''.join(f'<span>{esc(char)}</span>' for char in C['site_short']['zh-TW'])
+    en_chars = ''.join(f'<span>{esc(char)}</span>' for char in 'WANLI JINTENG')
     return (f'<a href="{hp}" class="logo-link"><img src="{logo}" alt="{esc(site_name(lang))}">'
-            f'<span class="wordmark"><span class="wordmark-zh">{esc(C["site_short"]["zh-TW"])}</span>'
-            f'<span class="wordmark-en">WANLI JINTENG</span></span></a>')
+            f'<span class="wordmark"><span class="wordmark-zh">{zh_chars}</span>'
+            f'<span class="wordmark-en">{en_chars}</span></span></a>')
 
 def header(page, lang, pre='', url_path=None):
     nav = I18N[lang]['nav']

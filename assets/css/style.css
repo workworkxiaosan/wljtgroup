@@ -124,8 +124,9 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .logo-link:hover { opacity: .85; }
 .logo-link img { height: 2.5rem; width: auto; flex-shrink: 0; }
 .wordmark { display: flex; flex-direction: column; line-height: 1.15; white-space: nowrap; }
-.wordmark-zh { font-family: var(--font-serif); font-size: 1.0625rem; font-weight: 600; color: var(--cream); letter-spacing: .08em; }
-.wordmark-en { font-size: .625rem; letter-spacing: .34em; color: var(--gold); font-weight: 600; }
+.wordmark-zh, .wordmark-en { display: flex; justify-content: space-between; width: 100%; }
+.wordmark-zh { font-family: var(--font-serif); font-size: 1.0625rem; font-weight: 600; color: var(--cream); }
+.wordmark-en { font-size: .625rem; color: var(--gold); font-weight: 600; }
 .main-nav { display: none; align-items: center; gap: .25rem; }
 @media (min-width: 1024px) { .main-nav { display: flex; } }
 .main-nav a {
@@ -293,7 +294,7 @@ html[lang="en"] .hero h1, html[lang="pt"] .hero h1 { font-size: clamp(1.75rem, 4
 .sector-card h3 { font-size: 1.3125rem; margin-bottom: .75rem; }
 .sector-card p { color: var(--muted); line-height: 1.75; font-size: .9375rem; }
 
-/* ---------- 旗下企業卡 ---------- */
+/* ---------- 投資項目卡 ---------- */
 .company-card { display: flex; flex-direction: column; padding: 0; overflow: hidden; }
 .company-img { aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 2px solid var(--gold); }
 .company-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s cubic-bezier(.4,0,.2,1); }
